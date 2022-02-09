@@ -539,6 +539,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2rem;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .w-auto {
   width: auto;
 }
@@ -553,6 +557,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex-shrink-0 {
   flex-shrink: 0;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .items-center {
@@ -760,5 +768,10 @@ body {
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .lg\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
