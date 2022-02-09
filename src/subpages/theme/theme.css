@@ -1,0 +1,140 @@
+
+@media (min-width: 979px) { 
+.theme{
+    height:550px;
+    width: 1000px;
+    margin-top: -3200px;
+    margin-left: 130px;
+    position: relative;
+    z-index: 2;
+  }
+.feature{
+    height:1000px ;
+    width: 1000px;
+    margin-top: -2400px;
+    margin-left: 125px;
+    position: relative;
+    z-index: 2;
+  }
+.method{
+    height:1000px;
+    width: 1000px;
+    margin-top: -1200px;
+    margin-left:255px;
+    position: relative;
+    z-index: 2;
+  }
+
+div.other_style{
+  position: relative;
+  width: 1255px;
+  height: 3400px;
+  z-index: 1;
+  background: linear-gradient(#c7e5e5 1390px, #99cfca 1390px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) { 
+    .theme{
+        height:450px;
+        width: 800px;
+        margin-top: -2300px;
+        margin-left: 90px;
+        position: relative;
+        z-index: 2;
+      }
+    .feature{
+        height:800px ;
+        width: 800px;
+        margin-top: -1736px;
+        margin-left: 125px;
+        position: relative;
+        z-index: 2;
+      }
+    .method{
+        height:800px;
+        width: 800px;
+        margin-top: -836px;
+        margin-left:178.3px;
+        position: relative;
+        z-index: 2;
+      }
+    
+    div.other_style{
+      position: relative;
+      width: 978px;
+      height: 2500px;
+      z-index: 1;
+      background: linear-gradient(#c7e5e5 1075px, #99cfca 1075px);
+      }
+    
+    }
+    @media (min-width: 480px)and (max-width: 768px) { 
+    .theme{
+        height:400px;
+        width: 620px;
+        margin-top: -1980px;
+        margin-left: 90px;
+        position: relative;
+        z-index: 2;
+      }
+    .feature{
+        height:620px ;
+        width: 620px;
+        margin-top: -1450px;
+        margin-left: 90px;
+        position: relative;
+        z-index: 2;
+      }
+    .method{
+        height:620px;
+        width: 620px;
+        margin-top: -680px;
+        margin-left:148px;
+        position: relative;
+        z-index: 2;
+      }
+    
+    div.other_style{
+      position: relative;
+      width: 768px;
+      height: 2080px;
+      z-index: 1;
+      background: linear-gradient(#c7e5e5 868px, #99cfca 868px);
+      }
+     }
+    
+    @media (max-width: 480px) { 
+    .theme{
+        height:230px;
+        width: 300Px;
+        margin-top: -1200px;
+        margin-left: 90px;
+        position: relative;
+        z-index: 2;
+      }
+    .feature{
+        height:300px ;
+        width: 300px;
+        margin-top: -890px;
+        margin-left: 90px;
+        position: relative;
+        z-index: 2;
+      }
+    .method{
+        height:400px;
+        width: 400px;
+        margin-top: -500px;
+        margin-left:80px;
+        position: relative;
+        z-index: 2;
+      }
+    
+    div.other_style{
+      position: relative;
+      width: 480px;
+      height: 1300px;
+      z-index: 1;
+      background: linear-gradient(#c7e5e5 525px, #99cfca 525px);
+      }
+     }

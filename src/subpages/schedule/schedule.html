@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../../../dist/app.css">
+    <link href="schedule.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+    <title>Schedule</title>
+  </head>
+  <body>
+    <!--add nav bar code-->
+    <div id="navbar"></div>
+    <!--picture carasouel -->
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img
+          src="https://cdn.pixabay.com/photo/2020/05/15/14/03/lake-5173683__340.jpg"
+          style="width: 100%"
+        />
+        <div class="text">Caption Text</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img
+          src="https://cdn.pixabay.com/photo/2021/07/12/19/43/swans-6421355__340.jpg"
+          style="width: 100%"
+        />
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img
+          src="https://cdn.pixabay.com/photo/2021/07/20/12/43/chamomiles-6480598__340.jpg"
+          style="width: 100%"
+        />
+        <div class="text">Caption Three</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div style="text-align: center; padding-bottom: 5vh">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!--switch tab timeline-->
+    <div class="wrapper">
+      <div class="buttonWrapper">
+        <button
+          class="tab-button active"
+          style="border-top-left-radius: 10px"
+          data-id="7/11"
+        >
+          7/11
+        </button>
+        <button class="tab-button" data-id="7/12">7/12</button>
+        <button
+          class="tab-button"
+          style="border-top-right-radius: 10px"
+          data-id="7/13"
+        >
+          7/13
+        </button>
+      </div>
+      <div class="contentWrapper">
+        <div
+          class="content active"
+          id="7/11"
+          style="text-align: center; padding: 10px"
+        >
+          <img src="../../img/schedule-1.png" style="align: right" />
+        </div>
+        <div
+          class="content"
+          id="7/12"
+          style="text-align: center; padding: 10px"
+        >
+          <img src="../../img/schedule-2.png" />
+        </div>
+        <div
+          class="content"
+          id="7/13"
+          style="text-align: center; padding: 10px"
+          ;
+        >
+          <img src="../../img/schedule-3.png" />
+        </div>
+      </div>
+    </div>
+    <!--final day timeline-->
+    <img src="../../img/schedule-5.png" class ="section-title"/ >
+    <img src="../../img/schedule-4.png" class="final-day" />
+
+    <!--footer-->
+    <div id="footer"></div>
+  </body>
+  <script src="schedule.js"></script>
+</html>
