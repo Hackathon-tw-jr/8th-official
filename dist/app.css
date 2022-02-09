@@ -509,6 +509,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: auto;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
 .w-auto {
   width: auto;
 }
@@ -581,10 +589,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
-.overflow-hidden {
-  overflow: hidden;
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
@@ -610,6 +614,30 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-teal-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(19 78 74 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\.\.\/img\/index\.png\'\)\] {
+  background-image: url('../img/index.png');
+}
+
+.bg-\[url\(\'\/img\/index\.png\'\)\] {
+  background-image: url('/img/index.png');
+}
+
+.bg-\[url\(\'\.\/img\/index\.png\'\)\] {
+  background-image: url('./img/index.png');
+}
+
+.bg-\[url\(\/img\/index\.png\)\] {
+  background-image: url(/img/index.png);
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-auto {
+  background-size: auto;
 }
 
 .px-2 {
