@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
     content: [
         "./src/app.html",
@@ -10,11 +12,14 @@ module.exports = {
       extend: {
             colors: {
                 'cyan-secnd-100': "#6da79d",
+            },
+            fontFamily: {
+                sans: ['Inter var', ...defaultTheme.fontFamily.sans],
             }
       },
       container: {
           center: true,
-          padding: '1em',
+          padding: '2em',
       },
     },
     plugins: [],
