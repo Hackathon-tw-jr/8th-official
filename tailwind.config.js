@@ -16,6 +16,14 @@ module.exports = {
             fontFamily: {
                 sans: ['Inter var', ...defaultTheme.fontFamily.sans],
             },
+            spacing: {
+                '200': '30rem',
+                '400': '70rem',
+            },
+            backgroundSize: {
+                '70%': '200%',
+                '90%': '90%',
+            },
       },
       container: {
           center: true,

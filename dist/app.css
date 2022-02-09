@@ -481,6 +481,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -505,16 +514,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2rem;
 }
 
+.h-400 {
+  height: 70rem;
+}
+
 .h-auto {
   height: auto;
-}
-
-.h-full {
-  height: 100%;
-}
-
-.h-20 {
-  height: 5rem;
 }
 
 .w-auto {
@@ -589,6 +594,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -616,28 +627,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(19 78 74 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/img\/index\.png\'\)\] {
-  background-image: url('../img/index.png');
-}
-
-.bg-\[url\(\'\/img\/index\.png\'\)\] {
-  background-image: url('/img/index.png');
-}
-
 .bg-\[url\(\'\.\/img\/index\.png\'\)\] {
   background-image: url('./img/index.png');
 }
 
-.bg-\[url\(\/img\/index\.png\)\] {
-  background-image: url(/img/index.png);
+.bg-70\% {
+  background-size: 200%;
 }
 
-.bg-cover {
-  background-size: cover;
+.bg-fixed {
+  background-attachment: fixed;
 }
 
-.bg-auto {
-  background-size: auto;
+.bg-left {
+  background-position: left;
+}
+
+.bg-right {
+  background-position: right;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .px-2 {
@@ -776,6 +787,10 @@ body {
     gap: 2.5rem;
   }
 
+  .sm\:bg-contain {
+    background-size: contain;
+  }
+
   .sm\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -784,6 +799,20 @@ body {
   .sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:bg-cover {
+    background-size: cover;
+  }
+
+  .md\:bg-90\% {
+    background-size: 90%;
+  }
+
+  .md\:bg-center {
+    background-position: center;
   }
 }
 

@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-
-    <link href="../dist/app.css" rel="stylesheet">
-    <title>Hackathon 8th Test Page</title>
-</head>
 <body class="bg-cyan-secnd-100 box-border">
     <!-- Navigation Bar -->
     <nav class="bg-cyan-secnd-100 dark:bg-teal-700">
@@ -16,22 +5,22 @@
             <div class="relative flex items-center justify-between h-16">
                 <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between">
                     <div class="flex-shrink-0 flex items-center">
-                        <h3 class="text-white text-xl font-bold">Hackathon Jr.</h3>
+                        <h3 class="text-white text-xl font-bold"></h3>
                         <!-- <img class="block lg:hidden h-8 w-auto" src="" alt="Workflow">
                         <img class="hidden lg:block h-8 w-auto" src="" alt="Workflow"> -->
                     </div>
                     <div class="hidden sm:block sm:ml-6">
                         <div class="flex items-center space-x-4">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-white hover:bg-teal-400 hover:text-white" -->
-                        <a href="app.html" class="text-teal-100 text-base px-4 py-2 hover:text-white rounded-full" aria-current="page">About Us</a>
+                        <a href="../../app.html" class="text-teal-100 text-base px-4 py-2 hover:text-white rounded-full" aria-current="page">About Us</a>
 
-                        <a href="./subpages/details/details.html" class="text-teal-100 text-base hover:text-white px-3 py-2 rounded-full">Details</a>
+                        <a href="../details/details.html" class="text-teal-100 text-base hover:text-white px-3 py-2 rounded-full">Details</a>
             
-                        <a href="./subpages/schedule/schedule.html" class="text-teal-100 text-base hover:text-white px-3 py-2 rounded-full">Schedule</a>
+                        <a href="../schedule/schedule.html" class="text-teal-100 text-base hover:text-white px-3 py-2 rounded-full">Schedule</a>
             
-                        <a href="./subpages/theme/theme.html" class="text-teal-100 text-base hover:text-white px-3 py-2 rounded-full">Theme</a>
+                        <a href="../theme/theme.html" class="text-teal-100 text-base hover:text-white px-3 py-2 rounded-full">Theme</a>
 
-                        <a href="./subpages/register/register.html" class="text-white border-2 text-base px-5 hover:bg-teal-600 hover:text-white py-2 rounded-lg ring-inset ring-teal-600 font-medium cursor-pointer">Register Now!</a>
+                        <a href="../register/register.html" class="text-white border-2 text-base px-5 hover:bg-teal-600 hover:text-white py-2 rounded-lg ring-inset ring-teal-600 font-medium cursor-pointer">Register Now!</a>
                         </div>
                     </div>
                 </div>
@@ -44,20 +33,16 @@
             <!-- Current: "bg-gray-900 text-white", Default: "text-white hover:bg-teal-400 hover:text-white" -->
             <a href="app.html" class="text-teal-100 hover:bg-teal-400 block px-3 py-2 rounded-lg text-base font-medium" aria-current="page">About Us</a>
     
-            <a href="./subpages/details/details.html" class="text-teal-100 hover:bg-teal-400 hover:text-white block px-3 py-2 rounded-lg text-base font-medium">Details</a>
+            <a href="../details/details.html" class="text-teal-100 hover:bg-teal-400 hover:text-white block px-3 py-2 rounded-lg text-base font-medium">Details</a>
     
-            <a href="./subpages/schedule/schedule.html" class="text-teal-100 hover:bg-teal-400 hover:text-white block px-3 py-2 rounded-lg text-base font-medium">Schedule</a>
+            <a href="../schedule/schedule.html" class="text-teal-100 hover:bg-teal-400 hover:text-white block px-3 py-2 rounded-lg text-base font-medium">Schedule</a>
     
-            <a href="./subpages/theme/theme.html" class="text-teal-100 hover:bg-teal-400 hover:text-white block px-3 py-2 rounded-lg text-base font-medium">Theme</a>
+            <a href="../theme/theme.html" class="text-teal-100 hover:bg-teal-400 hover:text-white block px-3 py-2 rounded-lg text-base font-medium">Theme</a>
            
-            <a href="./subpages/register/register.html" class="text-white hover:bg-teal-400 hover:text-white block px-3 py-2 border-2 rounded-lg ring-inset ring-teal-600 text-base font-medium">Register Now!</a>
+            <a href="../register/register.html" class="text-white hover:bg-teal-400 hover:text-white block px-3 py-2 border-2 rounded-lg ring-inset ring-teal-600 text-base font-medium">Register Now!</a>
         </div>
         </div>
     </nav>
-
-    <!-- Index Image ver 1-->
-    <div id="main" class="bg-[url('./img/index.png')] bg-no-repeat bg-70% sm:bg-contain md:bg-90% bg-left bg-right md:bg-center bg-fixed h-400">
-    </div>
 
     <!-- Footer Bar-->
     <footer class="relative bg-teal-900 block bottom-0">
@@ -66,15 +51,15 @@
                 <div id="footer-links" class="flex flex-row flex-auto gap-5 sm:gap-10 lg:gap-48">
                     <div class="item">
                     <ul class="list-none list-inside">
-                        <li><a href="app.html" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">About Us</a></li>
-                        <li><a href="./subpages/details/details.html" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">Details</a></li>
-                        <li><a href="./subpages/register/register.html" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">Prize</a></li>
-                        <li><a href="./subpages/schedule/schedule.html" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">Schedule</a></li>
+                        <li><a href="../../app.html" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">About Us</a></li>
+                        <li><a href="../details/details.html" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">Details</a></li>
+                        <li><a href="../register/register.html" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">Prize</a></li>
+                        <li><a href="../schedule/schedule.html" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">Schedule</a></li>
                     </ul>
                     </div>
                     <div class="item">
                     <ul class="list-none list-inside">
-                        <li><a href="./subpages/theme/theme.html" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">Theme</a></li>
+                        <li><a href="../theme/theme.html" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">Theme</a></li>
                         <li><a href="http://www.mingdao.edu.tw/homeX/Web/" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">Mingdao</a></li>
                         <li><a href="https://www.instagram.com/hackjr8th/" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">Instagram</a></li>
                         <li><a href="https://www.facebook.com/hackathontaiwanjunior" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">Facebook</a></li>
@@ -92,4 +77,3 @@
         </div>
     </footer>
 </body>
-</html>

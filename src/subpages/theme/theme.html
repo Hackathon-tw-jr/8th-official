@@ -1,20 +1,102 @@
-<html>
-    <head>
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>details</title>
-    <link rel="stylesheet" href="../../../dist/app.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link rel="stylesheet" href="theme.css" type="text/css">
-    </head>
-    <body>
-        <div class="other_style"></div>
-        <div >
-            <img  alt="主題" src="../../img/theme-1.png" class="theme">
+    <link rel="stylesheet" href="../../../dist/app.css">
+    <title>Details- Hack Jr 8th</title>
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav class="bg-cyan-secnd-100 dark:bg-teal-700">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div class="relative flex items-center justify-between h-16">
+            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between">
+                <div class="flex-shrink-0 flex items-center">
+                    <h3 class="text-white text-xl font-bold">Hackathon Jr.</h3>
+                    <!-- <img class="block lg:hidden h-8 w-auto" src="" alt="Workflow">
+                    <img class="hidden lg:block h-8 w-auto" src="" alt="Workflow"> -->
+                </div>
+                <div class="hidden sm:block sm:ml-6">
+                    <div class="flex items-center space-x-4">
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-white hover:bg-teal-400 hover:text-white" -->
+                    <a href="../../app.html" class="text-teal-100 text-base px-4 py-2 hover:text-white rounded-full" aria-current="page">About Us</a>
+
+                    <a href="../details/details.html" class="text-teal-100 text-base hover:text-white px-3 py-2 rounded-full">Details</a>
+        
+                    <a href="../schedule/schedule.html" class="text-teal-100 text-base hover:text-white px-3 py-2 rounded-full">Schedule</a>
+        
+                    <a href="../theme/theme.html" class="text-teal-100 text-base hover:text-white px-3 py-2 rounded-full">Theme</a>
+
+                    <a href="../register/register.html" class="text-white border-2 text-base px-5 hover:bg-teal-600 hover:text-white py-2 rounded-lg ring-inset ring-teal-600 font-medium cursor-pointer">Register Now!</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div >
-            <img  alt="本屆特色" src="../../img/theme-2.png" class="feature">
+    </div>
+
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="sm:hidden" id="mobile-menu">
+    <div class="px-2 pt-2 pb-3 space-y-2">
+        <!-- Current: "bg-gray-900 text-white", Default: "text-white hover:bg-teal-400 hover:text-white" -->
+        <a href="app.html" class="text-teal-100 hover:bg-teal-400 block px-3 py-2 rounded-lg text-base font-medium" aria-current="page">About Us</a>
+
+        <a href="../details/details.html" class="text-teal-100 hover:bg-teal-400 hover:text-white block px-3 py-2 rounded-lg text-base font-medium">Details</a>
+
+        <a href="../schedule/schedule.html" class="text-teal-100 hover:bg-teal-400 hover:text-white block px-3 py-2 rounded-lg text-base font-medium">Schedule</a>
+
+        <a href="../theme/theme.html" class="text-teal-100 hover:bg-teal-400 hover:text-white block px-3 py-2 rounded-lg text-base font-medium">Theme</a>
+       
+        <a href="../register/register.html" class="text-white hover:bg-teal-400 hover:text-white block px-3 py-2 border-2 rounded-lg ring-inset ring-teal-600 text-base font-medium">Register Now!</a>
+    </div>
+    </div>
+</nav>
+
+<div class="other_style"></div>
+    <div >
+        <img  alt="主題" src="../../img/theme-1.png" class="theme">
+    </div>
+    <div >
+        <img  alt="本屆特色" src="../../img/theme-2.png" class="feature">
+    </div>
+            <div >
+        <img  alt="比賽辦法" src="../../img/theme-3.png" class="method">
+    </div>
+
+<!-- Footer Bar-->
+<footer class="relative bg-teal-900 block bottom-0">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-6">
+        <div class="relative flex flex-col items-center gap-10 h-auto py-10">
+            <div id="footer-links" class="flex flex-row flex-auto gap-5 sm:gap-10 lg:gap-48">
+                <div class="item">
+                <ul class="list-none list-inside">
+                    <li><a href="../../app.html" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">About Us</a></li>
+                    <li><a href="../details/details.html" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">Details</a></li>
+                    <li><a href="../register/register.html" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">Prize</a></li>
+                    <li><a href="../schedule/schedule.html" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">Schedule</a></li>
+                </ul>
+                </div>
+                <div class="item">
+                <ul class="list-none list-inside">
+                    <li><a href="../theme/theme.html" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">Theme</a></li>
+                    <li><a href="http://www.mingdao.edu.tw/homeX/Web/" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">Mingdao</a></li>
+                    <li><a href="https://www.instagram.com/hackjr8th/" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/hackathontaiwanjunior" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">Facebook</a></li>
+                </ul>
+                </div>
+            </div>
+            <div class="hidden sm:block">
+                <a 
+                href="https://www.google.com/maps/place/Mingdao+High+School/@24.1068679,120.6339044,17z/data=!3m1!4b1!4m5!3m4!1s0x34693c169505249f:0xbde692385cfc5bed!8m2!3d24.1068679!4d120.6360984" 
+                class="text-white hover:underline">
+                    Location: No. 497號, Section 1, Zhongshan Rd, Wuri District, Taichung City, 41401
+                </a>
+            </div>
         </div>
-                <div >
-            <img  alt="比賽辦法" src="../../img/theme-3.png" class="method">
-        </div>
-    </body>
+    </div>
+</footer>
+</body>
 </html>
