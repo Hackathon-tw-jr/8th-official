@@ -4,9 +4,9 @@ module.exports = {
     content: [
         "./src/app.html",
         "./src/app.js",
-        "./src/theme/theme.html",
-        "./src/schedule/schedule.html",
-        "./src/schedule/schedule.js",
+        "./src/subpages/theme/theme.html",
+        "./src/subpages/schedule/schedule.html",
+        "./src/subpages/schedule/schedule.js",
     ],
     theme: {
       extend: {
@@ -23,6 +23,9 @@ module.exports = {
             backgroundSize: {
                 '70%': '200%',
                 '90%': '90%',
+            },
+            scale: {
+                '3000': '30.0',
             },
       },
       container: {

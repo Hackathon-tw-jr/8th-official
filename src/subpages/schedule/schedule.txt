@@ -1,0 +1,12 @@
+<span class="text-sm text-white ">開幕</span>
+    <span class="text-sm text-white ">報到</span>
+    <span class="text-sm text-white ">自由創作</span>
+
+
+    <span class="text-sm text-white ">自由創作</span>
+
+
+    <span class="text-sm text-white ">自由創作</span>
+    <span class="text-sm text-white ">12:00 收件</span>
+    <span class="text-sm text-white ">第一輪企畫書投票</span>
+    <span class="text-sm text-white ">第二輪企畫書投票</span>

@@ -10,29 +10,71 @@
     <link href="../dist/app.css" rel="stylesheet">
     <title>Hackathon 8th Test Page</title>
 </head>
-<body class="bg-cyan-secnd-100 box-border">
+<body class="bg-teal-50 box-border">
     <!-- Navigation Bar -->
-    <nav class="bg-cyan-secnd-100 dark:bg-teal-700">
+    <nav class="bg-teal-50 dark:bg-teal-900">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div class="relative flex items-center justify-between h-16">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <!-- Mobile menu button-->
+                    <button type="button" id="mobileToggle" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-black hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black" aria-controls="mobile-menu" aria-expanded="false">
+                      <span class="sr-only">Open main menu</span>
+                      <!--
+                        Icon when menu is closed.
+            
+                        Heroicon name: outline/menu
+            
+                        Menu open: "hidden", Menu closed: "block"
+                      -->
+                      <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                      </svg>
+                      <!--
+                        Icon when menu is open.
+            
+                        Heroicon name: outline/x
+            
+                        Menu open: "block", Menu closed: "hidden"
+                      -->
+                      <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button>
+                  </div>
                 <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between">
                     <div class="flex-shrink-0 flex items-center">
-                        <h3 class="text-white text-xl font-bold">Hackathon Jr.</h3>
+                        <img class="w-10 mr-8" src="../dist/logo.svg">
+                        <h3 class="relative text-black text-xl font-bold hidden sm:block
+                        after:transition-all after:text-transparent after:bg-black
+                        after:absolute after:content-['.'] after:m-auto after:bottom-0 after:left-0 after:right-0 after:h-px after:w-[0%]
+                        hover:after:w-[100%] hover:after:ease-in-out hover:after:duration-1000">Hackathon Junior Taiwan</h3>
                         <!-- <img class="block lg:hidden h-8 w-auto" src="" alt="Workflow">
                         <img class="hidden lg:block h-8 w-auto" src="" alt="Workflow"> -->
                     </div>
                     <div class="hidden sm:block sm:ml-6">
                         <div class="flex items-center space-x-4">
-                        <!-- Current: "bg-gray-900 text-white", Default: "text-white hover:bg-teal-400 hover:text-white" -->
-                        <a href="app.html" class="text-teal-100 text-base px-4 py-2 hover:text-white rounded-full" aria-current="page">About Us</a>
+                        <!-- Current: "bg-gray-900 text-black", Default: "text-black hover:bg-teal-400 hover:text-black" -->
+                        <a href="app.html" class="relative text-teal-100 text-base px-4 py-2 hover:text-black rounded-full
+                        after:transition-all after:text-transparent after:bg-black
+                        after:absolute after:content-['.'] after:m-auto after:bottom-0 after:left-0 after:right-0 after:h-px after:w-[0%]
+                        hover:after:w-[40%] hover:after:ease-in-out hover:after:duration-1000" aria-current="page">About Us</a>
 
-                        <a href="./subpages/details/details.html" class="text-teal-100 text-base hover:text-white px-3 py-2 rounded-full">Details</a>
+                        <a href="./subpages/details/details.html" class="relative text-teal-100 text-base hover:text-black px-3 py-2 rounded-full
+                        after:transition-all after:text-transparent after:bg-black
+                        after:absolute after:content-['.'] after:m-auto after:bottom-0 after:left-0 after:right-0 after:h-px after:w-[0%]
+                        hover:after:w-[40%] hover:after:ease-in-out hover:after:duration-1000">Details</a>
             
-                        <a href="./subpages/schedule/schedule.html" class="text-teal-100 text-base hover:text-white px-3 py-2 rounded-full">Schedule</a>
+                        <a href="./subpages/schedule/schedule.html" class="relative text-teal-100 text-base hover:text-black px-3 py-2 rounded-full
+                        after:transition-all after:text-transparent after:bg-black
+                        after:absolute after:content-['.'] after:m-auto after:bottom-0 after:left-0 after:right-0 after:h-px after:w-[0%]
+                        hover:after:w-[40%] hover:after:ease-in-out hover:after:duration-1000">Schedule</a>
             
-                        <a href="./subpages/theme/theme.html" class="text-teal-100 text-base hover:text-white px-3 py-2 rounded-full">Theme</a>
+                        <a href="./subpages/theme/theme.html" class="relative text-teal-100 text-base hover:text-black px-3 py-2 rounded-full
+                        after:transition-all after:text-transparent after:bg-black
+                        after:absolute after:content-['.'] after:m-auto after:bottom-0 after:left-0 after:right-0 after:h-px after:w-[0%]
+                        hover:after:w-[40%] hover:after:ease-in-out hover:after:duration-1000">Theme</a>
 
-                        <a href="./subpages/register/register.html" class="text-white border-2 text-base px-5 hover:bg-teal-600 hover:text-white py-2 rounded-lg ring-inset ring-teal-600 font-medium cursor-pointer">Register Now!</a>
+                        <a href="./subpages/register/register.html" class="relative text-black border-2 text-base px-5 hover:bg-teal-600 hover:text-black py-2 rounded-lg ring-inset ring-teal-600 font-medium cursor-pointer">Register Now!</a>
                         </div>
                     </div>
                 </div>
@@ -40,19 +82,20 @@
         </div>
     
         <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="sm:hidden" id="mobile-menu">
-        <div class="px-2 pt-2 pb-3 space-y-2">
-            <!-- Current: "bg-gray-900 text-white", Default: "text-white hover:bg-teal-400 hover:text-white" -->
-            <a href="app.html" class="text-teal-100 hover:bg-teal-400 block px-3 py-2 rounded-lg text-base font-medium" aria-current="page">About Us</a>
-    
-            <a href="./subpages/details/details.html" class="text-teal-100 hover:bg-teal-400 hover:text-white block px-3 py-2 rounded-lg text-base font-medium">Details</a>
-    
-            <a href="./subpages/schedule/schedule.html" class="text-teal-100 hover:bg-teal-400 hover:text-white block px-3 py-2 rounded-lg text-base font-medium">Schedule</a>
-    
-            <a href="./subpages/theme/theme.html" class="text-teal-100 hover:bg-teal-400 hover:text-white block px-3 py-2 rounded-lg text-base font-medium">Theme</a>
-           
-            <a href="./subpages/register/register.html" class="text-white hover:bg-teal-400 hover:text-white block px-3 py-2 border-2 rounded-lg ring-inset ring-teal-600 text-base font-medium">Register Now!</a>
-        </div>
+        <div class="hidden sm:hidden p-2" id="mobileMenu">
+
+            <div class="px-2 pt-2 pb-3 space-y-2">
+                <!-- Current: "bg-gray-900 text-black", Default: "text-black hover:bg-teal-400 hover:text-black" -->
+                <a href="app.html" class="text-teal-100 hover:bg-teal-400 block px-3 py-2 rounded-lg text-base font-medium" aria-current="page">About Us</a>
+        
+                <a href="./subpages/details/details.html" class="text-teal-100 hover:bg-teal-400 hover:text-black block px-3 py-2 rounded-lg text-base font-medium">Details</a>
+        
+                <a href="./subpages/schedule/schedule.html" class="text-teal-100 hover:bg-teal-400 hover:text-black block px-3 py-2 rounded-lg text-base font-medium">Schedule</a>
+        
+                <a href="./subpages/theme/theme.html" class="text-teal-100 hover:bg-teal-400 hover:text-black block px-3 py-2 rounded-lg text-base font-medium">Theme</a>
+            
+                <a href="./subpages/register/register.html" class="text-black hover:bg-teal-400 hover:text-black block px-3 py-2 border-2 rounded-lg ring-inset ring-teal-600 text-base font-medium">Register Now!</a>
+            </div>
         </div>
     </nav>
 
@@ -61,8 +104,85 @@
     </div>
     <div class="bg-[url('./img/about-1.png')] bg-no-repeat bg-contain md:bg-cover bg-center h-400">
     </div>
+    <div class="grid place-items-center w-screen pt-16 pb-32">
+        <div class=" text-7xl text-black font-bold text-shadow-xl">參賽流程</div>
+    </div>
+    <div class="grid place-items-right w-screen pt-16 pb-32">
+        <div class="text-4xl text-black font-semibold">
+
+        </div>
+    </div>
+
+    <div id="tabs" class="container sm-auto pb-24">
+        <div id="tab_bar" class="flex overflow-auto -mx-4 sm:mx-0 pb-8">
+            <ul class="flex-none inline-grid gap-x-4 px-4" style="grid-template-columns:repeat(4, minmax(6rem, 1fr))">
+                <li><button type="button" id="tab1" onclick="changeTab1()" class="px-8 py-2 border bg-emerald-600 rounded-lg selected group font-semibold w-full flex flex-col items-center text-black text-2xl hover:scale-105 hover:shadow-xl shadow-black">7/11</button></li>
+                <li><button type="button" id="tab2" onclick="changeTab2()" class="px-8 py-2 bg-white border text-emerald-600 rounded-lg group font-semibold w-full flex flex-col items-center text-2xl hover:scale-105 hover:shadow-xl shadow-black">7/12</button></li>
+                <li><button type="button" id="tab3" onclick="changeTab3()" class="px-8 py-2 bg-white border text-emerald-600 rounded-lg group font-semibold w-full flex flex-col items-center text-2xl hover:scale-105 hover:shadow-xl shadow-black">7/13</button></li>
+            </ul>
+        </div>
+        <div id="tab_content">
+            <div id="c1" class="bg-gray-50 p-4 rounded-lg bg-emerald-100 shadow-md shadow-emerald-900 h-80">
+                <h1>testing tab 1</h1>
+            </div>
+            <div id="c2" class="bg-gray-50 p-4 rounded-lg bg-emerald-100 shadow-md  shadow-emerald-900 hidden">
+                <h1>testing tab 2</h1>
+            </div>
+            <div id="c3" class="bg-gray-50 p-4 rounded-lg bg-emerald-100 shadow-md shadow-emerald-900 hidden">
+                <h1>testing tab 3</h1>
+            </div>
+        </div>
+
+    </div>
 
 
+    <!--final day timeline-->
+    <div class="grid place-items-center w-screen pb-24 ">
+        <div class="relative border-4 border-black w-48 h-16 rounded-full flex justify-center items-center ">
+            <div class="text-2xl text-black text-center font-bold"> 7/22 決賽流程</div>
+        </div>
+        <img src="../dist/img/schedule-4.png" class="object-scale-down w-3/4 h-auto object-center pt-4 " />
+        <div class="grid grid-cols-5 gap-x-12 gap-y-4 justify-items-center">
+            <div class="text-3xl text-black font-bold">報到</div>
+            <div class="text-3xl text-black font-bold">開幕</div>
+            <div class="text-3xl text-black break-all font-bold">設計組 Demo</div>
+            <div class="text-3xl text-black font-bold">工程組 Demo</div>
+            <div class="text-3xl text-black font-bold">頒獎</div>
+            <div class="text-2xl text-black ">13:00</div>
+            <div class="text-2xl text-black ">13:25</div>
+            <div class="text-2xl text-black break-all ">14:00</div>
+            <div class="text-2xl text-black ">15:30</div>
+            <div class="text-2xl text-black ">17:00</div>
+        </div>
+
+    </div>
+
+    <!--regestration dates-->
+    <div class="grid place-items-center w-screen pb-24 ">
+        <div class="relative border-4 border-black w-48 h-16 rounded-full flex justify-center items-center ">
+            <div class="text-2xl text-black text-center font-bold "> 報名時間</div>
+        </div>
+        <div class="text-4xl text-black font-bold pt-8 ">March 28 ~ May 20</div>
+    </div>
+    </div>
+
+    <div class="bg-gray-50">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+          <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <span class="block">Ready to dive in?</span>
+            <span class="block text-teal-600">Apply now and compete to be best.</span>
+          </h2>
+          <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+            <div class="inline-flex rounded-md shadow">
+              <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-cyan-secnd-100 hover:bg-cyan-700"> Register Now</a>
+            </div>
+            <div class="ml-3 inline-flex rounded-md shadow">
+              <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-3 text-base font-medium rounded-md text-teal-600 bg-white hover:bg-indigo-50"> Join Discord</a>
+            </div>
+          </div>
+        </div>
+    </div>
+      
 
     <!-- Footer Bar-->
     <footer class="relative bg-teal-900 block bottom-0">
@@ -71,18 +191,18 @@
                 <div id="footer-links" class="flex flex-row flex-auto gap-5 sm:gap-10 lg:gap-48">
                     <div class="item">
                     <ul class="list-none list-inside">
-                        <li><a href="app.html" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">About Us</a></li>
-                        <li><a href="./subpages/details/details.html" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">Details</a></li>
-                        <li><a href="./subpages/register/register.html" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">Prize</a></li>
-                        <li><a href="./subpages/schedule/schedule.html" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">Schedule</a></li>
+                        <li><a href="app.html" class="text-teal-100 hover:text-black rounded-lg text-lg sm:text-base">About Us</a></li>
+                        <li><a href="./subpages/details/details.html" class="text-teal-100 hover:text-black rounded-lg text-lg sm:text-base">Details</a></li>
+                        <li><a href="./subpages/register/register.html" class="text-teal-100 hover:text-black rounded-lg text-lg sm:text-base">Prize</a></li>
+                        <li><a href="./subpages/schedule/schedule.html" class="text-teal-100 hover:text-black rounded-lg text-lg sm:text-base">Schedule</a></li>
                     </ul>
                     </div>
                     <div class="item">
                     <ul class="list-none list-inside">
-                        <li><a href="./subpages/theme/theme.html" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">Theme</a></li>
-                        <li><a href="http://www.mingdao.edu.tw/homeX/Web/" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">Mingdao</a></li>
-                        <li><a href="https://www.instagram.com/hackjr8th/" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">Instagram</a></li>
-                        <li><a href="https://www.facebook.com/hackathontaiwanjunior" class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base">Facebook</a></li>
+                        <li><a href="./subpages/theme/theme.html" class="text-teal-100 hover:text-black rounded-lg text-lg sm:text-base">Theme</a></li>
+                        <li><a href="http://www.mingdao.edu.tw/homeX/Web/" class="text-teal-100 hover:text-black rounded-lg text-lg sm:text-base">Mingdao</a></li>
+                        <li><a href="https://www.instagram.com/hackjr8th/" class="text-teal-100 hover:text-black rounded-lg text-lg sm:text-base">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/hackathontaiwanjunior" class="text-teal-100 hover:text-black rounded-lg text-lg sm:text-base">Facebook</a></li>
                     </ul>
                     </div>
                 </div>
@@ -97,4 +217,5 @@
         </div>
     </footer>
 </body>
+<script src="./app.js"></script>
 </html>

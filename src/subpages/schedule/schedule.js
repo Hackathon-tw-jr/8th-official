@@ -1,48 +1,33 @@
-// functions for picture carasouel
-var slideIndex = 1;
-showSlides(slideIndex);
+var tab1 = document.getElementById('tab1'),
+    tab2 = document.getElementById('tab2'),
+    tab3 = document.getElementById('tab3'),
+    c1 = document.getElementById('c1'),
+    c2 = document.getElementById('c2'),
+    c3 = document.getElementById('c3');
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+function changeTab1() {
+    tab1.className = 'px-8 py-2 bg-emerald-600 rounded-lg selected group text-sm font-semibold w-full flex flex-col items-center text-white text-2xl hover:scale-105 hover:shadow-xl shadow-black';
+    tab2.className = 'px-8 py-2 bg-white text-emerald-600 rounded-lg group text-sm font-semibold w-full flex flex-col items-center text-2xl hover:scale-105 hover:shadow-xl shadow-black';
+    tab3.className = 'px-8 py-2 bg-white text-emerald-600 rounded-lg group text-sm font-semibold w-full flex flex-col items-center text-2xl hover:scale-105 hover:shadow-xl shadow-black';
+    c1.className = 'bg-gray-50 p-4 rounded-lg bg-emerald-100 shadow-md shadow-emerald-900 h-80'
+    c2.className = 'bg-gray-50 p-4 rounded-lg bg-emerald-100 shadow-md  shadow-emerald-900 hidden';
+    c3.className = 'bg-gray-50 p-4 rounded-lg bg-emerald-100 shadow-md  shadow-emerald-900 hidden';
 }
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
+function changeTab2() {
+    tab1.className = 'px-8 py-2 bg-white text-emerald-600 rounded-lg group text-sm font-semibold w-full flex flex-col items-center text-2xl hover:scale-105 hover:shadow-xl shadow-black';
+    tab2.className = 'px-8 py-2 bg-emerald-600 rounded-lg selected group text-sm font-semibold w-full flex flex-col items-center text-white text-2xl hover:scale-105 hover:shadow-xl shadow-black';
+    tab3.className = 'px-8 py-2 bg-white text-emerald-600 rounded-lg group text-sm font-semibold w-full flex flex-col items-center text-2xl hover:scale-105 hover:shadow-xl shadow-black';
+    c1.className = 'bg-gray-50 p-4 rounded-lg bg-emerald-100 shadow-md  shadow-emerald-900 hidden';
+    c2.className = 'bg-gray-50 p-4 rounded-lg bg-emerald-100 shadow-md shadow-emerald-900 h-80';
+    c3.className = 'bg-gray-50 p-4 rounded-lg bg-emerald-100 shadow-md  shadow-emerald-900 hidden';
 }
 
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-}
-
-// function for tab slidey
-const tabs = document.querySelector(".wrapper");
-const tabButton = document.querySelectorAll(".tab-button");
-const contents = document.querySelectorAll(".content");
-
-tabs.onclick = e => {
-    const id = e.target.dataset.id;
-    if (id) {
-        tabButton.forEach(btn => {
-            btn.classList.remove("active");
-        });
-        e.target.classList.add("active");
-
-        contents.forEach(content => {
-            content.classList.remove("active");
-        });
-        const element = document.getElementById(id);
-        element.classList.add("active");
-    }
+function changeTab3() {
+    tab1.className = 'px-8 py-2 bg-white text-emerald-600 rounded-lg group text-sm font-semibold w-full flex flex-col items-center text-2xl hover:scale-105 hover:shadow-xl shadow-black';
+    tab2.className = 'px-8 py-2 bg-white text-emerald-600 rounded-lg group text-sm font-semibold w-full flex flex-col items-center text-2xl hover:scale-105 hover:shadow-xl shadow-black';
+    tab3.className = 'px-8 py-2 bg-emerald-600 rounded-lg selected group text-sm font-semibold w-full flex flex-col items-center text-white text-2xl hover:scale-105 hover:shadow-xl shadow-black';
+    c1.className = 'bg-gray-50 p-4 rounded-lg bg-emerald-100 shadow-md  shadow-emerald-900 hidden'
+    c2.className = 'bg-gray-50 p-4 rounded-lg bg-emerald-100 shadow-md  shadow-emerald-900 hidden';
+    c3.className = 'bg-gray-50 p-4 rounded-lg bg-emerald-100 shadow-md shadow-emerald-900 h-80';
 }
