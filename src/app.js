@@ -70,3 +70,17 @@ document.addEventListener("DOMContentLoaded", (event) => {
         scheduleContentOne.classList.replace("block", "hidden");
     }
 })
+
+const typewriter = document.getElementById("typewriteDesc");
+
+const typewriterScrollObserver = new IntersectionObserver(entires => {
+    entires.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('typewriter');
+        } else {
+            entry.target.classList.remove('typewriter');
+        }
+    })
+})
+
+typewriterScrollObserver.observe(typewriter);

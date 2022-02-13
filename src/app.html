@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -54,22 +54,22 @@
                     <div class="hidden sm:block sm:ml-6">
                         <div class="flex items-center space-x-4">
                         <!-- Current: "bg-gray-900 text-black", Default: "text-black hover:bg-gray-400 hover:text-black" -->
-                        <a href="app.html" class="relative text-base px-4 py-2 rounded-full
+                        <a href="#description" class="relative text-base px-4 py-2 rounded-full
                         after:transition-all after:text-transparent after:bg-black
                         after:absolute after:content-['.'] after:m-auto after:bottom-0 after:left-0 after:right-0 after:h-px after:w-[0%]
                         hover:after:w-[40%] hover:after:ease-in-out hover:after:duration-1000" aria-current="page">關於我們</a>
 
-                        <a href="./subpages/theme/theme.html" class="relative text-base px-3 py-2 rounded-full
+                        <a href="#theme" class="relative text-base px-3 py-2 rounded-full
                         after:transition-all after:text-transparent after:bg-black
                         after:absolute after:content-['.'] after:m-auto after:bottom-0 after:left-0 after:right-0 after:h-px after:w-[0%]
                         hover:after:w-[40%] hover:after:ease-in-out hover:after:duration-1000">主題</a>
             
-                        <a href="./subpages/schedule/schedule.html" class="relative text-base px-3 py-2 rounded-full
+                        <a href="#schedule" class="relative text-base px-3 py-2 rounded-full
                         after:transition-all after:text-transparent after:bg-black
                         after:absolute after:content-['.'] after:m-auto after:bottom-0 after:left-0 after:right-0 after:h-px after:w-[0%]
                         hover:after:w-[40%] hover:after:ease-in-out hover:after:duration-1000">活動日程</a>
 
-                        <a href="./subpages/register/register.html" class="relative text-black border-2 text-base px-5 hover:bg-gray-100 hover:text-black py-2 rounded-full ring ring-1 ring-inset ring-black font-medium cursor-pointer">立即報名。</a>
+                        <a href="#" class="relative text-black border-2 text-base px-5 hover:bg-gray-100 hover:text-black py-2 rounded-full ring ring-1 ring-inset ring-black font-medium cursor-pointer">立即報名。</a>
                         </div>
                     </div>
                 </div>
@@ -77,7 +77,7 @@
         </div>
     
         <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="hidden sm:hidden p-2" id="mobileMenu">
+        <div class="hidden sm:hidden p-2 " id="mobileMenu">
 
             <div class="px-2 pt-2 pb-3 space-y-2">
                 <!-- Current: "bg-gray-900 text-black", Default: "text-black hover:bg-gray-400 hover:text-black" -->
@@ -98,7 +98,7 @@
     <div class="bg-[url('./img/about-1.png')] bg-no-repeat bg-contain md:bg-cover bg-center h-400">
     </div> -->
 
-    <div class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+    <div class="bg-gray-50 mt-10 mx-auto max-w-7xl px-4 py-[4rem] sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 z-10">
         <div class="sm:text-center lg:text-left">
           <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
             <span class="block xl:inline font-extrabold">今年度最佳的</span>
@@ -117,12 +117,22 @@
           </div>
         </div>
     </div>
-    <!-- <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="../dist/img/cover-unsplash.jpg" alt="">
-    </div> -->
-
-
-    <div id="schedule" class="grid place-items-center w-screen pt-16 pb-32">
+    <div class="lg:absolute lg:top-0 flex justify-center -z-20">
+        <img class="h-56 w-full mt-10 object-cover sm:h-72 md:h-96 lg:w-full lg:h-1/2 lg:mt-20" src="../dist/img/cover-unsplash.jpg" alt="">
+    </div>
+    <div id="description" class="grid place-items-center w-screen pt-16 pb-32 lg:mt-[25rem] xl:mt-[58rem]">
+        <div id="typewriteDesc" class=""><h2 class="text-4xl sm:text-6xl text-teal-500 font-extrabold text-shadow-xl">何謂黑客松？</h2></div>
+        <div class="grid place-items-center w-screen">
+            <p class="mt-3 text-lg text-gray-500 px-10 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 lg:max-w-4xl">
+                黑客松，顧名思義「黑客的馬拉松」，Hackathon，就是「程式設計」最具代表性的活動之一。
+                參賽者會在三天兩夜的比賽裡，共同完成主辦方提供的程式設計挑戰。
+            </p>
+            <p class="mt-3 text-lg text-gray-500 px-10 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 lg:max-w-4xl">
+                與隊友進行程式的激盪！完成莫屬你們獨家作品吧！
+            </p>
+        </div>
+    </div>
+    <div id="schedule" class="grid place-items-center w-screen pb-16">
         <h2 class="text-lg text-teal-500 font-semibold tracking-wide uppercase">參賽流程</h2>
         <div class="text-4xl sm:text-6xl text-black font-bold text-shadow-xl pt-5">什麼時候開始？</div>
         <div class="grid place-items-center w-screen pt-5 pb-10">
@@ -135,26 +145,26 @@
                 比賽流程總覽
             </h4>
         </div>
-        <div id="tab_bar" class="flex overflow-auto sm:mx-0">
+        <div id="tab_bar" class="flex sm:mx-0">
             <ul class="flex-none inline-grid px-4" style="grid-template-columns:repeat(4, minmax(6rem, 1fr))">
                 <li><button type="button" id="tab1" 
-                    class="px-8 py-2 bg-gray-200 text-black selected group font-semibold w-full flex flex-col items-centertext-black text-lg hover:shadow-xl shadow-black
+                    class="px-8 py-2 bg-gray-200 text-black rounded-md border selected group font-semibold w-full flex flex-col items-centertext-black text-lg hover:shadow-xl shadow-black
                     relative
                     after:text-transparent after:bg-black
                     after:absolute after:content-['.'] after:m-auto after:bottom-0 after:left-0 after:right-0 after:h-px after:w-[100%]
                     ">
-                    7/11</button></li>
-                <li><button type="button" id="tab2" class="px-8 py-2 bg-white text-black group font-semibold w-full flex flex-col items-center text-lg hover:shadow-xl shadow-black
+                    7月11日</button></li>
+                <li><button type="button" id="tab2" class="px-8 py-2 bg-white text-black rounded-md border group font-semibold w-full flex flex-col items-center text-lg hover:shadow-xl shadow-black
                     relative
                     after:text-transparent after:bg-black
                     after:absolute after:content-['.'] after:m-auto after:bottom-0 after:left-0 after:right-0 after:h-px after:w-[0%]">
-                    7/12
+                    7月12日
                 </button></li>
-                <li><button type="button" id="tab3" class="px-8 py-2 bg-white text-black group font-semibold w-full flex flex-col items-center text-lg hover:shadow-xl shadow-black
+                <li><button type="button" id="tab3" class="px-8 py-2 bg-white text-black rounded-md border group font-semibold w-full flex flex-col items-center text-lg hover:shadow-xl shadow-black
                     relative
                     after:text-transparent after:bg-black
                     after:absolute after:content-['.'] after:m-auto after:bottom-0 after:left-0 after:right-0 after:h-px after:w-[0%]">
-                   7/13</button></li>
+                    7月13日</button></li>
             </ul>
         </div>
         <div id="tab_content">
@@ -180,11 +190,11 @@
 
     <!--final day timeline-->
     <div class="bg-gray-50 grid place-items-center w-screen pb-24 ">
-        <div class="relative border-4 border-black w-48 h-16 rounded-full flex justify-center items-center ">
-            <div class="text-2xl text-black text-center font-bold"> 7/22 決賽流程</div>
+        <div class="relative border-4 border-black w-60 h-16 rounded-full flex justify-center items-center">
+            <div class="text-2xl text-black text-center font-bold px-2"> 7/22 決賽流程</div>
         </div>
         <img src="../dist/img/schedule-4.png" class="object-scale-down w-3/4 h-auto object-center pt-4 hidden sm:block" />
-        <div class="grid grid-rows-5 grid-cols-2 gap-x-12 gap-y-4 justify-items-center sm:grid-cols-5 sm:grid-rows-2">
+        <div class="hidden md:grid gap-x-12 gap-y-4 justify-items-center grid-cols-5 grid-rows-2">
             <div class="text-3xl text-black font-bold">報到</div>
             <div class="text-3xl text-black font-bold">開幕</div>
             <div class="text-3xl text-black break-all font-bold">設計組 Demo</div>
@@ -194,6 +204,22 @@
             <div class="text-2xl text-black ">13:25</div>
             <div class="text-2xl text-black break-all ">14:00</div>
             <div class="text-2xl text-black ">15:30</div>
+            <div class="text-2xl text-black ">17:00</div>
+        </div>
+        <div class="grid grid-rows-5 grid-cols-2 gap-x-12 gap-y-4 justify-items-center md:hidden mt-10">
+            <div class="text-3xl text-black font-bold">報到</div>
+            <div class="text-2xl text-black ">13:00</div>
+
+            <div class="text-3xl text-black font-bold">開幕</div>
+            <div class="text-2xl text-black ">13:25</div>
+
+            <div class="text-3xl text-black break-all font-bold">設計組 Demo</div>
+            <div class="text-2xl text-black break-all ">14:00</div>
+
+            <div class="text-3xl text-black font-bold">工程組 Demo</div>
+            <div class="text-2xl text-black ">15:30</div>
+
+            <div class="text-3xl text-black font-bold">頒獎</div>
             <div class="text-2xl text-black ">17:00</div>
         </div>
 
@@ -230,19 +256,19 @@
     <footer class="relative bg-teal-900 block bottom-0">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-6">
             <div class="relative flex flex-col items-center gap-10 h-auto py-10">
-                <div id="footer-links" class="flex flex-row flex-auto gap-x-44 sm:gap-10 lg:gap-48">
+                <div id="footer-links" class="flex flex-row flex-auto gap-x-44 lg:gap-48">
                     <div class="item">
                     <ul class="list-none list-inside">
-                        <li><a href="app.html" class="text-teal-100 hover:text-black rounded-lg text-lg sm:text-base">關於我們</a></li>
-                        <li><a href="./subpages/details/details.html" class="text-teal-100 hover:text-black rounded-lg text-lg sm:text-base">主題</a></li>
-                        <li><a href="./subpages/register/register.html" class="text-teal-100 hover:text-black rounded-lg text-lg sm:text-base">Prize</a></li>
-                        <li><a href="./subpages/schedule/schedule.html" class="text-teal-100 hover:text-black rounded-lg text-lg sm:text-base">Schedule</a></li>
+                        <li><a href="#" class="text-teal-100 hover:text-black rounded-lg text-lg sm:text-base">關於我們</a></li>
+                        <li><a href="#theme" class="text-teal-100 hover:text-black rounded-lg text-lg sm:text-base">主題</a></li>
+                        <li><a href="#prize" class="text-teal-100 hover:text-black rounded-lg text-lg sm:text-base">獎金</a></li>
+                        <li><a href="#schedule" class="text-teal-100 hover:text-black rounded-lg text-lg sm:text-base">活動日程</a></li>
                     </ul>
                     </div>
                     <div class="item">
                     <ul class="list-none list-inside">
-                        <li><a href="./subpages/theme/theme.html" class="text-teal-100 hover:text-black rounded-lg text-lg sm:text-base">活動相關文件</a></li>
-                        <li><a href="http://www.mingdao.edu.tw/homeX/Web/" class="text-teal-100 hover:text-black rounded-lg text-lg sm:text-base">Mingdao</a></li>
+                        <li><a href="#" class="text-teal-100 hover:text-black rounded-lg text-lg sm:text-base">活動相關文件</a></li>
+                        <li><a href="http://www.mingdao.edu.tw/homeX/Web/" class="text-teal-100 hover:text-black rounded-lg text-lg sm:text-base">明道官網</a></li>
                         <li><a href="https://www.instagram.com/hackjr8th/" class="text-teal-100 hover:text-black rounded-lg text-lg sm:text-base">Instagram</a></li>
                         <li><a href="https://www.facebook.com/hackathontaiwanjunior" class="text-teal-100 hover:text-black rounded-lg text-lg sm:text-base">Facebook</a></li>
                     </ul>

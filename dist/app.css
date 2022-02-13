@@ -539,6 +539,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 0px;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
+.-z-20 {
+  z-index: -20;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -661,12 +669,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100vw;
 }
 
-.w-48 {
-  width: 12rem;
+.w-60 {
+  width: 15rem;
 }
 
 .w-3\/4 {
   width: 75%;
+}
+
+.w-48 {
+  width: 12rem;
 }
 
 .max-w-7xl {
@@ -705,12 +717,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   list-style-type: none;
 }
 
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .grid-rows-5 {
@@ -786,6 +802,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .overflow-auto {
   overflow: auto;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .break-all {
@@ -964,6 +984,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1.25rem;
 }
 
+.py-\[4rem\] {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -1027,6 +1052,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
 }
 
 .text-center {
@@ -1217,6 +1250,66 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 body {
   box-sizing: border-box;
+}
+
+.typewriter h2 {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  border-right: solid 2px;
+  -webkit-animation: 
+    typing 2.5s steps(40, end),
+    blink-caret 1.0s step-end infinite;
+          animation: 
+    typing 2.5s steps(40, end),
+    blink-caret 1.0s step-end infinite;
+}
+
+/* The typing effect */
+
+@-webkit-keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: rgb(20 184 166 / var(--tw-text-opacity));
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: rgb(20 184 166 / var(--tw-text-opacity));
+  }
 }
 
 .after\:absolute::after {
@@ -1465,14 +1558,6 @@ body {
     max-width: 36rem;
   }
 
-  .sm\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
-  .sm\:grid-rows-2 {
-    grid-template-rows: repeat(2, minmax(0, 1fr));
-  }
-
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -1521,6 +1606,11 @@ body {
     line-height: 1.75rem;
   }
 
+  .sm\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
   .sm\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1529,11 +1619,6 @@ body {
   .sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-
-  .sm\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
   }
 }
 
@@ -1544,6 +1629,14 @@ body {
 
   .md\:mt-5 {
     margin-top: 1.25rem;
+  }
+
+  .md\:grid {
+    display: grid;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:h-96 {
@@ -1593,13 +1686,8 @@ body {
     position: absolute;
   }
 
-  .lg\:inset-y-0 {
+  .lg\:top-0 {
     top: 0px;
-    bottom: 0px;
-  }
-
-  .lg\:right-0 {
-    right: 0px;
   }
 
   .lg\:mx-0 {
@@ -1609,6 +1697,10 @@ body {
 
   .lg\:mt-20 {
     margin-top: 5rem;
+  }
+
+  .lg\:mt-\[25rem\] {
+    margin-top: 25rem;
   }
 
   .lg\:mt-0 {
@@ -1627,12 +1719,8 @@ body {
     display: none;
   }
 
-  .lg\:h-full {
-    height: 100%;
-  }
-
-  .lg\:w-1\/2 {
-    width: 50%;
+  .lg\:h-1\/2 {
+    height: 50%;
   }
 
   .lg\:w-full {
@@ -1686,6 +1774,10 @@ body {
 @media (min-width: 1280px) {
   .xl\:mt-28 {
     margin-top: 7rem;
+  }
+
+  .xl\:mt-\[58rem\] {
+    margin-top: 58rem;
   }
 
   .xl\:inline {
