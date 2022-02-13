@@ -10,36 +10,63 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
 })
 
-var tab1 = document.getElementById('tab1'),
-    tab2 = document.getElementById('tab2'),
-    tab3 = document.getElementById('tab3'),
-    c1 = document.getElementById('c1'),
-    c2 = document.getElementById('c2'),
-    c3 = document.getElementById('c3');
+document.addEventListener("DOMContentLoaded", (event) => { 
+    let scheduleTabOne = document.getElementById('tab1'),
+    scheduleTabTwo = document.getElementById('tab2'),
+    scheduleTabThree = document.getElementById('tab3'),
+    scheduleContentOne = document.getElementById('c1'),
+    scheduleContentTwo = document.getElementById('c2'),
+    scheduleContentThree = document.getElementById('c3');
 
-function changeTab1() {
-    tab1.className = 'px-8 py-2 border bg-emerald-600 rounded-lg selected group text-sm font-semibold w-full flex flex-col items-center text-white text-2xl hover:scale-105 hover:shadow-xl shadow-black';
-    tab2.className = 'px-8 py-2 bg-white border text-emerald-600 rounded-lg group text-sm font-semibold w-full flex flex-col items-center text-2xl hover:scale-105 hover:shadow-xl shadow-black';
-    tab3.className = 'px-8 py-2 bg-white border text-emerald-600 rounded-lg group text-sm font-semibold w-full flex flex-col items-center text-2xl hover:scale-105 hover:shadow-xl shadow-black';
-    c1.className = 'bg-gray-50 p-4 rounded-lg bg-emerald-100 shadow-md shadow-emerald-900 h-80'
-    c2.className = 'bg-gray-50 p-4 rounded-lg bg-emerald-100 shadow-md  shadow-emerald-900 hidden';
-    c3.className = 'bg-gray-50 p-4 rounded-lg bg-emerald-100 shadow-md  shadow-emerald-900 hidden';
-}
+    let activeTabClass = "";
+    let inactiveTabClass = "";
 
-function changeTab2() {
-    tab1.className = 'px-8 py-2 bg-white border text-emerald-600 rounded-lg group text-sm font-semibold w-full flex flex-col items-center text-2xl hover:scale-105 hover:shadow-xl shadow-black';
-    tab2.className = 'px-8 py-2 bg-emerald-600 border rounded-lg selected group text-sm font-semibold w-full flex flex-col items-center text-white text-2xl hover:scale-105 hover:shadow-xl shadow-black';
-    tab3.className = 'px-8 py-2 bg-white border text-emerald-600 rounded-lg group text-sm font-semibold w-full flex flex-col items-center text-2xl hover:scale-105 hover:shadow-xl shadow-black';
-    c1.className = 'bg-gray-50 p-4 rounded-lg bg-emerald-100 shadow-md  shadow-emerald-900 hidden';
-    c2.className = 'bg-gray-50 p-4 rounded-lg bg-emerald-100 shadow-md shadow-emerald-900 h-80';
-    c3.className = 'bg-gray-50 p-4 rounded-lg bg-emerald-100 shadow-md  shadow-emerald-900 hidden';
-}
+    let activeContentClass = "";
+    let inactiveContentClass = "";
 
-function changeTab3() {
-    tab1.className = 'px-8 py-2 bg-white border text-emerald-600 rounded-lg group text-sm font-semibold w-full flex flex-col items-center text-2xl hover:scale-105 hover:shadow-xl shadow-black';
-    tab2.className = 'px-8 py-2 bg-white border text-emerald-600 rounded-lg group text-sm font-semibold w-full flex flex-col items-center text-2xl hover:scale-105 hover:shadow-xl shadow-black';
-    tab3.className = 'px-8 py-2 bg-emerald-600 border rounded-lg selected group text-sm font-semibold w-full flex flex-col items-center text-white text-2xl hover:scale-105 hover:shadow-xl shadow-black';
-    c1.className = 'bg-gray-50 p-4 rounded-lg bg-emerald-100 shadow-md  shadow-emerald-900 hidden'
-    c2.className = 'bg-gray-50 p-4 rounded-lg bg-emerald-100 shadow-md  shadow-emerald-900 hidden';
-    c3.className = 'bg-gray-50 p-4 rounded-lg bg-emerald-100 shadow-md shadow-emerald-900 h-80';
-}
+    scheduleTabOne.onclick = () => {
+        scheduleTabOne.classList.replace("bg-white", "bg-gray-200");
+        scheduleTabOne.classList.replace("after:w-[0%]", "after:w-[100%]");
+
+        scheduleTabTwo.classList.replace("bg-gray-200", "bg-white");
+        scheduleTabTwo.classList.replace("after:w-[100%]", "after:w-[0%]");
+
+        scheduleTabThree.classList.replace("bg-gray-200", "bg-white");
+        scheduleTabThree.classList.replace("after:w-[100%]", "after:w-[0%]");
+
+        scheduleContentOne.classList.replace("hidden", "block");
+        scheduleContentTwo.classList.replace("block", "hidden");
+        scheduleContentThree.classList.replace("block", "hidden");
+    }
+
+    scheduleTabTwo.onclick = () => {
+        scheduleTabTwo.classList.replace("bg-white", "bg-gray-200");
+        scheduleTabTwo.classList.replace("after:w-[0%]", "after:w-[100%]");
+
+        scheduleTabOne.classList.replace("bg-gray-200", "bg-white");
+        scheduleTabOne.classList.replace("after:w-[100%]", "after:w-[0%]");
+
+        scheduleTabThree.classList.replace("bg-gray-200", "bg-white");
+        scheduleTabThree.classList.replace("after:w-[100%]", "after:w-[0%]");
+
+        scheduleContentTwo.classList.replace("hidden", "block");
+        scheduleContentOne.classList.replace("block", "hidden");
+        scheduleContentThree.classList.replace("block", "hidden");
+    }
+
+    scheduleTabThree.onclick = () => {
+        scheduleTabThree.classList.replace("bg-white", "bg-gray-200");
+        scheduleTabThree.classList.replace("after:w-[0%]", "after:w-[100%]");
+
+        scheduleTabTwo.classList.replace("bg-gray-200", "bg-white");
+        scheduleTabTwo.classList.replace("after:w-[100%]", "after:w-[0%]");
+
+        scheduleTabOne.classList.replace("bg-gray-200", "bg-white");
+        scheduleTabOne.classList.replace("after:w-[100%]", "after:w-[0%]");
+
+
+        scheduleContentThree.classList.replace("hidden", "block");
+        scheduleContentTwo.classList.replace("block", "hidden");
+        scheduleContentOne.classList.replace("block", "hidden");
+    }
+})
