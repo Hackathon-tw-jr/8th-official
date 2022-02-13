@@ -481,15 +481,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .box-border {
   box-sizing: border-box;
 }
@@ -588,12 +579,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-y-1 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
-}
-
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -631,20 +616,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('./img/index.png');
 }
 
+.bg-\[url\(\'\.\/img\/about-1\.png\'\)\] {
+  background-image: url('./img/about-1.png');
+}
+
 .bg-70\% {
   background-size: 200%;
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .bg-fixed {
   background-attachment: fixed;
 }
 
-.bg-left {
-  background-position: left;
-}
-
 .bg-right {
   background-position: right;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .bg-no-repeat {
@@ -803,12 +800,12 @@ body {
 }
 
 @media (min-width: 768px) {
-  .md\:bg-cover {
-    background-size: cover;
-  }
-
   .md\:bg-90\% {
     background-size: 90%;
+  }
+
+  .md\:bg-cover {
+    background-size: cover;
   }
 
   .md\:bg-center {
