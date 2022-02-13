@@ -117,8 +117,9 @@
           </div>
         </div>
     </div>
-    <div class="lg:absolute lg:top-0 flex justify-center -z-20">
+    <div class="lg:absolute lg:top-0 flex justify-center flex-col -z-20">
         <img class="h-56 w-full mt-10 object-cover sm:h-72 md:h-96 lg:w-full lg:h-1/2 lg:mt-20" src="../dist/img/cover-unsplash.jpg" alt="">
+        <small class="text-sm text-gray-500 px-10 py-4">圖源：自Unsplash，不受版權限制。</small>
     </div>
     <div id="description" class="grid place-items-center w-screen pt-16 pb-32 lg:mt-[25rem] xl:mt-[58rem]">
         <div id="typewriteDesc" class=""><h2 class="text-4xl sm:text-6xl text-teal-500 font-extrabold text-shadow-xl">何謂黑客松？</h2></div>
@@ -146,7 +147,7 @@
             </h4>
         </div>
         <div id="tab_bar" class="flex sm:mx-0">
-            <ul class="flex-none inline-grid px-4" style="grid-template-columns:repeat(4, minmax(6rem, 1fr))">
+            <ul class="flex-none inline-grid" style="grid-template-columns:repeat(4, minmax(6rem, 1fr))">
                 <li><button type="button" id="tab1" 
                     class="px-8 py-2 bg-gray-200 text-black rounded-md border selected group font-semibold w-full flex flex-col items-centertext-black text-lg hover:shadow-xl shadow-black
                     relative
@@ -273,6 +274,9 @@
                         <li><a href="https://www.facebook.com/hackathontaiwanjunior" class="text-teal-100 hover:text-black rounded-lg text-lg sm:text-base">Facebook</a></li>
                     </ul>
                     </div>
+                </div>
+                <div id="tech-desc" class="flex text-gray-200">
+                    This page was constructed using TailwindCSS, Parallax, and NodeJS.
                 </div>
                 <div class="px-8 sm:px-0 block">
                     <a 
