@@ -69,7 +69,7 @@
                         after:absolute after:content-['.'] after:m-auto after:bottom-0 after:left-0 after:right-0 after:h-px after:w-[0%]
                         hover:after:w-[40%] hover:after:ease-in-out hover:after:duration-1000">活動日程</a>
 
-                        <a href="#" class="relative text-black border-2 text-base px-5 hover:bg-gray-100 hover:text-black py-2 rounded-full ring ring-1 ring-inset ring-black font-medium cursor-pointer">立即報名。</a>
+                        <a href="#register" class="relative text-black border-2 text-base px-5 hover:bg-gray-100 hover:text-black py-2 rounded-full ring-1 ring-inset ring-black font-medium cursor-pointer"><span class="hidden sm:inline">立即</span>報名</a>
                         </div>
                     </div>
                 </div>
@@ -83,15 +83,17 @@
                 <!-- Current: "bg-gray-900 text-black", Default: "text-black hover:bg-gray-400 hover:text-black" -->
                 <a href="app.html" class="text-black hover:bg-gray-400 block px-3 py-2 rounded-lg text-base font-medium" aria-current="page">關於我們</a>
         
-                <a href="./subpages/theme/theme.html" class="text-black hover:bg-gray-400 hover:text-black block px-3 py-2 rounded-lg text-base font-medium">主題</a>
+                <a href="#theme" class="text-black hover:bg-gray-400 hover:text-black block px-3 py-2 rounded-lg text-base font-medium">主題</a>
         
-                <a href="./subpages/schedule/schedule.html" class="text-black hover:bg-gray-400 hover:text-black block px-3 py-2 rounded-lg text-base font-medium">活動日程</a>
+                <a href="#schedule" class="text-black hover:bg-gray-400 hover:text-black block px-3 py-2 rounded-lg text-base font-medium">活動日程</a>
             
-                <a href="./subpages/register/register.html" class="text-black hover:bg-gray-400 hover:text-black block px-3 py-2 border-2 rounded-full ring ring-inset ring-1 ring-black text-base text-center font-medium">立即報名。</a>
+                <a href="#register" class="text-black hover:bg-gray-400 hover:text-black block px-3 py-2 border-2 rounded-full ring ring-inset ring-1 ring-black text-base text-center font-medium">立即報名。</a>
             </div>
         </div>
     </nav>
-    <div class="bg-teal-600">
+
+    <!-- Notifcation, Opens only upon first visit within the day-->
+    <div id="bannerNotification" class="bg-teal-600">
         <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
           <div class="flex items-center justify-between flex-wrap">
             <div class="w-0 flex-1 flex items-center">
@@ -110,7 +112,7 @@
               <a href="#" class="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-teal-600 bg-white hover:bg-teal-50"> Learn more </a>
             </div>
             <div class="order-2 flex-shrink-0 sm:order-3 sm:ml-3">
-              <button type="button" class="-mr-1 flex p-2 rounded-md hover:bg-teal-500 focus:outline-none focus:ring-2 focus:ring-white sm:-mr-2">
+              <button id="bannerToggle" type="button" class="-mr-1 flex p-2 rounded-md hover:bg-teal-500 focus:outline-none focus:ring-2 focus:ring-white sm:-mr-2">
                 <span class="sr-only">Dismiss</span>
                 <!-- Heroicon name: outline/x -->
                 <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -439,7 +441,7 @@
     </div>
     </div>
 
-    <div class="bg-gray-50">
+    <div class="bg-gray-50" id="register">
         <div class="lg:max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
           <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             <span class="block">決定好要參加了嗎?</span>

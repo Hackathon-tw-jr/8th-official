@@ -1,4 +1,13 @@
 document.addEventListener("DOMContentLoaded", (event) => {
+    let bannerToggle = document.getElementById("bannerToggle");
+    let eventBanner = document.getElementById("bannerNotification");
+    
+    bannerToggle.onclick = () => {
+        eventBanner.classList.add("hidden");
+    }
+})
+
+document.addEventListener("DOMContentLoaded", (event) => {
     let toggle = document.getElementById("mobileToggle");
     let mobileMenu = document.getElementById("mobileMenu");
     toggle.onclick = () => {
