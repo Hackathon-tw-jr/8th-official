@@ -1,11 +1,28 @@
-import SimpleParallax from "/simple-parallax-js"
+function getNotificationStatus() {
+    if (sessionStorage.getItem("viewedNotification") == "true") {
+        return true;
+    } 
+    return false;
+}
 
-document.addEventListener("DOMContentLoaded", (event) => {
-    let bannerToggle = document.getElementById("bannerToggle");
+document.addEventListener("DOMContentLoaded", event => {
+    console.log(sessionStorage.getItem("viewedNotification"))
+    if (sessionStorage.getItem("viewedNotification") == null) {
+        sessionStorage.setItem("viewedNotification", false);
+    }
+
+    let notificationToggle = document.getElementById("notificationToggle");
     let eventBanner = document.getElementById("bannerNotification");
-    
-    bannerToggle.onclick = () => {
-        eventBanner.classList.add("hidden");
+
+    eventBanner.classList.add("hidden");
+
+    if (!getNotificationStatus()) {
+        eventBanner.classList.remove("hidden");
+    }
+
+    notificationToggle.onclick = () => {
+        sessionStorage.setItem("viewedNotification", true);
+        eventBanner.classList.toggle("hidden");
     }
 })
 
@@ -23,7 +40,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 document.addEventListener("DOMContentLoaded", event => {
     let thumbnail = document.getElementById("thumbnail");
-    new SimpleParallax(thumbnail);
+    new simpleParallax(thumbnail);
 })
 
 document.addEventListener("DOMContentLoaded", (event) => { 

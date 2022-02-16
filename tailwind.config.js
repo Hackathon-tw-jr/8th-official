@@ -1,12 +1,9 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
     content: [
-        "./src/app.html",
+        "app.html",
         "./src/app.js",
-        "./src/subpages/theme/theme.html",
-        "./src/subpages/schedule/schedule.html",
-        "./src/subpages/schedule/schedule.js",
     ],
     theme: {
       extend: {
