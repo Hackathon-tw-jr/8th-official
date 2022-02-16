@@ -1,3 +1,5 @@
+import SimpleParallax from "/simple-parallax-js"
+
 document.addEventListener("DOMContentLoaded", (event) => {
     let bannerToggle = document.getElementById("bannerToggle");
     let eventBanner = document.getElementById("bannerNotification");
@@ -17,6 +19,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
         } 
         mobileMenu.classList.add('hidden');
     }
+})
+
+document.addEventListener("DOMContentLoaded", event => {
+    let thumbnail = document.getElementById("thumbnail");
+    new SimpleParallax(thumbnail);
 })
 
 document.addEventListener("DOMContentLoaded", (event) => { 

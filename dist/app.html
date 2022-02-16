@@ -104,16 +104,16 @@
                 </svg>
               </span>
               <p class="ml-3 font-medium text-white truncate">
-                <span class="md:hidden"> We announced a new product! </span>
-                <span class="hidden md:inline"> Big news! We're excited to announce a brand new product. </span>
+                <span class="md:hidden"> 檢視今年比賽的變動總覽 </span>
+                <span class="hidden md:inline"> 過去的參賽者! 我們今年比賽有微變動。 </span>
               </p>
             </div>
             <div class="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
-              <a href="#" class="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-teal-600 bg-white hover:bg-teal-50"> Learn more </a>
+              <a href="#" class="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-teal-600 bg-white hover:bg-teal-50"> 檢視變更 </a>
             </div>
             <div class="order-2 flex-shrink-0 sm:order-3 sm:ml-3">
               <button id="bannerToggle" type="button" class="-mr-1 flex p-2 rounded-md hover:bg-teal-500 focus:outline-none focus:ring-2 focus:ring-white sm:-mr-2">
-                <span class="sr-only">Dismiss</span>
+                <span class="sr-only">知道了。</span>
                 <!-- Heroicon name: outline/x -->
                 <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -150,8 +150,11 @@
           </div>
         </div>
     </div>
+    <div class="flex sm:hidden items-center justify-center">
+
+    </div>
     <div class="lg:absolute lg:top-0 flex justify-center flex-col -z-20">
-        <img class="h-64 mt-10 object-cover sm:h-72 md:h-96 lg:w-full lg:h-1/2 lg:mt-20" src="../dist/img/cover-unsplash.jpg" alt="">
+        <img id="thumbnail" class="h-64 mt-10 object-cover sm:h-72 md:h-96 lg:w-full lg:h-1/2 lg:mt-20" src="../dist/img/cover-unsplash.jpg" alt="">
         <small class="text-sm text-gray-500 px-10 py-4">圖源：自Unsplash，不受版權限制。</small>
     </div>
     <div id="description" class="grid place-items-center w-screen pt-16 pb-32 lg:mt-[25rem] xl:mt-[58rem]">
@@ -256,10 +259,10 @@
                                   <svg class="flex-shrink-0 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd" d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z" clip-rule="evenodd" />
                                   </svg>
-                                  <span class="ml-2 flex-1 w-0 truncate"> resume_back_end_developer.pdf </span>
+                                  <span class="ml-2 flex-1 w-0 truncate"> software-engineering-example-proposal.pdf </span>
                                 </div>
                                 <div class="ml-4 flex-shrink-0">
-                                  <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500"> Download </a>
+                                  <a href="#" class="font-medium text-teal-600 hover:text-teal-500"> Download </a>
                                 </div>
                               </li>
                             </ul>
@@ -312,10 +315,10 @@
                                   <svg class="flex-shrink-0 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd" d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z" clip-rule="evenodd" />
                                   </svg>
-                                  <span class="ml-2 flex-1 w-0 truncate"> resume_back_end_developer.pdf </span>
+                                  <span class="ml-2 flex-1 w-0 truncate"> design-example-proposal.pdf </span>
                                 </div>
                                 <div class="ml-4 flex-shrink-0">
-                                  <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500"> Download </a>
+                                  <a href="#" class="font-medium text-teal-600 hover:text-teal-500"> Download </a>
                                 </div>
                               </li>
                             </ul>
@@ -353,21 +356,22 @@
             </h4>
         </div>
         <div id="tab_bar" class="flex sm:mx-0">
-            <ul class="flex-none inline-grid" style="grid-template-columns:repeat(4, minmax(6rem, 1fr))">
+            <ul class="flex-none inline-grid
+            " style="grid-template-columns:repeat(4, minmax(6rem, 1fr))">
                 <li><button type="button" id="tab1" 
-                    class="px-8 py-2 bg-gray-200 text-black rounded-md border selected group font-semibold w-full flex flex-col items-centertext-black text-lg hover:shadow-xl shadow-black
+                    class="px-2 sm:px-8 py-2 bg-gray-200 text-black rounded-md border selected group font-semibold w-full flex flex-col items-center text-md md:text-lg first-letter:hover:shadow-xl shadow-black
                     relative
                     after:text-transparent after:bg-black
                     after:absolute after:content-['.'] after:m-auto after:bottom-0 after:left-0 after:right-0 after:h-px after:w-[100%]
                     ">
                     7月11日</button></li>
-                <li><button type="button" id="tab2" class="px-8 py-2 bg-white text-black rounded-md border group font-semibold w-full flex flex-col items-center text-lg hover:shadow-xl shadow-black
+                <li><button type="button" id="tab2" class="px-2 sm:px-8 py-2 bg-white text-black rounded-md border group font-semibold w-full flex flex-col items-center text-md md:text-lg hover:shadow-xl shadow-black
                     relative
                     after:text-transparent after:bg-black
                     after:absolute after:content-['.'] after:m-auto after:bottom-0 after:left-0 after:right-0 after:h-px after:w-[0%]">
                     7月12日
                 </button></li>
-                <li><button type="button" id="tab3" class="px-8 py-2 bg-white text-black rounded-md border group font-semibold w-full flex flex-col items-center text-lg hover:shadow-xl shadow-black
+                <li><button type="button" id="tab3" class="px-2 sm:px-8 py-2 bg-white text-black rounded-md border group font-semibold w-full flex flex-col items-center text-md md:text-lg hover:shadow-xl shadow-black
                     relative
                     after:text-transparent after:bg-black
                     after:absolute after:content-['.'] after:m-auto after:bottom-0 after:left-0 after:right-0 after:h-px after:w-[0%]">
@@ -413,17 +417,17 @@
             <div class="text-2xl text-black ">15:30</div>
             <div class="text-2xl text-black ">17:00</div>
         </div>
-        <div class="grid grid-rows-5 grid-cols-2 gap-x-12 gap-y-4 justify-items-center md:hidden mt-10">
+        <div class="grid grid-rows-5 grid-cols-2 gap-x-1 gap-y-4 justify-items-center md:hidden mt-10">
             <div class="text-3xl text-black font-bold">報到</div>
             <div class="text-2xl text-black ">13:00</div>
 
             <div class="text-3xl text-black font-bold">開幕</div>
             <div class="text-2xl text-black ">13:25</div>
 
-            <div class="text-3xl text-black break-all font-bold">設計組 Demo</div>
+            <div class="text-2xl sm:text-3xl text-black break-all font-bold">設計組 Demo</div>
             <div class="text-2xl text-black break-all ">14:00</div>
 
-            <div class="text-3xl text-black font-bold">工程組 Demo</div>
+            <div class="text-2xl sm:text-3xl text-black font-bold">工程組 Demo</div>
             <div class="text-2xl text-black ">15:30</div>
 
             <div class="text-3xl text-black font-bold">頒獎</div>
@@ -495,5 +499,5 @@
         </div>
     </footer>
 </body>
-<script src="./app.js"></script>
+<script type="module" src="../dist/app.js"></script>
 </html>
