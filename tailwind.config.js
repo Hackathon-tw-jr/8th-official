@@ -25,6 +25,11 @@ module.exports = {
             scale: {
                 '3000': '30.0',
             },
+            backgroundPosition: {
+                'top-100-left-100': 'top 25rem left 25rem',
+                'top-4': 'top 1rem',
+                
+            }
       },
       container: {
           center: true,

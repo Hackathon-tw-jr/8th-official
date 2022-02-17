@@ -13,7 +13,7 @@
 </head>
 <body class="bg-gray-50 box-border">
     <!-- Navigation Bar -->
-    <nav class="bg-gray-50 border drop-shadow-md">
+    <nav id="navbar" class="sticky top-0 z-10 bg-gray-50 border drop-shadow-md">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div class="relative flex items-center justify-between h-16">
                 <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -178,20 +178,20 @@
         </div>
     </div>
 
-    <div id="mediaIcons" class="flex flex-row flex-1 items-center justify-center right-10 gap-10 bg-gray-50">
+    <div id="mediaIcons" class="flex flex-row flex-1 items-center justify-center right-10 gap-10 bg-gray-50 pb-40">
       <img class="media-icon w-64 rounded-lg shadow-md" src="./dist/img/alexander-img-cover/alexander-shatov-1.jpg">
       <img class="media-icon w-64 rounded-lg shadow-md" src="./dist/img/alexander-img-cover/alexander-shatov-2.jpg">
       <img class="media-icon w-64 rounded-lg shadow-md" src="./dist/img/alexander-img-cover/alexander-shatov-3.jpg">
     </div>
     
-    <section class="bg-[url('img/social-1.jpg')] object-cover bg-center mt-100 flex flex-row flex-wrap justify-end items-center h-[120vh]">
-        <div id="theme" class="bg-gray-50 sm:w-7xl p-12 sm:px-12 sm:max-w-7xl h-[110vh] md:h-[150vh] md:ml-32">
-          <div class="py-8 text-base leading-7 space-y-6 mt-20">
+    <section class="flex flex-row flex-wrap justify-end items-center" data-parallax="scroll" data-image-src="./dist/img/unsplash/max-harlynking-DGP-759-Ukk-unsplash.jpg">
+        <div id="theme" class="bg-gray-50 p-24 sm:px-44 h-[110%]">
+          <div class="py-8 text-base leading-7 space-y-6 mt-10 sm:mt-20">
             <div class="theme">
               <span class="bg-gradient-to-r from-cyan-500 to-blue-500 text-2xl sm:text-4xl font-bold text-transparent bg-clip-text">本屆主題：</span>
             </div>
             <div class="theme">
-              <span class="theme bg-gradient-to-r from-red-500 to-blue-500 text-5xl sm:text-7xl md:text-9xl font-bold px-12 text-transparent bg-clip-text whitespace-nowrap">高齡化社會</span>
+              <span class="theme bg-gradient-to-r from-red-500 to-blue-500 text-4xl sm:text-5xl md:text-7xl xl:text-9xl font-bold px-12 text-transparent bg-clip-text whitespace-nowrap">高齡化社會</span>
             </div>
           </div>
           <div class="py-8 text-base leading-7 space-y-6 text-gray-900">
@@ -220,14 +220,14 @@
               <span class="bg-gradient-to-r from-cyan-500 to-blue-500 text-2xl sm:text-4xl font-bold text-transparent bg-clip-text">比賽辦法：</span>
             </div>
             <div class="theme h-14 text-center">
-              <span class="ml-5 bg-gradient-to-r from-red-500 to-blue-500 sm:text-4xl font-bold text-transparent bg-clip-text">網頁製作。輕鬆簡單。</span>
+              <span class="ml-5 bg-gradient-to-r from-red-500 to-blue-500 text-2xl sm:text-4xl font-bold text-transparent bg-clip-text">網頁製作。輕鬆簡單。</span>
             </div>
-            <section id="features" class="theme feature-section pt-120">
+            <!-- <section id="features" class="theme feature-section pt-120">
               <div class="container">
                 <div class="flex flex-row justify-center text-center px-3 2xl:px-10 py-8">
-                  <div class="md:w-4/12 lg:w-4/12 flex flex-col">
+                  <div class="md:w-4/12 lg:w-4/12 flex flex-col item">
                       <div class="feature-icon w-10">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M331.8 224.1c28.29 0 54.88 10.99 74.86 30.97l19.59 19.59c40.01-17.74 71.25-53.3 81.62-96.65c5.725-23.92 5.34-47.08 .2148-68.4c-2.613-10.88-16.43-14.51-24.34-6.604l-68.9 68.9h-75.6V97.2l68.9-68.9c7.912-7.912 4.275-21.73-6.604-24.34c-21.32-5.125-44.48-5.51-68.4 .2148c-55.3 13.23-98.39 60.22-107.2 116.4C224.5 128.9 224.2 137 224.3 145l82.78 82.86C315.2 225.1 323.5 224.1 331.8 224.1zM384 278.6c-23.16-23.16-57.57-27.57-85.39-13.9L191.1 158L191.1 95.99l-127.1-95.99L0 63.1l96 127.1l62.04 .0077l106.7 106.6c-13.67 27.82-9.251 62.23 13.91 85.39l117 117.1c14.62 14.5 38.21 14.5 52.71-.0016l52.75-52.75c14.5-14.5 14.5-38.08-.0016-52.71L384 278.6zM227.9 307L168.7 247.9l-148.9 148.9c-26.37 26.37-26.37 69.08 0 95.45C32.96 505.4 50.21 512 67.5 512s34.54-6.592 47.72-19.78l119.1-119.1C225.5 352.3 222.6 329.4 227.9 307zM64 472c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24S88 434.7 88 448C88 461.3 77.25 472 64 472z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M331.8 224.1c28.29 0 54.88 10.99 74.86 30.97l19.59 19.59c40.01-17.74 71.25-53.3 81.62-96.65c5.725-23.92 5.34-47.08 .2148-68.4c-2.613-10.88-16.43-14.51-24.34-6.604l-68.9 68.9h-75.6V97.2l68.9-68.9c7.912-7.912 4.275-21.73-6.604-24.34c-21.32-5.125-44.48-5.51-68.4 .2148c-55.3 13.23-98.39 60.22-107.2 116.4C224.5 128.9 224.2 137 224.3 145l82.78 82.86C315.2 225.1 323.5 224.1 331.8 224.1zM384 278.6c-23.16-23.16-57.57-27.57-85.39-13.9L191.1 158L191.1 95.99l-127.1-95.99L0 63.1l96 127.1l62.04 .0077l106.7 106.6c-13.67 27.82-9.251 62.23 13.91 85.39l117 117.1c14.62 14.5 38.21 14.5 52.71-.0016l52.75-52.75c14.5-14.5 14.5-38.08-.0016-52.71L384 278.6zM227.9 307L168.7 247.9l-148.9 148.9c-26.37 26.37-26.37 69.08 0 95.45C32.96 505.4 50.21 512 67.5 512s34.54-6.592 47.72-19.78l119.1-119.1C225.5 352.3 222.6 329.4 227.9 307zM64 472c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24S88 434.7 88 448C88 461.3 77.25 472 64 472z"/></svg>
                         <i class="fa-solid fa-list-check"></i>
                       </div>
                       <div class="content">
@@ -238,7 +238,7 @@
                   <div class=" md:w-4/12 lg:w-4/12">
                     <div class="text-center px-3 2xl:px-10 py-8">
                       <div class="feature-icon w-10">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M362.7 19.32C387.7-5.678 428.3-5.678 453.3 19.32L492.7 58.75C517.7 83.74 517.7 124.3 492.7 149.3L444.3 197.7L314.3 67.72L362.7 19.32zM421.7 220.3L188.5 453.4C178.1 463.8 165.2 471.5 151.1 475.6L30.77 511C22.35 513.5 13.24 511.2 7.03 504.1C.8198 498.8-1.502 489.7 .976 481.2L36.37 360.9C40.53 346.8 48.16 333.9 58.57 323.5L291.7 90.34L421.7 220.3z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M362.7 19.32C387.7-5.678 428.3-5.678 453.3 19.32L492.7 58.75C517.7 83.74 517.7 124.3 492.7 149.3L444.3 197.7L314.3 67.72L362.7 19.32zM421.7 220.3L188.5 453.4C178.1 463.8 165.2 471.5 151.1 475.6L30.77 511C22.35 513.5 13.24 511.2 7.03 504.1C.8198 498.8-1.502 489.7 .976 481.2L36.37 360.9C40.53 346.8 48.16 333.9 58.57 323.5L291.7 90.34L421.7 220.3z"/></svg>
                       </div>
                       <div class="content">
                         <h3 class="mb-5">設計組</h3>
@@ -248,20 +248,47 @@
                   </div>
                 </div>
               </div>
-            </section>
+            </section> -->
           </div>
         </div>
     </section>
+    <section class="block md:hidden">
+      <img src="dist/img/unsplash/max-harlynking-DGP-759-Ukk-unsplash.jpg">
+    </section>
 
-    <section id="prize" class="relative md:mt-10 lg:mt-20">
+    <section class="flex flex-row flex-wrap justify-end items-center text-center -bottom-0 mt-20" data-parallax="scroll" data-image-src="dist/img/unsplash/sigmund-HsTnjCVQ798-unsplash.jpg">
+      <div id="prizes" class="bg-gray-50 pl-40 pr-20 basis-[600px] sm:basis-[700px] md:basis-[900px] shrink-0 h-[110%]">
+        <div class="py-8 text-base leading-3 mt-10 sm:mt-20">
+          <div class="theme">
+            <span class="bg-gradient-to-r from-cyan-500 to-blue-500 text-2xl sm:text-4xl font-bold text-transparent bg-clip-text">第五屆</span>
+          </div>
+          <div class="theme">
+            <span class="theme bg-gradient-to-r from-red-500 to-blue-500 text-5xl sm:text-7xl font-bold px-12 text-transparent bg-clip-text whitespace-nowrap">60k</span>
+          </div>
+        </div>
+        <div class="py-8 text-base leading-3 mt-10 sm:mt-20">
+          <div class="theme">
+            <span class="bg-gradient-to-r from-cyan-500 to-blue-500 text-2xl sm:text-4xl font-bold text-transparent bg-clip-text">第六屆</span>
+          </div>
+          <div class="theme">
+            <span class="theme bg-gradient-to-r from-red-500 to-blue-500 text-5xl sm:text-7xl font-bold px-12 text-transparent bg-clip-text whitespace-nowrap">65k</span>
+          </div>
+        </div><div class="py-8 text-base leading-3 mt-10 sm:mt-20">
+          <div class="theme">
+            <span class="bg-gradient-to-r from-cyan-500 to-blue-500 text-2xl sm:text-4xl font-bold text-transparent bg-clip-text">第七屆</span>
+          </div>
+          <div class="theme mt-10 sm:mt-20 top-10">
+            <span class="theme bg-gradient-to-r from-red-500 to-blue-500 text-5xl sm:text-7xl font-bold px-12 text-transparent bg-clip-text whitespace-nowrap">70k</span>
+          </div>
+        </div>
         <div id="prizeSlide" class="hidden md:block">
           <!-- <section class="flex justify-center absolute sm:-top-[3rem] md:-top-[7rem] xl:-top-[8rem] 2xl:-top-[11rem] -z-10">
               <img class="object-cover hidden md:block md-w-[700px] lg:h-auto lg:w-[1000px]" src="./dist/img/prizeinfo.png" alt="prizeinfo">
           </section> -->
-          <section class="bg-[url('img/prizeinfo.png')] bg-origin-border bg-cover bg-center grid place-items-center p-10 z-10">
+          <section class="bg-origin-border bg-cover bg-center grid place-items-center p-10 z-10">
               <div class="sm:text-center lg:text-left">
                   <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-5xl xl:text-8xl">
-                    <span class="block xl:inline font-extrabold">總獎金，$75k。</span>
+                    <span class="block xl:inline font-extrabold whitespace-nowrap">這屆總獎金，$75k。</span>
                   </h1>
                   <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                       <div class="text-gray-500 text-base md:text-xl">歷屆最高獎金等你來角逐。</div>
@@ -271,21 +298,57 @@
               </div>
           </section>
         </div>
+      </div>
+  </section>
+  <section class="block sm:hidden">
+    <img src="dist/img/unsplash/sigmund-HsTnjCVQ798-unsplash.jpg">
+  </section>
 
-        <div class="block md:hidden">
-          <section class="container bg-transparent grid place-items-center p-10 max-w-2xl md:max-w-3xl lg:max-w-4xl mb-20 z-10">
-            <div class="sm:text-center lg:text-left">
-                <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-5xl xl:text-8xl">
-                  <span class="block xl:inline font-extrabold">總獎金，$75k。</span>
-                </h1>
-                <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                    <div class="text-gray-500 text-base md:text-xl">歷屆最高獎金等你來角逐。</div>
-                    <div class="text-gray-500 text-base md:text-xl">可以嗎？</div>
-                    <div class="text-gray-500 text-base md:text-xl"></div>
-                </p>
-            </div>
-          </section>
+  <div class="block md:hidden mt-20">
+    <section class="container bg-transparent grid place-items-center p-10 max-w-2xl md:max-w-3xl lg:max-w-4xl mb-20 z-10">
+      <div class="sm:text-center lg:text-left">
+          <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-5xl xl:text-8xl">
+            <span class="block xl:inline font-extrabold">總獎金，$75k。</span>
+          </h1>
+          <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              <div class="text-gray-500 text-base md:text-xl">歷屆最高獎金等你來角逐。</div>
+              <div class="text-gray-500 text-base md:text-xl">可以嗎？</div>
+              <div class="text-gray-500 text-base md:text-xl"></div>
+          </p>
+      </div>
+    </section>
+  </div>
+  <section class="overflow-auto">
+    <div class="grid place-items-center w-screen pt-16 pb-32 lg:mt-20">
+      <div id="typewriteDesc" class=""><h2 class="text-3xl sm:text-5xl font-extrabold text-shadow-xl px-8">今年，兩個組別，兩個機會。
+      </h2></div>
+      <div class="grid place-items-center w-screen">
+          <p class="mt-3 text-lg text-gray-500 px-10 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 lg:max-w-4xl">
+             設計組和工程組，前端和後端的專家，Hackathon Jr. 兩者兼顧。
+          </p>
+      </div>
+    </div>
+    <div id="groupCards" class="cards flex flex-row flex-wrap mt-2 gap-20 justify-center">
+      <a href="#" class="flex flex-col items-center bg-gray-50 rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full h-96 rounded-t-lg md:w-48 md:rounded-none md:rounded-l-lg" src="dist/img/unsplash/alexander-shatov-DHl49oyrn7Y-unsplash.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5 class="mb-2 text-2xl sm:text-3xl font-bold tracking-tight text-gray-900 dark:text-white">設計組，Frontend-Only</h5>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">For those who specialize in only the fundamentals and principles of design. Nothing else.</p>
+            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Default</button>
         </div>
+      </a>
+      <a href="#" class="flex flex-col items-center bg-gray-50 rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover h-96 rounded-t-lg md:w-48 md:rounded-none md:rounded-l-lg" src="dist/img/unsplash/jonas-svidras-e28-krnIVmo-unsplash.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5 class="mb-2 text-2xl sm:text-3xl font-bold tracking-tight text-gray-900 dark:text-white">工程組，Fullstack</h5>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">The whole power of the web in your hands. No limits, no compromise.</p>
+            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Default</button>
+        </div>
+      </a>
+    </div>
+  </section>
+  <section id="prize" class="relative md:mt-10 lg:mt-20">
+        
     
         <!-- <section id="prize" class="my-20 mx-96">
     
@@ -321,7 +384,7 @@
             </box>
     
         </section> -->
-        <section class="container mb-20 md:mt-[10rem] 2xl:mt-[17rem]">
+        <section class="container mb-20 md:mt-[10rem] mt-[20rem]">
             <div class="flex flex-row justify-center">
                 <div class="bg-gray-50 shadow overflow-hidden sm:rounded-lg">
                     <div class="px-4 py-5 sm:px-6">
@@ -624,12 +687,22 @@
     scale: 4.0,
     orientation: "left",
     overflow: true,
+    maxTransition: 50,
   })
 
   let themeSlide = document.getElementById("theme");
 
   let themeSlideParallaxInstance = new simpleParallax(themeSlide, {
     scale: 1.2
+  })
+
+  let groupCards = document.getElementById("groupCards");
+
+  let groupCardsParallaxInstance = new simpleParallax(groupCards, {
+    scale: 3.0,
+    orientation: "right",
+    overflow: true,
+    maxTransition: 50,
   })
 
 </script>

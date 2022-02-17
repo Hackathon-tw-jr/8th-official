@@ -130,9 +130,15 @@ document.addEventListener("scroll", () => {
     let hackDesc = document.getElementById("description");
     let mediaIcons = document.getElementById("mediaIcons");
     let theme = document.querySelectorAll(".theme");
+    let cards = document.querySelectorAll(".cards");
+
     theme.forEach(element => {
         console.log(element)
         element.style.opacity = (-differentToViewportTop(element) + 800)* 0.003 ;
+    })
+
+    cards.forEach(element => {
+        element.style.opacity = (-differentToViewportTop(element) + 350)* 0.004 ;
     })
 
     // if (isAtViewportTop(hackDesc)) {
@@ -140,6 +146,11 @@ document.addEventListener("scroll", () => {
     // } else {
     //     theme.classList.replace("flex", "hidden");
     // }
+})
+
+document.addEventListener("scroll", () => {
+    let navbar = document.getElementById("navbar");
+
 })
 
 typewriterScrollObserver.observe(typewriter);
