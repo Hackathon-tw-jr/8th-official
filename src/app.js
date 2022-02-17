@@ -38,10 +38,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
 })
 
-document.addEventListener("DOMContentLoaded", event => {
-    let thumbnail = document.getElementById("thumbnail");
-    new simpleParallax(thumbnail);
-})
 
 document.addEventListener("DOMContentLoaded", (event) => { 
     let scheduleTabOne = document.getElementById('tab1'),
@@ -114,6 +110,36 @@ const typewriterScrollObserver = new IntersectionObserver(entires => {
             entry.target.classList.remove('typewriter');
         }
     })
+})
+
+function isAtViewportTop(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top <= 0
+    );
+}
+
+function differentToViewportTop(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.top;
+}
+
+
+
+document.addEventListener("scroll", () => {
+    let hackDesc = document.getElementById("description");
+    let mediaIcons = document.getElementById("mediaIcons");
+    let theme = document.querySelectorAll(".theme");
+    theme.forEach(element => {
+        console.log(element)
+        element.style.opacity = (-differentToViewportTop(element) + 800)* 0.003 ;
+    })
+
+    // if (isAtViewportTop(hackDesc)) {
+    //     theme.classList.replace("hidden", "flex");
+    // } else {
+    //     theme.classList.replace("flex", "hidden");
+    // }
 })
 
 typewriterScrollObserver.observe(typewriter);
