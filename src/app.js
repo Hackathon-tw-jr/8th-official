@@ -132,6 +132,7 @@ document.addEventListener("scroll", () => {
     let theme = document.querySelectorAll(".theme");
     let cards = document.querySelectorAll(".cards");
     let groups = document.querySelectorAll(".groups");
+    let prize = document.querySelectorAll(".prizes-opac");
 
     theme.forEach(element => {
         console.log(element)
@@ -144,6 +145,10 @@ document.addEventListener("scroll", () => {
 
     groups.forEach(element => {
         element.style.opacity = (-differentToViewportTop(element) + 700)* 0.004;
+    })
+
+    prize.forEach(element => {
+        element.style.opacity = (-differentToViewportTop(element) + 350)* 0.004;
     })
 
     // if (isAtViewportTop(hackDesc)) {
