@@ -131,6 +131,7 @@ document.addEventListener("scroll", () => {
     let mediaIcons = document.getElementById("mediaIcons");
     let theme = document.querySelectorAll(".theme");
     let cards = document.querySelectorAll(".cards");
+    let groups = document.querySelectorAll(".groups");
 
     theme.forEach(element => {
         console.log(element)
@@ -139,6 +140,10 @@ document.addEventListener("scroll", () => {
 
     cards.forEach(element => {
         element.style.opacity = (-differentToViewportTop(element) + 350)* 0.004 ;
+    })
+
+    groups.forEach(element => {
+        element.style.opacity = (-differentToViewportTop(element) + 700)* 0.004;
     })
 
     // if (isAtViewportTop(hackDesc)) {

@@ -36,5 +36,7 @@ module.exports = {
           padding: '2em',
       },
     },
-    plugins: [],
+    plugins: [
+        require('flowbite/plugin')
+    ],
 }
