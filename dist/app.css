@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.0.19 | MIT License | https://tailwindcss.com
+! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -751,12 +751,16 @@ input[type=file]::file-selector-button:hover {
   left: 0px;
 }
 
-.right-0 {
-  right: 0px;
+.bottom-20 {
+  bottom: 5rem;
 }
 
 .right-10 {
   right: 2.5rem;
+}
+
+.right-0 {
+  right: 0px;
 }
 
 .top-4 {
@@ -765,14 +769,6 @@ input[type=file]::file-selector-button:hover {
 
 .bottom-0 {
   bottom: 0px;
-}
-
-.bottom-10 {
-  bottom: 2.5rem;
-}
-
-.bottom-20 {
-  bottom: 5rem;
 }
 
 .z-10 {
@@ -903,6 +899,30 @@ input[type=file]::file-selector-button:hover {
   margin-top: 2rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mt-\[100px\] {
+  margin-top: 100px;
+}
+
+.mt-100 {
+  margin-top: 15rem;
+}
+
+.-mt-100 {
+  margin-top: -15rem;
+}
+
+.-mt-\[200px\] {
+  margin-top: -200px;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -955,10 +975,6 @@ input[type=file]::file-selector-button:hover {
   height: 16rem;
 }
 
-.h-\[\] {
-  height: ;
-}
-
 .h-14 {
   height: 3.5rem;
 }
@@ -997,10 +1013,6 @@ input[type=file]::file-selector-button:hover {
 
 .h-auto {
   height: auto;
-}
-
-.h-\[110\%\] {
-  height: 110%;
 }
 
 .w-6 {
@@ -1184,6 +1196,10 @@ input[type=file]::file-selector-button:hover {
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-end {
   justify-content: flex-end;
 }
@@ -1349,12 +1365,12 @@ input[type=file]::file-selector-button:hover {
   border-width: 2px;
 }
 
-.border-4 {
-  border-width: 4px;
-}
-
 .border-8 {
   border-width: 8px;
+}
+
+.border-4 {
+  border-width: 4px;
 }
 
 .border-b {
@@ -1369,6 +1385,11 @@ input[type=file]::file-selector-button:hover {
   border-color: transparent;
 }
 
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
@@ -1377,11 +1398,6 @@ input[type=file]::file-selector-button:hover {
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-gray-50 {
@@ -1655,8 +1671,8 @@ input[type=file]::file-selector-button:hover {
   padding-bottom: 0.75rem;
 }
 
-.pt-16 {
-  padding-top: 4rem;
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .pb-32 {
@@ -1667,8 +1683,8 @@ input[type=file]::file-selector-button:hover {
   padding-bottom: 10rem;
 }
 
-.pt-8 {
-  padding-top: 2rem;
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .pl-3 {
@@ -2053,6 +2069,12 @@ body {
 .after\:content-\[\'\.\'\]::after {
   --tw-content: '.';
   content: var(--tw-content);
+}
+
+.hover\:scale-95:hover {
+  --tw-scale-x: .95;
+  --tw-scale-y: .95;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:bg-gray-700:hover {
@@ -2665,6 +2687,10 @@ body {
     margin-top: 0px;
   }
 
+  .lg\:mt-\[100px\] {
+    margin-top: 100px;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -2744,6 +2770,11 @@ body {
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .lg\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
   }
 }
 
