@@ -6,7 +6,7 @@ module.exports = {
         "./src/app.js", 
     ],
     theme: {
-      extend: {
+        extend: {
             colors: {
                 'cyan-secnd-100': "#6da79d",
             },
@@ -28,13 +28,17 @@ module.exports = {
             backgroundPosition: {
                 'top-100-left-100': 'top 25rem left 25rem',
                 'top-4': 'top 1rem',
-                
+
+            },
+            screens: {
+                'xl': '2560px'
             }
-      },
-      container: {
-          center: true,
-          padding: '2em',
-      },
+
+        },
+        container: {
+            center: true,
+            padding: '2em',
+        },
     },
     plugins: [
         require('flowbite/plugin')
