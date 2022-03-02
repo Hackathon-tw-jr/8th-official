@@ -15,7 +15,7 @@
 
 <body class="bg-gray-50 box-border">
     <!-- Navigation Bar -->
-    <nav id="navbar" class="sticky top-0 z-10 bg-gray-50 border drop-shadow-md">
+    <nav id="navbar" class="sticky bg-gray-50 border drop-shadow-md leading-normal tracking-normal">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div class="relative flex items-center justify-between h-16">
                 <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -84,7 +84,7 @@
 
             <div class="px-2 pt-2 pb-3 space-y-2">
                 <!-- Current: "bg-gray-900 text-black", Default: "text-black hover:bg-gray-400 hover:text-black" -->
-                <a href="app.html" class="text-black hover:bg-gray-400 block px-3 py-2 rounded-lg text-base font-medium" aria-current="page">關於我們</a>
+                <a href="#description" class="text-black hover:bg-gray-400 block px-3 py-2 rounded-lg text-base font-medium" aria-current="page">關於我們</a>
 
                 <a href="#theme" class="text-black hover:bg-gray-400 hover:text-black block px-3 py-2 rounded-lg text-base font-medium">主題</a>
 
@@ -145,7 +145,7 @@
             </p>
             <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div class="rounded-md shadow">
-                    <a href="#schedule" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-teal-600 hover:bg-teal-700 md:py-4 md:text-lg md:px-10"> 開始你的旅途。</a>
+                    <a href="#description" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-teal-600 hover:bg-teal-700 md:py-4 md:text-lg md:px-10">開始你的旅途。</a>
                 </div>
                 <div class="mt-3 sm:mt-0 sm:ml-3">
                     <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-teal-700 bg-gray-200 hover:bg-gray-300 md:py-4 md:text-lg md:px-10"> 過去作品和競賽</a>
@@ -158,7 +158,7 @@
 
     <div class="hidden lg:absolute lg:inset-0 lg:flex justify-center flex-col -z-20">
         <div id="coverAbsolute" class="h-[100vh]" data-parallax="scroll" data-image-src="./dist/img/cover-unsplash.jpg" data-natural-width="5355" data-natural-height="4016"></div>
-        <div class="flex justify-center">
+        <a href="#description" class="flex justify-center">
             <svg class="relative w-10 justify-center bottom-20 animate-bounce fill-white" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;"
                 xml:space="preserve">
         <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
@@ -180,7 +180,7 @@
         <g></g>
         <g></g>
       </svg>
-        </div>
+    </a>
         <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 
 
@@ -193,12 +193,11 @@
     </div>
 
     <div id="description" class="grid place-items-center w-screen pb-32 lg:mt-[5rem] xl:mt-[35rem]">
-        <img src="src\img\what1.png" class="relative object-center w-300 mt-100">
-        <div id="typewriteDesc" class="absolute">
-            <h2 class="text-4xl sm:text-6xl lg:text-8xl text-teal-500 font-extrabold text-shadow-xl">何謂黑客松？</h2>
+        <img src="src\img\what1.png" class="object-center w-300 md:w-400 mt-[10rem] lg:mt-[30rem]">
+        <div class="absolute -mt-[10rem] lg:mt-[5rem]">
+          <span id="typewriteDesc" class="typewriteDesc"><h2 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-teal-500 font-extrabold text-shadow-xl">何謂黑客松？</h2></span>
         </div>
-
-        <div class="grid place-items-center w-screen">
+        <div class="hidden md:absolute md:block mt-[10rem] lg:mt-[20rem]">
             <p class="lg:mt-[100px] text-lg text-gray-500 px-10 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 lg:max-w-4xl">
                 黑客松，顧名思義「黑客的馬拉松」，Hackathon，就是「程式設計」最具代表性的活動之一。 參賽者會在三天兩夜的比賽裡，共同完成主辦方提供的程式設計挑戰。
             </p>
@@ -206,51 +205,92 @@
                 與隊友進行程式的激盪！完成莫屬你們獨家作品吧！
             </p>
         </div>
+        <div class="grid place-items-center w-screen mt-10 sm:mt-4 relative md:hidden">
+          <p class="lg:mt-[100px] text-lg text-gray-500 px-10 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 lg:max-w-4xl">
+              黑客松，顧名思義「黑客的馬拉松」，Hackathon，就是「程式設計」最具代表性的活動之一。 參賽者會在三天兩夜的比賽裡，共同完成主辦方提供的程式設計挑戰。
+          </p>
+          <p class="mt-3 text-lg text-gray-500 px-10 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 lg:max-w-4xl">
+              與隊友進行程式的激盪！完成莫屬你們獨家作品吧！
+          </p>
+        </div>
+
     </div>
 
-    <div id="mediaIcons" class="flex flex-row flex-1 items-center justify-center right-10 gap-5 bg-gray-50 pb-40 overflow-scroll-hidden">
+    <!-- <div id="mediaIcons" class="flex flex-row flex-1 items-center justify-center right-10 gap-5 bg-gray-50 pb-40 overflow-scroll-hidden">
         <img class="media-icon w-36 sm:w-64 rounded-lg shadow-md" src="src\img\cloud1.png">
-        <img class="media-icon w-36 sm:w-64 rounded-lg shadow-md" src="src\img\baloon1.png">
+        <img class="media-icon w-full rounded-lg" src="dist/img/本屆主題 1.png">
         <img class="media-icon w-36 sm:w-64 rounded-lg shadow-md" src="src\img\cloud1.png">
-    </div>
+    </div> -->
 
-    <section class="flex flex-row flex-wrap justify-end items-center bg-origin-content" data-parallax="scroll" data-image-src="./dist/img/unsplash/max-harlynking-DGP-759-Ukk-unsplash.jpg" data-speed="0.6">
+    <section class="flex flex-row flex-wrap bg-origin-content justify-center">
+      <div class="relative top-[1rem]">
+        <div class="flex flex-row flex-1 justify-center">
+        <img class="w-full rounded-lg" src="dist/img/本屆主題 1.png">
+        </div>
+      </div>
+      <!-- <img class="absolute w-300 rounded-lg" src="dist/img/本屆主題 1.png"> -->
+      <div class="bg-gray-50 shadow-lg shadow-gray-100 border px-10 rounded-xl">
+        <div class="max-w-2xl mx-auto py-24 px-4 grid items-center grid-cols-1 gap-y-16 gap-x-8 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8 lg:grid-cols-2">
+          <div>
+            <h2 class="tracking-tight text-gray-900 theme bg-gradient-to-r from-teal-500 to-green-500 text-4xl sm:text-5xl md:text-7xl xl:text-9xl font-extrabold text-transparent bg-clip-text whitespace-nowrap">高齡化社會</h2>
+            <p class="mt-4 text-gray-500">The walnut wood card tray is precision milled to perfectly fit a stack of Focus cards. The powder coated steel divider separates active cards from new ones, or can be used to archive important task lists.</p>
+      
+            <dl class="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:gap-y-16 lg:gap-x-8">
+              <div class="border-t border-gray-200 pt-4">
+                <dt class="font-medium text-gray-900 text-xl">🙌  比賽辦法：</dt>
+                <dd class="mt-2 text-md text-gray-500">網頁製作。</dd>
+              </div>
+      
+              <div class="border-t border-gray-200 pt-4">
+                <dt class="font-medium text-gray-900 text-xl">✔️ 評分標準</dt>
+                <dd class="mt-2 text-md text-gray-500">提供課程，讓學員不只是來比賽，也可以學到東西</dd>
+              </div>
+      
+              <div class="border-t border-gray-200 pt-4">
+                <dt class="font-medium text-gray-900 text-xl">🏹 Lorem Ipsum Stuff</dt>
+                <dd class="mt-2 text-sm text-gray-500">6.25&quot; x 3.55&quot; x 1.15&quot;</dd>
+              </div>
+      
+            </dl>
+          </div>
+          <div class="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+            <img src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-01.jpg" alt="Walnut card tray with white powder coated steel divider and 3 punchout holes." class="bg-gray-100 rounded-lg">
+            <img src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-02.jpg" alt="Top down view of walnut card tray with embedded magnets and card groove." class="bg-gray-100 rounded-lg">
+            <img src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-03.jpg" alt="Side of walnut card tray with card groove and recessed card area." class="bg-gray-100 rounded-lg">
+            <img src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-04.jpg" alt="Walnut card tray filled with cards and card angled in dedicated groove." class="bg-gray-100 rounded-lg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="flex flex-row flex-wrap justify-end items-center bg-origin-content" data-parallax="scroll" data-image-src="./dist/img/unsplash/max-harlynking-DGP-759-Ukk-unsplash.jpg" data-speed="0.6">
         <div id="theme" class="bg-gray-50 p-20 sm:py-24 sm:px-44 border border-white border-8">
             <div class="py-8 text-base leading-7 space-y-6 mt-10 sm:mt-20">
                 <div class="theme">
-                    <span class="bg-gradient-to-r from-cyan-500 to-blue-500 text-2xl sm:text-4xl font-bold text-transparent bg-clip-text">本屆主題</span>
-                </div>
-                <div class="theme">
-                    <span class="theme bg-gradient-to-r from-red-500 to-blue-500 text-4xl sm:text-5xl md:text-7xl xl:text-9xl font-bold text-transparent bg-clip-text whitespace-nowrap">高齡化社會</span>
+                    <span class="theme bg-gradient-to-r from-teal-500 to-green-500 text-4xl sm:text-5xl md:text-7xl xl:text-9xl font-bold text-transparent bg-clip-text whitespace-nowrap">高齡化社會</span>
                 </div>
             </div>
             <div class="py-8 text-base leading-7 space-y-6 text-gray-900">
                 <div class="theme h-14">
-                    <span class="bg-gradient-to-r from-cyan-500 to-blue-500 text-2xl sm:text-4xl font-bold text-transparent bg-clip-text">本屆特色</span>
+                    <span class="bg-gradient-to-r from-cyan-500 to-green-500 text-2xl sm:text-4xl font-bold text-transparent bg-clip-text">本屆特色</span>
                 </div>
                 <ul class="theme space-y-4">
                     <li class="flex items-center">
-                        <svg class="w-6 h-6 flex-none fill-sky-100 stroke-teal-500 stroke-2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="11" />
-                  <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
-                </svg>
+                        🙌 
                         <p class="ml-4 text-xl">加入指定技術進入<code class="font-extrabold text-gray-900">評分標準</code></p>
                     </li>
                     <li class="flex items-center">
-                        <svg class="w-6 h-6 flex-none fill-sky-100 stroke-teal-500 stroke-2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="11" />
-                  <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
-                </svg>
-                        <p class="ml-4 text-xl"><code class="text-xl font-extrabold text-gray-900">提供課程，</code>讓學員不只是來比賽，也可以學到東西</p>
+                        🙌 
+                        <p class="ml-4 text-xl"><code class="text-xl font-extrabold text-gray-900">提供課程，</code>讓學員不只是來比賽，也可以學到東西。</p>
                     </li>
                 </ul>
             </div>
             <div class="pt-8 text-base leading-7 font-semibold">
                 <div class="theme h-14">
-                    <span class="bg-gradient-to-r from-cyan-500 to-blue-500 text-2xl sm:text-4xl font-bold text-transparent bg-clip-text">比賽辦法：</span>
+                    <span class="bg-gradient-to-r from-cyan-500 to-green-500 text-2xl sm:text-4xl font-bold text-transparent bg-clip-text">比賽辦法：</span>
                 </div>
                 <div class="theme h-14 text-center mb-20 sm:mb-100">
-                    <span class="ml-5 bg-gradient-to-r from-red-500 to-blue-500 text-2xl sm:text-4xl font-bold text-transparent bg-clip-text">網頁製作。輕鬆簡單。</span>
+                    <span class="ml-5 bg-gradient-to-r from-green-500 to-blue-500 text-2xl sm:text-4xl font-bold text-transparent bg-clip-text">網頁製作。輕鬆簡單。</span>
                 </div>
                 <!-- <section id="features" class="theme feature-section pt-120">
               <div class="container">
@@ -278,10 +318,10 @@
                   </div>
                 </div>
               </div>
-            </section> -->
-            </div>
+            </section> 
+          </div>
         </div>
-    </section>
+    </section> -->
     <section class="block md:hidden">
         <img src="dist/img/unsplash/max-harlynking-DGP-759-Ukk-unsplash.jpg">
     </section>
@@ -624,34 +664,34 @@
     </div>
     <div id="tabs" class="container sm-auto pb-24">
         <div id="scheduleTabsDesc" class="lg:text-left mb-4">
-            <h4 class="text-2xl tracking-tight">
+            <h4 class="text-2xl md:text-3xl md:font-semibold tracking-tight">
                 比賽流程總覽
             </h4>
         </div>
         <div id="tab_bar" class="flex sm:mx-0">
             <ul class="flex-none inline-grid
-            " style="grid-template-columns:repeat(4, minmax(6rem, 1fr))">
-                <li><button type="button" id="tab1" class="px-10 py-2 bg-gray-200 text-black selected group w-full flex flex-col items-center text-md md:text-lg first-letter:hover:shadow-xl hover:scale-95 shadow-black
+            " style="grid-template-columns:repeat(3, minmax(6rem, 1fr))">
+                <li><button type="button" id="tab1" class="px-3 sm:px-10 py-2 bg-gray-200 text-black rounded-xl selected group w-full flex flex-col items-center text-md md:text-lg hover:bg-gray-100 hover:scale-90 shadow-black
                     relative
                     after:text-transparent after:bg-black
                     after:absolute after:content-['.'] after:m-auto after:bottom-0 after:left-0 after:right-0 after:h-px after:w-[100%]
                     ">
-                    7/11</button></li>
-                <li><button type="button" id="tab2" class="px-10 py-2 bg-white text-black group w-full flex flex-col items-center text-md md:text-lg hover:shadow-xl hover:scale-95 shadow-black
+                    第一天</button></li>
+                <li><button type="button" id="tab2" class="px-3 sm:px-10 py-2 bg-gray-50 text-black rounded-xl group w-full flex flex-col items-center text-md md:text-lg hover:bg-gray-100 hover:scale-90 shadow-black
                     relative
                     after:text-transparent after:bg-black
                     after:absolute after:content-['.'] after:m-auto after:bottom-0 after:left-0 after:right-0 after:h-px after:w-[0%]">
-                    7/12
+                    第二天
                 </button></li>
-                <li><button type="button" id="tab3" class="px-10 py-2 bg-white text-black group w-full flex flex-col items-center text-md md:text-lg hover:shadow-xl hover:scale-95 shadow-black
+                <li><button type="button" id="tab3" class="px-3 sm:px-10 py-2 bg-gray-50 text-black rounded-xl group w-full flex flex-col items-center text-md md:text-lg hover:bg-gray-100 hover:scale-90 shadow-black
                     relative
                     after:text-transparent after:bg-black
                     after:absolute after:content-['.'] after:m-auto after:bottom-0 after:left-0 after:right-0 after:h-px after:w-[0%]">
-                    7/13</button></li>
+                    第三天</button></li>
             </ul>
         </div>
         <div id="tab_content">
-            <div id="c1" class="bg-gray-50 p-4 rounded-lg shadow-sm shadow-gray-300 block pb-10">
+            <div id="c1" class="bg-gray-100 p-4 rounded-lg shadow-sm shadow-gray-300 block pb-10">
 
                 <ol class="items-center sm:flex">
                     <li class="relative mb-6 sm:mb-0">
@@ -837,13 +877,13 @@
     <footer class="relative bg-teal-900 block bottom-0">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-6">
             <div class="relative flex flex-col items-center gap-10 h-auto py-10">
-                <div id="footer-links" class="flex flex-row flex-auto gap-x-44 lg:gap-48">
+                <div id="footer-links" class="flex flex-row flex-auto gap-x-20 lg:gap-48 justify-start">
                     <div class="item">
                         <ul class="list-none list-inside">
                             <li><a href="#" class="text-teal-100 hover:text-black rounded-lg text-lg sm:text-base">關於我們</a></li>
                             <li><a href="#theme" class="text-teal-100 hover:text-black rounded-lg text-lg sm:text-base">主題</a></li>
                             <li><a href="#prize" class="text-teal-100 hover:text-black rounded-lg text-lg sm:text-base">獎金</a></li>
-                            <li><a href="#schedule" class="text-teal-100 hover:text-black rounded-lg text-lg sm:text-2xl">活動日程</a></li>
+                            <li><a href="#schedule" class="text-teal-100 hover:text-black rounded-lg text-lg sm:text-base">活動日程</a></li>
                         </ul>
                     </div>
                     <div class="item">
@@ -855,7 +895,7 @@
                         </ul>
                     </div>
                 </div>
-                <div id="tech-desc" class="flex text-gray-200">
+                <div id="tech-desc" class="flex text-gray-200 px-10">
                     This page was constructed using TailwindCSS, Parallax, and NodeJS.
                 </div>
                 <div class="px-8 sm:px-0 block">

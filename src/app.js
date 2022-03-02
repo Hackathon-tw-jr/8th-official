@@ -54,13 +54,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
     let inactiveContentClass = "";
 
     scheduleTabOne.onclick = () => {
-        scheduleTabOne.classList.replace("bg-white", "bg-gray-200");
+        scheduleTabOne.classList.replace("bg-gray-50", "bg-gray-200");
         scheduleTabOne.classList.replace("after:w-[0%]", "after:w-[100%]");
 
-        scheduleTabTwo.classList.replace("bg-gray-200", "bg-white");
+        scheduleTabTwo.classList.replace("bg-gray-200", "bg-gray-50");
         scheduleTabTwo.classList.replace("after:w-[100%]", "after:w-[0%]");
 
-        scheduleTabThree.classList.replace("bg-gray-200", "bg-white");
+        scheduleTabThree.classList.replace("bg-gray-200", "bg-gray-50");
         scheduleTabThree.classList.replace("after:w-[100%]", "after:w-[0%]");
 
         scheduleContentOne.classList.replace("hidden", "block");
@@ -69,13 +69,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
 
     scheduleTabTwo.onclick = () => {
-        scheduleTabTwo.classList.replace("bg-white", "bg-gray-200");
+        scheduleTabTwo.classList.replace("bg-gray-50", "bg-gray-200");
         scheduleTabTwo.classList.replace("after:w-[0%]", "after:w-[100%]");
 
-        scheduleTabOne.classList.replace("bg-gray-200", "bg-white");
+        scheduleTabOne.classList.replace("bg-gray-200", "bg-gray-50");
         scheduleTabOne.classList.replace("after:w-[100%]", "after:w-[0%]");
 
-        scheduleTabThree.classList.replace("bg-gray-200", "bg-white");
+        scheduleTabThree.classList.replace("bg-gray-200", "bg-gray-50");
         scheduleTabThree.classList.replace("after:w-[100%]", "after:w-[0%]");
 
         scheduleContentTwo.classList.replace("hidden", "block");
@@ -84,13 +84,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
 
     scheduleTabThree.onclick = () => {
-        scheduleTabThree.classList.replace("bg-white", "bg-gray-200");
+        scheduleTabThree.classList.replace("bg-gray-50", "bg-gray-200");
         scheduleTabThree.classList.replace("after:w-[0%]", "after:w-[100%]");
 
-        scheduleTabTwo.classList.replace("bg-gray-200", "bg-white");
+        scheduleTabTwo.classList.replace("bg-gray-200", "bg-gray-50");
         scheduleTabTwo.classList.replace("after:w-[100%]", "after:w-[0%]");
 
-        scheduleTabOne.classList.replace("bg-gray-200", "bg-white");
+        scheduleTabOne.classList.replace("bg-gray-200", "bg-gray-50");
         scheduleTabOne.classList.replace("after:w-[100%]", "after:w-[0%]");
 
 
