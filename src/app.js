@@ -39,66 +39,66 @@ document.addEventListener("DOMContentLoaded", (event) => {
 })
 
 
-document.addEventListener("DOMContentLoaded", (event) => { 
-    let scheduleTabOne = document.getElementById('tab1'),
-    scheduleTabTwo = document.getElementById('tab2'),
-    scheduleTabThree = document.getElementById('tab3'),
-    scheduleContentOne = document.getElementById('c1'),
-    scheduleContentTwo = document.getElementById('c2'),
-    scheduleContentThree = document.getElementById('c3');
+// document.addEventListener("DOMContentLoaded", (event) => { 
+//     let scheduleTabOne = document.getElementById('tab1'),
+//     scheduleTabTwo = document.getElementById('tab2'),
+//     scheduleTabThree = document.getElementById('tab3'),
+//     scheduleContentOne = document.getElementById('c1'),
+//     scheduleContentTwo = document.getElementById('c2'),
+//     scheduleContentThree = document.getElementById('c3');
 
-    let activeTabClass = "";
-    let inactiveTabClass = "";
+//     let activeTabClass = "";
+//     let inactiveTabClass = "";
 
-    let activeContentClass = "";
-    let inactiveContentClass = "";
+//     let activeContentClass = "";
+//     let inactiveContentClass = "";
 
-    scheduleTabOne.onclick = () => {
-        scheduleTabOne.classList.replace("bg-gray-50", "bg-gray-200");
-        scheduleTabOne.classList.replace("after:w-[0%]", "after:w-[100%]");
+//     scheduleTabOne.onclick = () => {
+//         scheduleTabOne.classList.replace("bg-gray-50", "bg-gray-200");
+//         scheduleTabOne.classList.replace("after:w-[0%]", "after:w-[100%]");
 
-        scheduleTabTwo.classList.replace("bg-gray-200", "bg-gray-50");
-        scheduleTabTwo.classList.replace("after:w-[100%]", "after:w-[0%]");
+//         scheduleTabTwo.classList.replace("bg-gray-200", "bg-gray-50");
+//         scheduleTabTwo.classList.replace("after:w-[100%]", "after:w-[0%]");
 
-        scheduleTabThree.classList.replace("bg-gray-200", "bg-gray-50");
-        scheduleTabThree.classList.replace("after:w-[100%]", "after:w-[0%]");
+//         scheduleTabThree.classList.replace("bg-gray-200", "bg-gray-50");
+//         scheduleTabThree.classList.replace("after:w-[100%]", "after:w-[0%]");
 
-        scheduleContentOne.classList.replace("hidden", "block");
-        scheduleContentTwo.classList.replace("block", "hidden");
-        scheduleContentThree.classList.replace("block", "hidden");
-    }
+//         scheduleContentOne.classList.replace("hidden", "block");
+//         scheduleContentTwo.classList.replace("block", "hidden");
+//         scheduleContentThree.classList.replace("block", "hidden");
+//     }
 
-    scheduleTabTwo.onclick = () => {
-        scheduleTabTwo.classList.replace("bg-gray-50", "bg-gray-200");
-        scheduleTabTwo.classList.replace("after:w-[0%]", "after:w-[100%]");
+//     scheduleTabTwo.onclick = () => {
+//         scheduleTabTwo.classList.replace("bg-gray-50", "bg-gray-200");
+//         scheduleTabTwo.classList.replace("after:w-[0%]", "after:w-[100%]");
 
-        scheduleTabOne.classList.replace("bg-gray-200", "bg-gray-50");
-        scheduleTabOne.classList.replace("after:w-[100%]", "after:w-[0%]");
+//         scheduleTabOne.classList.replace("bg-gray-200", "bg-gray-50");
+//         scheduleTabOne.classList.replace("after:w-[100%]", "after:w-[0%]");
 
-        scheduleTabThree.classList.replace("bg-gray-200", "bg-gray-50");
-        scheduleTabThree.classList.replace("after:w-[100%]", "after:w-[0%]");
+//         scheduleTabThree.classList.replace("bg-gray-200", "bg-gray-50");
+//         scheduleTabThree.classList.replace("after:w-[100%]", "after:w-[0%]");
 
-        scheduleContentTwo.classList.replace("hidden", "block");
-        scheduleContentOne.classList.replace("block", "hidden");
-        scheduleContentThree.classList.replace("block", "hidden");
-    }
+//         scheduleContentTwo.classList.replace("hidden", "block");
+//         scheduleContentOne.classList.replace("block", "hidden");
+//         scheduleContentThree.classList.replace("block", "hidden");
+//     }
 
-    scheduleTabThree.onclick = () => {
-        scheduleTabThree.classList.replace("bg-gray-50", "bg-gray-200");
-        scheduleTabThree.classList.replace("after:w-[0%]", "after:w-[100%]");
+//     scheduleTabThree.onclick = () => {
+//         scheduleTabThree.classList.replace("bg-gray-50", "bg-gray-200");
+//         scheduleTabThree.classList.replace("after:w-[0%]", "after:w-[100%]");
 
-        scheduleTabTwo.classList.replace("bg-gray-200", "bg-gray-50");
-        scheduleTabTwo.classList.replace("after:w-[100%]", "after:w-[0%]");
+//         scheduleTabTwo.classList.replace("bg-gray-200", "bg-gray-50");
+//         scheduleTabTwo.classList.replace("after:w-[100%]", "after:w-[0%]");
 
-        scheduleTabOne.classList.replace("bg-gray-200", "bg-gray-50");
-        scheduleTabOne.classList.replace("after:w-[100%]", "after:w-[0%]");
+//         scheduleTabOne.classList.replace("bg-gray-200", "bg-gray-50");
+//         scheduleTabOne.classList.replace("after:w-[100%]", "after:w-[0%]");
 
 
-        scheduleContentThree.classList.replace("hidden", "block");
-        scheduleContentTwo.classList.replace("block", "hidden");
-        scheduleContentOne.classList.replace("block", "hidden");
-    }
-})
+//         scheduleContentThree.classList.replace("hidden", "block");
+//         scheduleContentTwo.classList.replace("block", "hidden");
+//         scheduleContentOne.classList.replace("block", "hidden");
+//     }
+// })
 
 const typewriter = document.getElementById("typewriteDesc");
 
@@ -140,7 +140,7 @@ document.addEventListener("scroll", () => {
     })
 
     cards.forEach(element => {
-        element.style.opacity = (-differentToViewportTop(element) + 350)* 0.004 ;
+        element.style.opacity = (-differentToViewportTop(element) + 700)* 0.004 ;
     })
 
     groups.forEach(element => {
@@ -148,7 +148,7 @@ document.addEventListener("scroll", () => {
     })
 
     prize.forEach(element => {
-        element.style.opacity = (-differentToViewportTop(element) + 350)* 0.004;
+        element.style.opacity = (-differentToViewportTop(element) + 550)* 0.004;
     })
 
     // if (isAtViewportTop(hackDesc)) {
