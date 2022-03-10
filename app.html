@@ -229,11 +229,11 @@
     </div> -->
 
     <section>
-        <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-24 justify-center items-center">
-          <div class="flex flex-wrap flex-grow mx-auto max-w-7xl gap-8 justify-center items-center">
-            <div class="w-100 md:w-full lg:max-w-lg lg:w-1/2 rounded-xl">
+        <div class="px-4 py-12 flex flex-row mx-auto sm:px-6 md:px-12 lg:px-24 lg:py-24 justify-center items-center">
+          <div class="flex flex-row flex-wrap max-w-7xl flex-grow mx-auto gap-10 justify-center items-center">
+            <div class="w-full md:w-2/3 lg:max-w-xl lg:w-2/3 rounded-xl">
               <div>
-                <div class="relative w-full max-w-lg">
+                <div class="relative w-full">
                   <div class="
                 absolute
                 top-0
@@ -271,10 +271,8 @@
             </div>
             <div class="
           flex flex-col
-          items-start
           mt-12
           mb-16
-          text-left
           lg:flex-grow lg:w-1/2 lg:pl-6
           xl:pl-24
           md:mb-0
@@ -298,7 +296,7 @@
                   <ul>
                     <li class="text-gray-500 text-lg">課程提供：</li>
                     <li class="text-gray-500 text-lg">TailwindCSS 、 CORS保護 等教學</li>
-                    <li class="text-gray-500 text-lg">比賽使用另外加分。</li>
+                    <li class="text-gray-500 text-lg" id="theme">比賽使用另外加分。</li>
                   </ul>
                 </div>
               </div>
@@ -307,7 +305,7 @@
         </div>
       </section>
     
-      <aside>
+      <aside">
         <div class="px-4 py-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8 mt-20 pb-[20rem]">
           <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <div class="p-8 text-center text-white sm:col-span-2 sm:p-16 lg:py-12">
@@ -469,7 +467,7 @@
       max-w-7xl
       md:mt-20
     ">
-          <div class="grid w-full grid-cols-1 gap-6 mx-auto md:grid-cols-2 border-1 shadow-md shadow-gray-400 rounded-xl py-20 px-20">
+          <div class="grid w-full grid-cols-1 gap-6 mx-auto md:grid-cols-2">
          
             <div class="p-6 max-w-md">
               <img class="
@@ -1013,7 +1011,7 @@
                 </div>
               </div>
             </div>
-            <div class="
+            <div id="schedule" class="
           flex flex-col
           items-center
           justify-center
@@ -1183,7 +1181,7 @@
           </div>
       
           <ul class="grid grid-cols-1 gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-4">
-            <li class="p-8 shadow-xl rounded-xl bg-teal-400">
+            <li class="flex flex-col items-center justify-center p-8 shadow-xl rounded-xl">
               <p class="text-3xl font-extrabold">設計組</p>
               <p class="mt-1 text-xl font-medium">較重設計和UI</p>
             </li>
@@ -1200,7 +1198,7 @@
               <p class="mt-1 text-xl font-medium">設計（UX、UI）</p>
             </li>
       
-            <li class="p-8 shadow-xl rounded-xl bg-teal-400">
+            <li class="flex flex-col items-center justify-center p-8 shadow-xl rounded-xl">
               <p class="text-3xl font-extrabold">工程組</p>
               <p class="mt-1 text-xl font-medium">較重技術和科技的使用</p>
             </li>
@@ -1223,7 +1221,7 @@
 
 
     <!--final day timeline-->
-    <div class="bg-gray-50 grid place-items-center w-screen rounded-lg sm:mt-10 border container py-20 ">
+    <div class="bg-gray-50 grid place-items-center w-screen rounded-lg sm:mt-10 container py-20">
         <div class="relative border-4 border-black w-60 h-16 rounded-full flex justify-center items-center ">
             <div class="text-2xl text-black text-center font-bold px-2"> 7/22 決賽流程</div>
         </div>
@@ -1268,7 +1266,7 @@
     </div>
     </div>
 
-    <div class="bg-gray-50 " id="register ">
+    <div class="bg-gray-50 " id="register">
         <div class="lg:max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between ">
             <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl ">
                 <span class="block ">決定好要參加了嗎?</span>
