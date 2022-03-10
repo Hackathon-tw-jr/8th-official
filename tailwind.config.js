@@ -3,7 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
     content: [
         "app.html",
-        "./src/app.js", 
+        "./src/app.js",
         "./node_modules/flowbite/**/*.js"
     ],
     theme: {
@@ -32,7 +32,7 @@ module.exports = {
 
             },
             screens: {
-                'xl': '2560px'
+                '2xl': '2560px'
             }
 
         },
