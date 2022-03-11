@@ -2911,6 +2911,10 @@ input:checked + .toggle-bg {
     margin-left: 0px;
   }
 
+  .sm\:mt-32 {
+    margin-top: 8rem;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -3112,6 +3116,10 @@ input:checked + .toggle-bg {
     margin-top: 2.5rem;
   }
 
+  .md\:mt-32 {
+    margin-top: 8rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -3238,11 +3246,20 @@ input:checked + .toggle-bg {
     font-size: 3.75rem;
     line-height: 1;
   }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 @media (min-width: 1024px) {
   .lg\:absolute {
     position: absolute;
+  }
+
+  .lg\:relative {
+    position: relative;
   }
 
   .lg\:inset-0 {
@@ -3307,6 +3324,18 @@ input:checked + .toggle-bg {
 
   .lg\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .lg\:mt-28 {
+    margin-top: 7rem;
+  }
+
+  .lg\:mt-36 {
+    margin-top: 9rem;
+  }
+
+  .lg\:mt-32 {
+    margin-top: 8rem;
   }
 
   .lg\:block {
@@ -3464,6 +3493,11 @@ input:checked + .toggle-bg {
     padding-right: 1.5rem;
   }
 
+  .lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .lg\:pb-12 {
     padding-bottom: 3rem;
   }
@@ -3560,6 +3594,10 @@ input:checked + .toggle-bg {
     margin-top: 3rem;
   }
 
+  .xl\:mt-96 {
+    margin-top: 24rem;
+  }
+
   .xl\:inline {
     display: inline;
   }
@@ -3600,6 +3638,11 @@ input:checked + .toggle-bg {
 
   .xl\:text-9xl {
     font-size: 8rem;
+    line-height: 1;
+  }
+
+  .xl\:text-8xl {
+    font-size: 6rem;
     line-height: 1;
   }
 }
