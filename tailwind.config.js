@@ -10,6 +10,8 @@ module.exports = {
         extend: {
             colors: {
                 'cyan-secnd-100': "#6da79d",
+                'useful-teal': "#99cfca",
+                'engineer-teal': "6da79d"
             },
             fontFamily: {
                 sans: ['Inter var', ...defaultTheme.fontFamily.sans],
