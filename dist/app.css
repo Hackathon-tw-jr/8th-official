@@ -1830,6 +1830,15 @@ input:checked + .toggle-bg {
   background-color: rgb(255 255 255 / 0.5);
 }
 
+.bg-useful-teal {
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 207 202 / var(--tw-bg-opacity));
+}
+
+.bg-engineer-teal {
+  background-color: 6da79d;
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
