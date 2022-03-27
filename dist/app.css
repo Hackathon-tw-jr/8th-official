@@ -1223,6 +1223,10 @@ input:checked + .toggle-bg {
   height: 1rem;
 }
 
+.h-\[40vh\] {
+  height: 40vh;
+}
+
 .w-screen {
   width: 100vw;
 }
