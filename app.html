@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="icon" href="./dist/logo.svg">
+
+    <link href="./dist/app.css" rel="stylesheet">
+    <title>Hackathon 8th</title>
+</head>
+
+<body class="bg-gray-50 box-border overflow-x-hidden">
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="sticky top-0 z-50 bg-gray-50 border drop-shadow-md leading-normal tracking-normal w-screen">
+        <div class="sticky top-0 z-50 max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <!-- Mobile menu button-->
+                    <button type="button" id="mobileToggle" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-black hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black" aria-controls="mobile-menu" aria-expanded="false">
+                      <span class="sr-only">Open main menu</span>
+                      <!--
+                        Icon when menu is closed.
+            
+                        Heroicon name: outline/menu
+            
+                        Menu open: "hidden", Menu closed: "block"
+                      -->
+                      <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                      </svg>
+                      <!--
+                        Icon when menu is open.
+            
+                        Heroicon name: outline/x
+            
+                        Menu open: "block", Menu closed: "hidden"
+                      -->
+                      <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button>
+                </div>
+                <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between">
+                    <div class="flex-shrink-0 flex items-center">
+                        <svg id="圖層_1" data-name="圖層 1" class="fill-black w-10 h-8 mr-5 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117.65 106.77"><defs><style>.cls-1{fill:rgb(0, 0, 0);}</style></defs><title>白色小logo</title><path class="cls-1" d="M120.77,103.85l-18.9-58.28q-5.49-16.92-11-33.83a10,10,0,0,1-.24-1.13h-.87a7.23,7.23,0,0,1-.84.19c-1.48.15-3,.28-4.47.43l-12,1.18L60.44,13.56c-4.25.41-8.52.8-12.77,1.25a7.19,7.19,0,0,0-2.27.6c-4.5,2.11-9,4.29-13.46,6.4a3.38,3.38,0,0,0-1.72,1.81Q22.33,41.31,14.4,59q-4.29,9.58-8.57,19.17c-.23.5-.42,1-.66,1.65l14.62.49c-1.12,2.43-2.17,4.69-3.21,7s-2.12,4.55-3.17,6.83-2.12,4.55-3.16,6.83-2.12,4.5-3.15,6.87c.64.07,1.13.13,1.63.18l6.47.61,10.49,1,10.05,1,10.32,1,10.14,1,12.15,1.17,12.16,1.16,12.06,1.18L105,117.31a7.89,7.89,0,0,0,4.3-.5q6.76-3.25,13.53-6.47v-.18q-1-3.15-2.05-6.31M47.86,18.22a1.16,1.16,0,0,1,.82-.39c2.76-.27,5.53-.5,8.3-.75l10.84-1,8.83-.79L79.71,15a4.69,4.69,0,0,1,1.42.05c-.19.11-.38.23-.57.33l-4.78,2.26a9,9,0,0,1-3.06.73l-12.5,1.2L47.11,20.81a3.17,3.17,0,0,1-.45-.05c.41-.9.76-1.75,1.2-2.54m-3.15,6.84a1.35,1.35,0,0,1,1.33-1c5.71-.5,11.43-1,17.14-1.55,2.86-.26,5.72-.53,8.58-.77,1.22-.1,1.29,0,1.69,1.17Q80,43.39,86.61,63.83L99.24,103c.09.31.17.62.3,1.05L26.86,97.47l13-27.86L25,69.21A2.17,2.17,0,0,1,25.4,68q2.49-5.57,5-11.13l14.1-31.34c.07-.16.17-.32.22-.49m-.86-5.37c-.27,1.33-.44,1.51-1.49,1.59l-1.6.14c0-.07,0-.14,0-.21l3.15-1.52M11,73.88l-.13-.13c.11-.27.22-.54.34-.81q10.34-23,20.7-46c.12-.28.26-.55.39-.82a1.51,1.51,0,0,1,1.26-.86l7.87-.69a2,2,0,0,1,.37.08c-.14.35-.26.66-.4,1L28,55.39c-1.81,4-3.63,8.07-5.41,12.11A2.87,2.87,0,0,1,21.13,69c-3.16,1.49-6.31,3-9.47,4.52l-.71.31m2.92,3.24c-.25,0-.51,0-.95-.09a4.77,4.77,0,0,1,.59-.4c2.86-1.37,5.72-2.75,8.6-4.09a3.84,3.84,0,0,1,1.61-.37c2.13,0,4.27.12,6.41.2.22,0,.45.07.82.12-.32.19-.51.32-.71.42-2.84,1.36-5.68,2.72-8.52,4.05a3,3,0,0,1-1.26.3c-2.2,0-4.39-.08-6.59-.14M12.9,102c.17-.43.26-.67.37-.9q4.62-9.91,9.23-19.82a2.8,2.8,0,0,1,1.44-1.47c3.09-1.45,6.15-2.93,9.23-4.41.26-.12.52-.22.92-.38-.17.43-.27.7-.4,1q-4.55,9.79-9.08,19.59A3.07,3.07,0,0,1,23,97.23c-3.14,1.48-6.26,3-9.38,4.49l-.77.33m89.57,11.43-88.18-8a7.25,7.25,0,0,1,.6-.42c3.07-1.47,6.16-2.93,9.23-4.41a3.11,3.11,0,0,1,1.72-.27l6.73.62,8.48.83,10.32,1,8.22.8,10.4,1,8.31.79,10.58,1,8.22.79,3,.31a.82.82,0,0,1,.81.56c.54,1.68,1.09,3.36,1.62,5a1.35,1.35,0,0,1,0,.29m4.46.54c-.65-2-1.27-3.9-2-6l11.61,1.11,0,.23L106.93,114m9.48-8.42-11.46-1c-1.13-.1-1.13-.09-1.48-1.16Q90.27,62.76,77.09,22.12c-.1-.31-.19-.61-.31-1l11.47-5.48,29,89.94c-.34,0-.58,0-.82,0" transform="translate(-5.17 -10.61)"/><path class="cls-1" d="M52.65,47.33a8.34,8.34,0,0,0,0,16.67" transform="translate(-5.17 -10.61)"/><path class="cls-1" d="M52.65,64a8.34,8.34,0,0,0,0-16.67" transform="translate(-5.17 -10.61)"/></svg>
+                        <h3 class="relative text-black text-xl font-bold hidden sm:block
+                        after:transition-all after:text-transparent after:bg-black
+                        after:absolute after:content-['.'] after:m-auto after:bottom-0 after:left-0 after:right-0 after:h-px after:w-[0%]
+                        hover:after:w-[100%] hover:after:ease-in-out hover:after:duration-1000">Hackathon Junior Taiwan</h3>
+                        <!-- <img class="block lg:hidden h-8 w-auto" src="" alt="Workflow">
+                        <img class="hidden lg:block h-8 w-auto" src="" alt="Workflow"> -->
+                    </div>
+                    <div class="hidden sm:block sm:ml-6">
+                        <div class="flex items-center space-x-4">
+                            <!-- Current: "bg-gray-900 text-black", Default: "text-black hover:bg-gray-400 hover:text-black" -->
+                            <a href="#description" class="relative text-base px-4 py-2 rounded-full
+                        after:transition-all after:text-transparent after:bg-black
+                        after:absolute after:content-['.'] after:m-auto after:bottom-0 after:left-0 after:right-0 after:h-px after:w-[0%]
+                        hover:after:w-[40%] hover:after:ease-in-out hover:after:duration-1000" aria-current="page">關於我們</a>
+
+                            <a href="#theme" class="relative text-base px-3 py-2 rounded-full
+                        after:transition-all after:text-transparent after:bg-black
+                        after:absolute after:content-['.'] after:m-auto after:bottom-0 after:left-0 after:right-0 after:h-px after:w-[0%]
+                        hover:after:w-[40%] hover:after:ease-in-out hover:after:duration-1000">主題</a>
+
+                            <a href="#schedule" class="relative text-base px-3 py-2 rounded-full
+                        after:transition-all after:text-transparent after:bg-black
+                        after:absolute after:content-['.'] after:m-auto after:bottom-0 after:left-0 after:right-0 after:h-px after:w-[0%]
+                        hover:after:w-[40%] hover:after:ease-in-out hover:after:duration-1000">活動日程</a>
+
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWi_a-1jM93gHQHaiOKX8rkouyLofGCm0U1MZ4LXVLYTSVdA/closedform" class="relative text-black border-2 text-base px-5 hover:bg-black hover:text-gray-100 py-2 rounded-full ring-1 ring-inset ring-black font-medium cursor-pointer"><span class="hidden sm:inline">立即</span>報名</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="hidden sm:hidden p-2 " id="mobileMenu">
+
+            <div class="px-2 pt-2 pb-3 space-y-2">
+                <!-- Current: "bg-gray-900 text-black", Default: "text-black hover:bg-gray-400 hover:text-black" -->
+                <a href="#description" class="text-black hover:bg-gray-400 block px-3 py-2 rounded-lg text-base font-medium" aria-current="page">關於我們</a>
+
+                <a href="#theme" class="text-black hover:bg-gray-400 hover:text-black block px-3 py-2 rounded-lg text-base font-medium">主題</a>
+
+                <a href="#schedule" class="text-black hover:bg-gray-400 hover:text-black block px-3 py-2 rounded-lg text-base font-medium">活動日程</a>
+
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWi_a-1jM93gHQHaiOKX8rkouyLofGCm0U1MZ4LXVLYTSVdA/closedform" class="text-black hover:bg-gray-400 hover:text-black block px-3 py-2 border-2 rounded-full ring-inset ring-1 ring-black text-base text-center font-medium">立即報名。</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Notifcation, Opens only upon first visit within the day-->
+    <div id="bannerNotification" class="bg-teal-600">
+        <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between flex-wrap">
+                <div class="w-0 flex-1 flex items-center">
+                    <span class="flex p-2 rounded-lg bg-teal-800">
+                <!-- Heroicon name: outline/speakerphone -->
+                <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
+                </svg>
+              </span>
+                    <p class="ml-3 font-medium text-white truncate">
+                        <span class="md:hidden"> 檢視今年比賽的變動總覽 </span>
+                        <span class="hidden md:inline"> 過去的參賽者! 我們今年比賽有微變動。 </span>
+                    </p>
+                </div>
+                <div class="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
+                    <a href="#featured" class="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-teal-600 bg-white hover:bg-teal-50"> 檢視變更 </a>
+                </div>
+                <div class="order-2 flex-shrink-0 sm:order-3 sm:ml-3">
+                    <button id="notificationToggle" type="button" class="-mr-1 flex p-2 rounded-md hover:bg-teal-500 focus:outline-none focus:ring-2 focus:ring-white sm:-mr-2">
+                <span class="sr-only">知道了。</span>
+                <!-- Heroicon name: outline/x -->
+                <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Index Images-->
+    <!-- <div class="bg-[url('./img/index.png')] bg-no-repeat bg-70% sm:bg-contain md:bg-90% bg-right md:bg-center h-400">
+    </div>
+    <div class="bg-[url('./img/about-1.png')] bg-no-repeat bg-contain md:bg-cover bg-center h-400">
+    </div> -->
+    <main class="">
+        <div class="bg-transparent mt-4 mx-auto max-w-7xl px-4 py-[3rem] sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-20 z-10">
+            <div class="sm:text-center lg:text-left">
+                <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+                    <img class="w-56 mb-10 hidden lg:block" src="./dist/logo.svg">
+                    <div class="block lg:text-gray-100 font-extrabold">第八屆</div>
+                    <!-- <div class="block text-teal-600 lg:text-teal-500 font-extrabold">台灣青年黑客松</div> -->
+                    <div class="block text-teal-600 lg:text-gray-50 font-extrabold">台灣青年黑客松</div>
+                </h1>
+                <p class="mt-3 text-base text-gray-500 lg:text-gray-400 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                    全台最大的高中黑客松，就在Hackathon Jr.
+                </p>
+                <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                    <div class="rounded-md shadow">
+                        <a href="#description" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-teal-700 lg:bg-teal-500 hover:bg-teal-700 md:py-4 md:text-lg md:px-10"> 開始探索 </a>
+                    </div>
+                    <div class="mt-3 sm:mt-0 sm:ml-3">
+                        <a href="https://www2.mingdao.edu.tw/hackathon/7th/" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-teal-75 bg-gray-200 hover:bg-gray-300 md:py-4 md:text-lg md:px-10"> 歷屆官網 </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Parallax Scrolled Image, but cancels when screen-size is small-->
+
+        <div class="hidden lg:absolute lg:inset-0 lg:flex justify-center flex-col -z-20 ">
+            <img id="coverAbsolute" class="object-cover h-[100vh]" src="./dist/img/heroMain.png">
+            <a href="#description" class="flex justify-center">
+                <svg class="relative w-10 justify-center bottom-20 animate-bounce fill-white" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;"
+                    xml:space="preserve">
+        <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+          c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+          s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"/>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+      </svg>
+            </a>
+            <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+        </div>
+
+        <div class="lg:hidden lg:top-0 flex justify-center flex-col -z-20">
+            <img id="coverRelative" class="h-64 mt-10 object-cover bg-cover object-right sm:h-72 md:h-96 lg:w-full lg:h-1/2 lg:mt-20" src="./dist/img/heroMain.png" alt="">
+        </div>
+
+
+
+        <div id="description" class="grid place-items-center w-screen pb-32 lg:pb-12 xl:mt-[3rem] 2xl:mt-[30rem]">
+
+            <img src="dist\img\browserTab.png" class="object-center w-300 md:w-400 mt-[10rem] lg:mt-[12rem] shadow-lg rounded-[2.3rem] shadow-teal-500">
+            <div class="absolute -mt-[10rem] lg:mt-[5rem]">
+                <span id="typewriteDesc" class="typewriteDesc"><h2 class="relative md:-top-[2rem] lg:-top-[10rem] text-4xl sm:text-6xl md:text-8xl lg:text-8xl text-teal-500 font-extrabold text-shadow-xl">何謂黑客松？</h2></span>
+            </div>
+            <div class="hidden md:absolute md:block mt-[10rem] lg:mt-[2rem] text-center">
+                <p class="lg:mt-[100px] text-lg text-gray-500 px-10 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 lg:max-w-4xl">
+                    黑客松，顧名思義「黑客的馬拉松」，Hackathon，是「程式設計」最具代表性的活動之一。會在三天兩夜的比賽裡，依活動主題完成挑戰。與隊友進行程式的激盪，完成屬於你們獨家作品吧！
+                </p>
+                <p class="mt-3 text-lg text-gray-500 px-10 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 lg:max-w-4xl ">
+
+                </p>
+            </div>
+            <div class="grid place-items-center w-screen mt-10 sm:mt-4 relative md:hidden">
+                <p class="lg:mt-[100px] text-lg text-gray-500 px-10 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 lg:max-w-4xl">
+                    黑客松，顧名思義「黑客的馬拉松」，Hackathon，就是「程式設計」最具代表性的活動之一。 參賽者會在三天兩夜的比賽裡，依活動主題完成挑戰。
+                </p>
+                <p class="mt-3 text-lg text-gray-500 px-10 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 lg:max-w-4xl">
+                    與隊友進行程式的激盪，完成屬於你們獨家作品吧！
+                </p>
+            </div>
+            <div class="hidden relative grid-cols-3 justify-items-center gap-[1rem] sm:gap-[6.5rem] sm:grid sm:-top-[24rem] md:gap-[10rem] lg:gap-[12rem] md:-top-[4.6rem] lg:-top-[21rem] right-2 text-teal-700">
+                <p class="sm:text-xl sm:mt-2 lg:mt-0 lg:text-3xl font-bold ">程式設計</p>
+                <p class="sm:text-xl sm:mt-2 lg:mt-0 lg:text-3xl font-bold ">團隊合作</p>
+                <p class="sm:text-xl sm:mt-2 lg:mt-0 lg:text-3xl font-bold ">創意</p>
+            </div>
+        </div>
+
+        <!-- <div id="mediaIcons" class="flex flex-row flex-1 items-center justify-center right-10 gap-5 bg-gray-50 pb-40 overflow-scroll-hidden">
+        <img class="media-icon w-36 sm:w-64 rounded-lg shadow-md" src="src\img\cloud1.png">
+        <img class="media-icon w-full rounded-lg" src="dist/img/theme1.png">
+        <img class="media-icon w-36 sm:w-64 rounded-lg shadow-md" src="src\img\cloud1.png">
+    </div> -->
+
+        <section>
+            <div class="px-4 py-12 flex flex-row mx-auto sm:px-6 md:px-12 lg:px-24 lg:py-24 justify-center items-center">
+                <div class="flex flex-row flex-wrap max-w-7xl flex-grow mx-auto gap-10 justify-center items-center">
+                    <div class="w-full md:w-2/3 lg:max-w-xl lg:w-2/3 rounded-xl">
+                        <div>
+                            <div class="relative w-full">
+                                <div class="
+                absolute
+                top-0
+                rounded-full
+                bg-cyan-300
+                -left-4
+                w-72
+                h-72
+                mix-blend-multiply
+                filter
+                blur-xl
+                opacity-50
+                animate-blob
+              "></div>
+                                <div class="
+                absolute
+                rounded-full
+                bg-teal-300
+                -bottom-24
+                right-20
+                w-72
+                h-72
+                mix-blend-multiply
+                filter
+                blur-xl
+                opacity-50
+                animate-blob
+                animation-delay-4000
+              "></div>
+                                <div class="">
+                                    <img class="object-cover object-center mx-auto rounded-lg w-200 md:w-full" alt="hero" src="./dist/img/prizes-side-image.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="
+          flex flex-col
+          mt-12
+          mb-16
+          lg:flex-grow lg:w-1/2 lg:pl-6
+          xl:pl-24
+          md:mb-0
+          xl:mt-0
+        ">
+                        <span class="mb-8 text-base font-bold tracking-widest text-teal-600 uppercase"> 富有黑客精神的黑客松 </span>
+                        <h1 id="featured" class="
+            mb-8
+            text-4xl
+            font-bold
+            leading-none
+            tracking-tighter
+            text-neutral-600
+            md:text-7xl
+            lg:text-7xl
+          "> 本屆特色</h1>
+                        <p class="mb-8 text-lg leading-relaxed text-left text-gray-500"> 提供學員線上課程，並將課程指定技術加入評分標準。 </p>
+                        <!-- <p class="mb-8 text-lg leading-relaxed text-left text-teal-600 font-bold"> 讓學員不只是參賽，同時也在學習。 </p> -->
+                        <div class="flex-col mt-0 lg:mt-6 max-w-7xl sm:flex">
+                            <div class="prose prose-md">
+                                <ul>
+                                    <li class="text-gray-500 text-lg">課程提供：</li>
+                                    <li class="text-gray-500 text-lg">SCSS- CSS預處理器</li>
+                                    <li class="text-gray-500 text-lg">TailwindCSS- CSS框架</li>
+                                    <li class="text-gray-500 text-lg">VueJS- 網頁前端框架</li>
+                                    <li class="text-gray-500 text-lg">SEO- 搜尋引擎最佳化</li>
+                                    <li class="text-gray-500 text-lg">GSAP- JS動畫套件</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="mb-8 text-lg leading-relaxed text-left text-teal-600 font-bold mt-4"> *作品中使用另行加分 </p>
+                    </div>
+                </div>
+
+        </section>
+        <div class="gird grid-cols-1 flex justify-center mt-16 sm:mt-4">
+            <h1 class="sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-neutral-600">
+                【教學影片尚未上線，敬請期待】
+            </h1>
+        </div>
+
+        <aside>
+            <div id="theme" class=" px-4 py-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8 mt-20 pb-[20rem] ">
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 ">
+                    <div class="p-8 text-center text-white sm:col-span-2 sm:p-16 lg:py-12 ">
+                        <div>
+                            <img class="w-full rounded-lg mb-20 relative " src="dist/img/theme1.png ">
+                            <div class="relative ">
+                                <h2 class=" block text-center z-10 md:top-[3rem] xl:left-[5.8rem] lg:left-[1rem] tracking-tighttheme text-5xl sm:text-7xl lg:text-6xl xl:text-8xl font-extrabold text-teal-900 whitespace-nowrap bg-useful-teal rounded-full
+            py-10 shadow-lg shadow-teal-400 ">高齡化社會</h2>
+                            </div>
+
+
+                            <!-- <p class="mt-[30rem] text-gray-500 "> Some random text.</p>
+              
+                    <dl class="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:gap-y-16 lg:gap-x-8 ">
+                
+              
+                      <div class="border-t border-gray-200 pt-4 ">
+                        <dt class="font-medium text-gray-900 text-xl ">🏹 主題特色 </dt>
+                        <dd class="mt-2 text-sm text-gray-500 ">6.25&quot; x 3.55&quot; x 1.15&quot;</dd>
+                      </div>
+              
+                    </dl> -->
+                        </div>
+                    </div>
+
+                    <div class="relative h-64 lg:order-first lg:h-full ">
+                        <img src="./dist/img/bookcase1.png" alt="Bookshelf " class="absolute inset-0 object-contain w-auto h-200 " />
+                    </div>
+
+                    <div class="relative h-64 lg:h-full ">
+                        <img src="./dist/img/old.png" alt="Old Man in a wheelchair " class="absolute inset-0 object-contain w-auto h-200 " />
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+
+        <!-- <section class="flex flex-row flex-wrap justify-end items-center bg-origin-content " data-parallax="scroll " data-image-src="./dist/img/unsplash/max-harlynking-DGP-759-Ukk-unsplash.jpg " data-speed="0.6 ">
+        <div id="theme " class="bg-gray-50 p-20 sm:py-24 sm:px-44 border border-white border-8 ">
+            <div class="py-8 text-base leading-7 space-y-6 mt-10 sm:mt-20 ">
+                <div class="theme ">
+                    <span class="theme bg-gradient-to-r from-teal-500 to-green-500 text-4xl sm:text-5xl md:text-7xl xl:text-9xl font-bold text-transparent bg-clip-text whitespace-nowrap ">雃社會</span>
+                </div>
+            </div>
+            <div class="py-8 text-base leading-7 space-y-6 text-gray-900 ">
+                <div class="theme h-14 ">
+                    <span class="bg-gradient-to-r from-cyan-500 to-green-500 text-2xl sm:text-4xl font-bold text-transparent bg-clip-text ">本屆特色</span>
+                </div>
+                <ul class="theme space-y-4 ">
+                    <li class="flex items-center ">
+                        🙌 
+                        <p class="ml-4 text-xl ">加入指定技術進入<code class="font-extrabold text-gray-900 ">評分標準</code></p>
+                    </li>
+                    <li class="flex items-center ">
+                        🙌 
+                        <p class="ml-4 text-xl "><code class="text-xl font-extrabold text-gray-900 ">提供課程，</code>讓學員不只是來比賽，也可以學到東西。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="pt-8 text-base leading-7 font-semibold ">
+                <div class="theme h-14 ">
+                    <span class="bg-gradient-to-r from-cyan-500 to-green-500 text-2xl sm:text-4xl font-bold text-transparent bg-clip-text ">比賽辦法：</span>
+                </div>
+                <div class="theme h-14 text-center mb-20 sm:mb-100 ">
+                    <span class="ml-5 bg-gradient-to-r from-green-500 to-blue-500 text-2xl sm:text-4xl font-bold text-transparent bg-clip-text ">網頁製作。輕鬆簡單。</span>
+                </div>
+                <!-- <section id="features " class="theme feature-section pt-120 ">
+              <div class="container ">
+                <div class="flex flex-row justify-center text-center px-3 2xl:px-10 py-8 ">
+                  <div class="md:w-4/12 lg:w-4/12 flex flex-col item ">
+                      <div class="feature-icon w-10 ">
+                        <svg xmlns="http://www.w3.org/2000/svg " viewBox="0 0 512 512 "><path d="M331.8 224.1c28.29 0 54.88 10.99 74.86 30.97l19.59 19.59c40.01-17.74 71.25-53.3 81.62-96.65c5.725-23.92 5.34-47.08 .2148-68.4c-2.613-10.88-16.43-14.51-24.34-6.604l-68.9
+            68.9h-75.6V97.2l68.9-68.9c7.912-7.912 4.275-21.73-6.604-24.34c-21.32-5.125-44.48-5.51-68.4 .2148c-55.3 13.23-98.39 60.22-107.2 116.4C224.5 128.9 224.2 137 224.3 145l82.78 82.86C315.2 225.1 323.5 224.1 331.8 224.1zM384 278.6c-23.16-23.16-57.57-27.57-85.39-13.9L191.1
+            158L191.1 95.99l-127.1-95.99L0 63.1l96 127.1l62.04 .0077l106.7 106.6c-13.67 27.82-9.251 62.23 13.91 85.39l117 117.1c14.62 14.5 38.21 14.5 52.71-.0016l52.75-52.75c14.5-14.5 14.5-38.08-.0016-52.71L384 278.6zM227.9 307L168.7 247.9l-148.9 148.9c-26.37
+            26.37-26.37 69.08 0 95.45C32.96 505.4 50.21 512 67.5 512s34.54-6.592 47.72-19.78l119.1-119.1C225.5 352.3 222.6 329.4 227.9 307zM64 472c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24S88 434.7 88 448C88 461.3 77.25 472 64 472z "/></svg>
+                        <i class="fa-solid fa-list-check "></i>
+                      </div>
+                      <div class="content ">
+                        <h3 class="mb-5 ">工程組</h3>
+                        <p class="text-lg ">Lorem ipsum dolor sit amet</p>
+                      </div>
+                  </div>
+                  <div class=" md:w-4/12 lg:w-4/12 ">
+                    <div class="text-center px-3 2xl:px-10 py-8 ">
+                      <div class="feature-icon w-10 ">
+                        <svg xmlns="http://www.w3.org/2000/svg " viewBox="0 0 512 512 "><path d="M362.7 19.32C387.7-5.678 428.3-5.678 453.3 19.32L492.7 58.75C517.7 83.74 517.7 124.3 492.7 149.3L444.3 197.7L314.3 67.72L362.7 19.32zM421.7 220.3L188.5
+            453.4C178.1 463.8 165.2 471.5 151.1 475.6L30.77 511C22.35 513.5 13.24 511.2 7.03 504.1C.8198 498.8-1.502 489.7 .976 481.2L36.37 360.9C40.53 346.8 48.16 333.9 58.57 323.5L291.7 90.34L421.7 220.3z "/></svg>
+                      </div>
+                      <div class="content ">
+                        <h3 class="mb-5 ">設計組</h3>
+                        <p class="text-lg ">Lorem ipsum dolor sit amet</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section> 
+          </div>
+        </div>
+    </section> -->
+
+
+
+
+        <div class="relative lg:inset-0 lg:flex justify-center flex-col ">
+            <img id="prizeAbsolute " class="object-cover h-[50vh] -z-10 " src="./dist/img/heroMain.png ">
+            <div class="absolute container top-10 bg-transparent mt-4 mx-auto max-w-7xl px-4 py-[4rem] sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 z-10 ">
+                <div class="sm:text-center lg:text-left ">
+                    <div class="sm:text-center lg:text-left ">
+                        <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl xl:text-9xl ">
+                            <span class="block xl:inline font-extrabold whitespace-nowrap ">8th總獎金，$75k</span>
+                        </h1>
+                        <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 ">
+                            <div class="text-gray-500 text-base md:text-xl ">歷屆最高獎金，等你來角逐</div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- <section class="sm:hidden container bg-transparent grid place-items-center p-10 max-w-2xl md:max-w-3xl lg:max-w-4xl mb-20 z-10 cards ">
+            <div class="sm:text-center lg:text-left ">
+                <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-5xl xl:text-8xl ">
+                    <span class="block xl:inline font-extrabold ">總獎金，$75k。</span>
+                </h1>
+                <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 ">
+                    <div class="text-gray-500 text-base md:text-xl ">歷屆最高獎金等你來角逐。</div>
+                </p>
+            </div>
+        </section> -->
+        </div>
+
+
+
+
+        <section>
+            <div id="prize" class=" relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl md:mt-20 ">
+                <div class="grid w-full grid-cols-1 gap-6 mx-auto md:grid-cols-2 ">
+
+                    <div class="p-6 max-w-md ">
+                        <img class=" object-contain bg-teal-800 py-10 px-10 object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl " src="./dist/img/design1.png" alt="Front End Icon ">
+                        <h2 class=" mb-8 text-sm font-semibold tracking-widest text-teal-600 uppercase "> UI/UX 專精 </h2>
+                        <h1 class=" mx-auto mb-8 text-3xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-4xl xl:text-5xl "> 設計組 </h1>
+                        <p class="mx-auto text-lg font-medium leading-relaxed text-gray-500 "> 給專精於設計使用者體驗UX、使用者介面UI的你，設計出你的網站風格。 </p>
+                        <div class="mt-4 ">
+                            <button class=" inline-flex items-center mt-4 font-semibold text-teal-600 lg:mb-0 hover:text-neutral-600 " title="read more " type="button " data-modal-toggle="frontendModal "> 瞭解更多 >> </a>
+              </div>
+            </div>
+            <div class="p-6 max-w-md ">
+              <img class=" object-contain py-10 px-10 bg-teal-800 object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl bg " src="./dist/img/advanced.png " alt="Full Stack Icon ">
+              <h2 class=" mb-8 text-sm font-semibold tracking-widest text-teal-600 uppercase "> 前端 ＋ 後端 全方位 </h2>
+              <h1 class=" mx-auto mb-8 text-3xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-4xl xl:text-5xl "> 工程組 </h1>
+              <p class="mx-auto text-lg font-medium leading-relaxed text-gray-500 "> 發揮科技長才，給專精於CODE 架設網頁的你。 </p>
+              <div class="mt-4 ">
+                <button class=" inline-flex items-center mt-4 font-semibold text-teal-600 lg:mb-0 hover:text-neutral-600 " title="read more " type="button " data-modal-toggle="fullstackModal "> 瞭解更多 >> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    
+    
+    <!-- Main modal -->
+    <div id="frontendModal " aria-hidden="true " class="hidden overflow-y-auto overflow-x-hidden fixed right-0 left-0 top-4 z-50 justify-center items-center h-modal md:h-full md:inset-0 ">
+        <div class="relative px-4 w-full max-w-2xl h-full md:h-auto ">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow ">
+                <!-- Modal header -->
+                <div class="flex justify-between items-start p-5 rounded-t border-b -600 ">
+                    <h3 class="text-xl font-semibold text-gray-900 lg:text-2xl ">
+                        設計組獎金列表
+                    </h3>
+                    <button type="button " class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center ay-600 white " data-modal-toggle="frontendModal ">
+                        <svg class="w-5 h-5 " fill="currentColor " viewBox="0 0 20 20 " xmlns="http://www.w3.org/2000/svg "><path fill-rule="evenodd " d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1
+            0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z " clip-rule="evenodd "></path></svg>  
+                    </button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="p-6 space-y-6 ">
+                            <div class="flex flex-row justify-center ">
+                                <div class="bg-gray-50 shadow overflow-hidden sm:rounded-lg ">
+                                    <div class="px-4 py-5 sm:px-6 ">
+                                        <h3 class="text-lg leading-6 font-medium text-gray-900 ">設計組獎金列表</h3>
+                                        <p class="mt-1 max-w-2xl text-sm text-gray-500 ">所有得獎的前提為晉級決賽。</p>
+                                    </div>
+                                    <div class="border-t border-gray-200 ">
+                                        <dl>
+                                            <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 ">
+                                                <dt class="text-sm font-medium text-gray-500 ">第一名</dt>
+                                                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 ">
+                                                    12000元
+                                                </dd>
+                                            </div>
+                                            <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 ">
+                                                <dt class="text-sm font-medium text-gray-500 ">第二名</dt>
+                                                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 ">9000元</dd>
+                                            </div>
+                                            <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 ">
+                                                <dt class="text-sm font-medium text-gray-500 ">第三名</dt>
+                                                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 ">6000元</dd>
+                                            </div>
+                                            <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 ">
+                                                <dt class="text-sm font-medium text-gray-500 ">優勝</dt>
+                                                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 ">1000元</dd>
+                                            </div>
+                                            <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 ">
+                                                <dt class="text-sm font-medium text-gray-500 ">佳作（若干人）</dt>
+                                                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 ">頒發獎狀，無獎金</dd>
+                                            </div>
+                                            <!-- <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 ">
+                                                <dt class="text-sm font-medium text-gray-500 ">範例企劃書</dt>
+                                                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 ">
+                                                    <ul role="list " class="border border-gray-200 rounded-md divide-y divide-gray-200 ">
+                                                        <li class="pl-3 pr-4 py-3 flex items-center justify-between text-sm ">
+                                                            <div class="w-0 flex-1 flex items-center ">
+                                                               
+                                                                <svg class="flex-shrink-0 h-5 w-5 text-gray-400 " xmlns="http://www.w3.org/2000/svg " viewBox="0 0 20 20 " fill="currentColor " aria-hidden="true ">
+                                          <path fill-rule="evenodd " d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z " clip-rule="evenodd " />
+                                        </svg>
+                                                                <span class="ml-2 flex-1 w-0 truncate "> software-engineering-example-proposal.pdf </span>
+                                                            </div>
+                                                            <div class="ml-4 flex-shrink-0 ">
+                                                                <a href="# " class="font-medium text-teal-600 hover:text-teal-500 " download="範例企劃書 "> Download </a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </dd>
+                                            </div> -->
+
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 -600 ">
+                            <button data-modal-toggle="frontendModal " type="button " class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900
+            focus:z-10 -500 white ay-600 ">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="fullstackModal " aria-hidden="true " class="hidden overflow-y-auto overflow-x-hidden fixed right-0 left-0 top-4 z-50 justify-center items-center h-modal md:h-full md:inset-0 ">
+                <div class="relative px-4 w-full max-w-2xl h-full md:h-auto ">
+                    <!-- Modal content -->
+                    <div class="relative bg-white rounded-lg shadow ">
+                        <!-- Modal header -->
+                        <div class="flex justify-between items-start p-5 rounded-t border-b -600 ">
+                            <h3 class="text-xl font-semibold text-gray-900 lg:text-2xl ">
+                                工程組獎金列表
+                            </h3>
+                            <button type="button " class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center ay-600 white " data-modal-toggle="fullstackModal ">
+                      <svg class="w-5 h-5 " fill="currentColor " viewBox="0 0 20 20 " xmlns="http://www.w3.org/2000/svg "><path fill-rule="evenodd " d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0
+            01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z " clip-rule="evenodd "></path></svg>  
+                  </button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="p-6 space-y-6 ">
+
+                            <div class="flex flex-row justify-center ">
+                                <div class="bg-gray-50 shadow overflow-hidden sm:rounded-lg ">
+                                    <div class="px-4 py-5 sm:px-6 ">
+                                        <h3 class="text-lg leading-6 font-medium text-gray-900 ">工程組獎金列表</h3>
+                                        <p class="mt-1 max-w-2xl text-sm text-gray-500 ">所有得獎的前提為晉級決賽。</p>
+                                    </div>
+                                    <div class="border-t border-gray-200 ">
+                                        <dl>
+                                            <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 ">
+                                                <dt class="text-sm font-medium text-gray-500 ">第一名</dt>
+                                                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 ">
+                                                    18000元
+                                                </dd>
+                                            </div>
+                                            <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 ">
+                                                <dt class="text-sm font-medium text-gray-500 ">第二名</dt>
+                                                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 ">15000元</dd>
+                                            </div>
+                                            <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 ">
+                                                <dt class="text-sm font-medium text-gray-500 ">第三名</dt>
+                                                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 ">9000元</dd>
+                                            </div>
+                                            <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 ">
+                                                <dt class="text-sm font-medium text-gray-500 ">優勝</dt>
+                                                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 ">1000元</dd>
+                                            </div>
+
+                                            <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 ">
+                                                <dt class="text-sm font-medium text-gray-500 ">佳作（若干人）</dt>
+                                                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 ">頒發獎狀，無獎金</dd>
+                                            </div>
+                                            <!-- <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 ">
+                                                <dt class="text-sm font-medium text-gray-500 ">範例企劃書</dt>
+                                                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 ">
+                                                    <ul role="list " class="border border-gray-200 rounded-md divide-y divide-gray-200 ">
+                                                        <li class="pl-3 pr-4 py-3 flex items-center justify-between text-sm ">
+                                                            <div class="w-0 flex-1 flex items-center ">
+                                                               
+                                                                <svg class="flex-shrink-0 h-5 w-5 text-gray-400 " xmlns="http://www.w3.org/2000/svg " viewBox="0 0 20 20 " fill="currentColor " aria-hidden="true ">
+                                          <path fill-rule="evenodd " d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z " clip-rule="evenodd " />
+                                        </svg>
+                                                                <span class="ml-2 flex-1 w-0 truncate "> software-engineering-example-proposal.pdf </span>
+                                                            </div>
+                                                            <div class="ml-4 flex-shrink-0 ">
+                                                                <a href="# " class="font-medium text-teal-600 hover:text-teal-500 " download="範例企劃書 "> Download </a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </dd>
+                                            </div> -->
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 -600 ">
+                            <button data-modal-toggle="fullstackModal " type="button " class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900
+            focus:z-10 -500 white ay-600 ">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="prize " class="relative md:mt-10 lg:mt-20 ">
+            <!-- <section id="prize " class="my-20 mx-96 ">
+    
+            <box id="engrinner ">
+                <p class="mt-10 text-teal-800 text-4xl ">工程組</p>
+                <div class="flex flex-wrap pt-6 text-2xl text-teal-800 ml-4 ">
+                    <div class="mt-5 mx-4 px-10 py-8 bg-white w-48 h-32 rounded-2xl "><p>第一名</p><p>18000元</p></div>
+                    <div class="mt-5 mx-4 px-10 py-8 bg-white w-48 h-32 rounded-2xl "><p>第二名</p><p>15000元</p></div>
+                    <div class="mt-5 mx-4 px-10 py-8 bg-white w-48 h-32 rounded-2xl "><p>第三名</p><p>9000元</p></div>
+                    <div class="mt-5 mx-4 px-10 py-8 bg-white w-48 h-32 rounded-2xl "><p>優勝</p><p>1000元</p></div>
+                </div>
+            </box>
+        
+            <box id="design ">
+                <p class="mt-10 text-teal-800 text-4xl ">設計組</p>
+                <div class="flex flex-wrap pt-6 text-2xl text-teal-800 ml-4 ">
+                    <div class="mt-5 mx-4 px-10 py-8 bg-white w-48 h-32 rounded-2xl "><p>第一名</p><p>12000元</p></div>
+                    <div class="mt-5 mx-4 px-10 py-8 bg-white w-48 h-32 rounded-2xl "><p>第二名</p><p>9000元</p></div>
+                    <div class="mt-5 mx-4 px-10 py-8 bg-white w-48 h-32 rounded-2xl "><p>第三名</p><p>6000元</p></div>
+                    <div class="mt-5 mx-4 px-10 py-8 bg-white w-48 h-32 rounded-2xl "><p>優勝</p><p>1000元</p></div>
+                </div>
+            </box>
+    
+            <box id="special ">
+                <p class="mt-10 text-teal-800 text-4xl ">特別獎項</p>
+                <div class="pt-6 text-2xl ml-4 ">
+                    <div class="mt-5 mx-4 px-10 py-8 bg-white w-52 h-32 rounded-2xl "><p>最佳人氣獎</p><p> 1000元</p></div>
+                </div>
+            </box>
+        
+            <box id="note " class=" ">
+                <p class="pt-10 text-teal-800 text-xl ">※另有佳作若干名，僅頒發獎狀</p>
+            </box>
+    
+        </section> -->
+
+
+            <section class="container mb-20 hidden ">
+                <div class="flex flex-row justify-center ">
+                    <div class="bg-gray-50 shadow overflow-hidden sm:rounded-lg ">
+                        <div class="px-4 py-5 sm:px-6 ">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900 ">設計組獎金列表</h3>
+                            <p class="mt-1 max-w-2xl text-sm text-gray-500 ">所有得獎的前提為晉級決賽。</p>
+                        </div>
+                        <div class="border-t border-gray-200 ">
+                            <dl>
+                                <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 ">
+                                    <dt class="text-sm font-medium text-gray-500 ">第一名</dt>
+                                    <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 ">
+                                        12000元
+                                    </dd>
+                                </div>
+                                <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 ">
+                                    <dt class="text-sm font-medium text-gray-500 ">第二名</dt>
+                                    <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 ">9000元</dd>
+                                </div>
+                                <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 ">
+                                    <dt class="text-sm font-medium text-gray-500 ">第三名</dt>
+                                    <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 ">6000元</dd>
+                                </div>
+                                <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 ">
+                                    <dt class="text-sm font-medium text-gray-500 ">優勝（若干人）</dt>
+                                    <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 ">1000元</dd>
+                                </div>
+                                <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 ">
+                                    <dt class="text-sm font-medium text-gray-500 ">晉級決賽資格</dt>
+                                    <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 ">Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt cillum culpa consequat. Excepteur qui ipsum aliquip consequat sint. Sit id mollit nulla mollit nostrud in ea officia proident. Irure nostrud pariatur
+                                        mollit ad adipisicing reprehenderit deserunt qui eu.</dd>
+                                </div>
+                                <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 ">
+                                    <dt class="text-sm font-medium text-gray-500 ">範例企劃書</dt>
+                                    <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 ">
+                                        <ul role="list " class="border border-gray-200 rounded-md divide-y divide-gray-200 ">
+                                            <li class="pl-3 pr-4 py-3 flex items-center justify-between text-sm ">
+                                                <div class="w-0 flex-1 flex items-center ">
+                                                    <!-- Heroicon name: solid/paper-clip -->
+                                                    <svg class="flex-shrink-0 h-5 w-5 text-gray-400 " xmlns="http://www.w3.org/2000/svg " viewBox="0 0 20 20 " fill="currentColor " aria-hidden="true ">
+                                    <path fill-rule="evenodd " d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z " clip-rule="evenodd " />
+                                  </svg>
+                                                    <span class="ml-2 flex-1 w-0 truncate "> design-example-proposal.pdf </span>
+                                                </div>
+                                                <div class="ml-4 flex-shrink-0 ">
+                                                    <a href="# " class="font-medium text-teal-600 hover:text-teal-500 "> Download </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section id="registration " class="pt-10 ml-80 ">
+
+            <div>
+                <p class="text-3xl text-teal-800 pb-10 ">報名連結:</p>
+            </div>
+    
+            <a href=" " target="_blank ">
+                <img class="w-96 text-center rounded-full shadow hover:shadow-2xl " src="./dist/img/discord.png " alt="discord " id="discord ">
+            </a>
+    
+        </section> -->
+        </section>
+
+        <section>
+            <div class="px-4 py-12 mx-auto 2xl:max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-24 2xl:px-12 ">
+                <div class="flex flex-wrap items-center justify-center mx-auto 2xl:max-w-7xl gap-20 sm:gap-44 ">
+                    <div class="flex flex-col items-center justify-center sm:mb-16 text-left md:mb-0 ">
+                        <img class="w-[10rem] mb-10 hidden md:block " src="./dist/img/lamp.png ">
+                        <span class="mb-8 text-lg font-bold tracking-widest text-teal-600 uppercase "> 評比過程一目瞭然 </span>
+                        <h1 class=" mb-8 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-8xl "> 繳件流程 </h1>
+                        <p class="mb-8 text-md leading-relaxed text-left text-gray-500 "> 初賽繳件及評分細項。 </p>
+                        <div class="mt-0 lg:mt-6 max-w-7xl sm:flex ">
+                            <div class="mt-3 rounded-lg sm:mt-0 sm:ml-3 ">
+                                <button class=" items-center block px-10 py-3.5 text-base font-medium text-center text-teal-600 transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl focus:outline-none focus:ring-2
+            focus:ring-offset-2 focus:ring-gray-500 " type="button " data-modal-toggle="upload-procedure-modal "> 展開繳件全圖 </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-center w-full sm:mt-12 lg:max-w-lg xl:mt-0 ">
+                        <div>
+                            <div class="relative w-full max-w-lg ">
+                                <div class="absolute top-0 rounded-full bg-cyan-300 -left-4 w-72 h-72 mix-blend-multiply filter blur-xl opacity-70 animate-blob "></div>
+                                <div class="absolute rounded-full bg-blue-300 -bottom-24 right-20 w-72 h-72 mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000 "></div>
+                                <div class="relative container bg-gray-50 rounded-lg shadow-2xl py-20 px-10 ">
+                                    <img class="object-contain object-center mx-auto " alt="hero " src="./dist/img/piechart1.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden overflow-y-auto overflow-x-hidden fixed right-0 left-0 top-4 z-50 justify-center items-center md:inset-0 h-modal sm:h-full " id="upload-procedure-modal ">
+                <div class="relative px-4 w-full max-w-7xl h-full md:h-auto ">
+                    <!-- Modal content -->
+                    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700 ">
+                        <!-- Modal header -->
+                        <div class="flex justify-between items-center p-5 rounded-t border-b dark:border-gray-600 ">
+                            <h3 class="text-xl font-medium text-gray-900 dark:text-white ">
+                                繳件全流程
+                            </h3>
+                            <button type="button " class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white " data-modal-toggle="upload-procedure-modal ">
+                                    <svg class="w-5 h-5 " fill="currentColor " viewBox="0 0 20 20 " xmlns="http://www.w3.org/2000/svg "><path fill-rule="evenodd " d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293
+            4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z " clip-rule="evenodd "></path></svg>  
+                                </button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="p-6 space-y-6 ">
+                            <img class="object-contain object-center mx-auto " alt="hero " src="./dist/img/piechart1.png">
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600 ">
+                            <button data-modal-toggle="upload-procedure-modal " type="button " class="text-white bg-teal-700 hover:bg-teal-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700
+            dark:focus:ring-blue-800 ">關閉</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-white bg-gradient-to-r from-teal-300 to-teal-400 container rounded-xl shadow-2xl shadow-teal-400 mt-10 ">
+            <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8 ">
+                <div class="max-w-xl ">
+                    <h2 class="text-4xl font-bold sm:text-6xl ">
+                        評審評分標準
+                    </h2>
+                    <p class="mt-4 sm:text-xl ">
+                        各組作品內容佔比
+                    </p>
+                </div>
+
+                <ul class="grid grid-cols-1 gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-4 ">
+                    <li class="flex flex-col items-center justify-center p-8 shadow-lg rounded-xl bg-useful-teal ">
+                        <p class="text-3xl font-extrabold ">設計組</p>
+                        <p class="mt-1 text-xl font-medium ">較重設計和UI</p>
+                    </li>
+                    <li class="p-8 shadow-xl rounded-xl bg-useful-teal ">
+                        <p class="text-3xl font-extrabold ">30%</p>
+                        <p class="mt-1 text-xl font-medium ">內容（相關性、可行性、完整度、創新）</p>
+                    </li>
+                    <li class="p-8 shadow-xl rounded-xl bg-useful-teal ">
+                        <p class="text-3xl font-extrabold ">20%</p>
+                        <p class="mt-1 text-xl font-medium ">技術（複雜度、功能）</p>
+                    </li>
+                    <li class="p-8 shadow-xl rounded-xl bg-useful-teal ">
+                        <p class="text-3xl font-extrabold ">50%+</p>
+                        <p class="mt-1 text-xl font-medium ">設計（UX、UI）</p>
+                    </li>
+
+                    <li class="flex flex-col items-center justify-center p-8 shadow-xl rounded-xl bg-engineer-teal ">
+                        <p class="text-3xl font-extrabold ">工程組</p>
+                        <p class="mt-1 text-xl font-medium ">較重技術和科技的使用</p>
+                    </li>
+
+                    <li class="p-8 shadow-xl rounded-xl bg-engineer-teal ">
+                        <p class="text-3xl font-extrabold ">30%</p>
+                        <p class="mt-1 text-xl font-medium ">內容（相關性、可行性、完整度、創新）</p>
+                    </li>
+                    <li class="p-8 shadow-xl rounded-xl bg-engineer-teal ">
+                        <p class="text-3xl font-extrabold ">50%</p>
+                        <p class="mt-1 text-xl font-medium ">技術（複雜度、功能）</p>
+                    </li>
+                    <li class="p-8 shadow-xl rounded-xl bg-engineer-teal ">
+                        <p class="text-3xl font-extrabold ">20%+</p>
+                        <p class="mt-1 text-xl font-medium ">設計（UX、UI）</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div id="schedule" class="px-4 py-12 mx-auto max-w-10xl sm:px-6 md:px-12 lg:px-24 lg:py-24 ">
+                <div class="flex flex-wrap items-center mx-auto max-w-7xl ">
+                    <div class="w-full lg:max-w-xl lg:w-1/2 rounded-xl ">
+                        <div>
+                            <div class="relative w-full ">
+                                <div class=" absolute top-0 rounded-full bg-cyan-300 -left-4 w-72 h-72 mix-blend-multiply filter blur-xl opacity-50 animate-blob "></div>
+                                <div class=" absolute rounded-full bg-teal-300 -bottom-24 right-20 w-72 h-72 mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-4000 "></div>
+                                <div class="relative ">
+                                    <div class=" flex flex-row flex-wrap justify-center items-center pb-10 mx-auto my-10 border-b border-gray-200 max-w-10xl sm:flex-row ">
+                                        <div class="bg-gray-50 p-4 rounded-lg shadow-md shadow-gray-400 block pb-10 px-10 ">
+
+                                            <ol class="items-center sm:flex ">
+                                                <li class="relative mb-6 sm:mb-0 ">
+                                                    <div class="flex items-center ">
+                                                        <div class="flex z-10 justify-center items-center w-6 h-6 bg-teal-200 rounded-full ring-0 ring-white sm:ring-8 shrink-0 ">
+                                                            <svg class="w-3 h-3 text-teal-600 " fill="currentColor " viewBox="0 0 20 20 " xmlns="http://www.w3.org/2000/svg "><path fill-rule="evenodd " d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002
+            2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z " clip-rule="evenodd "></path></svg>
+                                                        </div>
+                                                        <div class="hidden sm:flex w-full bg-gray-200 h-0.5 "></div>
+                                                    </div>
+                                                    <div class="mt-3 sm:pr-8 ">
+                                                        <h3 class="text-lg font-semibold text-gray-900 ">報到 & 開幕</h3>
+                                                        <time class="text-base font-normal text-gray-500 ">7/11 9:00~9:45</time>
+                                                    </div>
+                                                </li>
+                                                <li class="relative mb-6 sm:mb-0 ">
+                                                    <div class="flex items-center ">
+                                                        <div class="flex z-10 justify-center items-center w-6 h-6 bg-teal-200 rounded-full ring-0 ring-white sm:ring-8 shrink-0 ">
+                                                            <svg class="w-3 h-3 text-teal-600 " fill="currentColor " viewBox="0 0 20 20 " xmlns="http://www.w3.org/2000/svg "><path fill-rule="evenodd " d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002
+            2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z " clip-rule="evenodd "></path></svg>
+                                                        </div>
+                                                        <div class="hidden sm:flex w-full bg-gray-200 h-0.5 "></div>
+                                                    </div>
+                                                    <div class="mt-3 sm:pr-8 ">
+                                                        <h3 class="text-lg font-semibold text-gray-900 ">題目公布</h3>
+                                                        <time class="text-base font-normal text-gray-500 ">7/11 9:45~10:00</time>
+
+                                                    </div>
+                                                </li>
+                                                <!-- <li class="relative mb-6 sm:mb-0 ">
+                                        <div class="flex items-center ">
+                                            <div class="flex z-10 justify-center items-center w-6 h-6 bg-teal-200 rounded-full ring-0 ring-white sm:ring-8 shrink-0 ">
+                                                <svg class="w-3 h-3 text-teal-600 " fill="currentColor " viewBox="0 0 20 20 " xmlns="http://www.w3.org/2000/svg "><path fill-rule="evenodd " d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2
+            0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z " clip-rule="evenodd "></path></svg>
+                                            </div>
+                                            <div class="hidden sm:flex w-full bg-gray-200 h-0.5 "></div>
+                                        </div>
+                                        <div class="mt-3 sm:pr-8 ">
+                                            <h3 class="text-lg font-semibold text-gray-900 ">10:00~17:30</h3>
+                                            <time class="text-base font-normal text-gray-500 ">自由創作</time>
+                                            <p class="text-base font-normal text-gray-500 ">在這裡還是需要一些字</p>
+                                        </div>
+                                    </li> -->
+                                            </ol>
+                                        </div>
+                                    </div>
+
+                                    <div class=" flex items-center pb-10 mx-auto my-10 border-b border-gray-200 max-w-10xl justify-center flex-row flex-wrap sm:flex-row ">
+                                        <div class="bg-gray-50 p-4 rounded-lg shadow-md shadow-gray-400 pb-10 px-10 ">
+                                            <ol class="items-center sm:flex ">
+                                                <li class="relative mb-6 sm:mb-0 ">
+                                                    <div class="flex items-center ">
+                                                        <div class="flex z-10 justify-center items-center w-6 h-6 bg-teal-200 rounded-full ring-0 ring-white sm:ring-8 shrink-0 ">
+                                                            <svg class="w-3 h-3 text-teal-600 " fill="currentColor " viewBox="0 0 20 20 " xmlns="http://www.w3.org/2000/svg "><path fill-rule="evenodd " d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002
+            2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z " clip-rule="evenodd "></path></svg>
+                                                        </div>
+                                                        <div class="hidden sm:flex w-full bg-gray-200 h-0.5 "></div>
+                                                    </div>
+                                                    <div class="mt-3 sm:pr-8 ">
+                                                        <h3 class="text-lg font-semibold text-gray-900 "> 自由創作 </h3>
+                                                        <time class="text-base font-normal text-gray-500 ">7/11 10:00 ~ 7/13 0:00 </time>
+
+                                                    </div>
+                                                </li>
+
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div class=" flex flex-row flex-wrap items-center justify-center sm:justi pb-10 mx-auto my-10 border-b border-gray-200 max-w-7xl sm:flex-row ">
+                                        <div class="bg-gray-50 p-4 rounded-lg shadow-md shadow-gray-400 pb-10 px-10 ">
+                                            <ol class="items-center sm:flex ">
+                                                <li class="relative mb-6 sm:mb-0 ">
+                                                    <div class="flex items-center ">
+                                                        <div class="flex z-10 justify-center items-center w-6 h-6 bg-teal-200 rounded-full ring-0 ring-white sm:ring-8 shrink-0 ">
+                                                            <svg class="w-3 h-3 text-teal-600 " fill="currentColor " viewBox="0 0 20 20 " xmlns="http://www.w3.org/2000/svg "><path fill-rule="evenodd " d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002
+            2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z " clip-rule="evenodd "></path></svg>
+                                                        </div>
+                                                        <div class="hidden sm:flex w-full bg-gray-200 h-0.5 "></div>
+                                                    </div>
+                                                    <div class="mt-3 sm:pr-8 ">
+                                                        <h3 class="text-lg font-semibold text-gray-900 ">第一輪企劃書投票</h3>
+                                                        <time class="text-base font-normal text-gray-500 ">7/13 13:00 ~ 14:00</time>
+
+                                                    </div>
+                                                </li>
+                                                <li class="relative mb-6 sm:mb-0 ">
+                                                    <div class="flex items-center ">
+                                                        <div class="flex z-10 justify-center items-center w-6 h-6 bg-teal-200 rounded-full ring-0 ring-white sm:ring-8 shrink-0 ">
+                                                            <svg class="w-3 h-3 text-teal-600 " fill="currentColor " viewBox="0 0 20 20 " xmlns="http://www.w3.org/2000/svg "><path fill-rule="evenodd " d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002
+            2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z " clip-rule="evenodd "></path></svg>
+                                                        </div>
+                                                        <div class="hidden sm:flex w-full bg-gray-200 h-0.5 "></div>
+                                                    </div>
+                                                    <div class="mt-3 sm:pr-8 ">
+                                                        <h3 class="text-lg font-semibold text-gray-900 ">第二輪企劃書投票</h3>
+                                                        <time class="text-base font-normal text-gray-500 ">7/13 15:00~15:30</time>
+
+                                                    </div>
+                                                </li>
+
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="schedule " class=" flex flex-col items-center justify-center mt-12 mb-16 flex-grow lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0 ">
+                        <img class="w-[20rem] mb-10 hidden md:block " src="./dist/img/book3-2.png">
+                        <span class="mb-8 text-lg font-bold tracking-widest text-teal-600 uppercase "> 活動日程 </span>
+                        <h2 class=" mb-8 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-8xl "> 參賽流程 </h2>
+                        <p class="mb-8 text-md leading-relaxed text-left text-gray-500 "> 總共50小時的挑戰，緊張又刺激 </p>
+                        <div class="mt-0 lg:mt-6 max-w-10xl sm:flex ">
+                            <div class="mt-3 rounded-lg sm:mt-0 ">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWi_a-1jM93gHQHaiOKX8rkouyLofGCm0U1MZ4LXVLYTSVdA/closedform ">
+                                    <button class=" items-center block px-10 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-teal-600 rounded-xl hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2
+            focus:ring-teal-500 ">馬上報名</button></a>
+                            </div>
+                            <div class="mt-3 rounded-lg sm:mt-0 sm:ml-3 ">
+                                <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NGpkczV0ODdhNDd0aGgyZTk0NGdtZHVxdjAgaGFja2F0aG9uanJAbXMubWluZ2Rhby5lZHUudHc&amp;tmsrc=hackathonjr%40ms.mingdao.edu.tw"><button class=" items-center block px-10 py-3.5 text-base font-medium text-center text-teal-600 transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl focus:outline-none focus:ring-2
+            focus:ring-offset-2 focus:ring-gray-500 "> 加入行事曆 </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--final day timeline-->
+        <div class="bg-gray-50 grid place-items-center w-screen rounded-lg sm:mt-10 container py-20 ">
+            <div class="relative border-black w-60 h-16 rounded-full flex justify-center items-center border-4 ">
+                <div class="text-2xl text-black text-center font-bold px-2 "> 7/22 決賽流程</div>
+            </div>
+            <img src="./dist/img/schedule-4.png " class="object-scale-down w-3/4 h-auto object-center pt-4 hidden sm:block mt-10 " />
+            <div class="hidden md:grid 2xl:gap-x-16 xl:gap-x-12 xl:gap-y-4 lg:gap-x-2 justify-items-center grid-cols-5 grid-rows-2 ">
+                <div class="2xl:text-3xl text-black font-bold lg:text-2xl ">報到</div>
+                <div class="2xl:text-3xl text-black font-bold lg:text-2xl ">開幕</div>
+                <div class="2xl:text-3xl text-black break-all font-bold lg:text-2xl lg:break-all ">設計組 Demo</div>
+                <div class="2xl:text-3xl text-black break-all font-bold lg:text-2xl lg-break-all ">工程組 Demo</div>
+                <div class="2xl:text-3xl text-black font-bold lg:text-2xl ">頒獎</div>
+                <div class="2xl:text-2xl text-black lg:text-xl ">13:00</div>
+                <div class="2xl:text-2xl text-black lg:text-xl ">13:25</div>
+                <div class="2xl:text-2xl text-black lg:text-xl ">14:00</div>
+                <div class="2xl:text-2xl text-black lg:text-xl ">15:50</div>
+                <div class="2xl:text-2xl text-black lg:text-xl ">17:45</div>
+            </div>
+            <div class="grid grid-rows-5 grid-cols-2 gap-x-1 gap-y-4 justify-items-center md:hidden mt-10 ">
+                <div class="text-3xl text-black font-bold ">報到</div>
+                <div class="text-2xl text-black ">13:00</div>
+
+                <div class="text-3xl text-black font-bold ">開幕</div>
+                <div class="text-2xl text-black ">13:25</div>
+
+                <div class="ml-5 sm:ml-0 text-3xl text-black break-all font-bold ">設計組 Demo</div>
+                <div class="text-2xl text-black break-all ">14:00</div>
+
+                <div class="ml-5 sm:ml-0 text-3xl text-black break-all font-bold ">工程組 Demo</div>
+                <div class="text-2xl text-black ">15:50</div>
+
+                <div class="text-3xl text-black font-bold ">頒獎</div>
+                <div class="text-2xl text-black ">17:45</div>
+            </div>
+
+        </div>
+
+        <!--regestration dates-->
+        <div class="bg-gray-50 flex justify-center flex-col sm:flex-row gap-10 items-center w-screen pb-24 mt-10 py-20 ">
+            <div class="border-4 border-black w-48 h-16 rounded-full flex justify-center items-center ">
+                <div class="text-2xl text-black text-center font-bold "> 報名時間 </div>
+            </div>
+            <div class="text-4xl text-black font-bold ">3/28 ~ 5/22</div>
+        </div>
+        </div>
+
+        <div class="bg-gray-50 border-2 shadow-lg rounded-lg container mt-10 " id="register ">
+            <div class="lg:max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between ">
+                <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl ">
+                    <span class="block ">決定好要參加了嗎?</span>
+                    <span class="block text-teal-600 ">心動不如行動，馬上報名加入吧！</span>
+                </h2>
+                <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0 ">
+                    <div class="inline-flex rounded-md shadow ">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWi_a-1jM93gHQHaiOKX8rkouyLofGCm0U1MZ4LXVLYTSVdA/closedform" target="_blank" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-teal-500 hover:bg-teal-700 "> 立即報名</a>
+                    </div>
+                    <div class="ml-3 inline-flex rounded-md shadow ">
+                        <a href="https://discord.gg/qmgsaVqn " target="_blank" sclass="inline-flex items-center justify-center px-5 py-3 border border-3 text-base font-medium rounded-md text-teal-600 bg-white hover:bg-gray-200 "> 加入Discord</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  SPONSORS -->
+        <section class="w-full bg-gray-50 container rounded-lg mt-20 shadow-lg border mb-20 px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-24 ">
+            <h2 class=" mb-8 text-4xl font-bold leading-none tracking-tighter text-teal-600 md:text-7xl text-center "> 相關單位 </h2>
+            <div class="flex w-full mx-auto text-left flex-col flex-1 items-center gap-10 ">
+                <div class="flex flex-wrap flex-row flex-shrink-0 justify-center items-center gap-10 ">
+                    <div class="flex flex-wrap flex-row flex-1 justify-center items-center sm:gap-10 basis-100 ">
+                        <div class="text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-neutral-600 ">主辦單位</div>
+                        <img class="object-contain h-44 max-w-sm lg:w-100 lg:max-w-100 " src="./dist/img/Sponsor3.png " alt="Sketch ">
+                    </div>
+                    <div class="flex flex-wrap flex-row flex-1 justify-center items-center sm:gap-10 basis-100 ">
+                        <div class="text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-neutral-600 ">贊助單位</div>
+                        <img class="object-contain h-44 max-w-sm lg:w-100 lg:max-w-100 " src="./dist/img/Sponsor5.png " alt="Invision ">
+                    </div>
+                </div>
+                <div class="flex flex-col flex-wrap flex-1 gap-4 items-center ">
+                    <div class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl col-span-1 font-semibold rounded-full text-neutral-600 "> 指導單位</div>
+                    <div class="grid grid-cols-1 grid-rows-3 md:grid-cols-3 md:grid-rows-1 gap-4 md:gap-20 divide-transparent justify-center items-center ">
+                        <img class="object-contain w-100 " src="./dist/img/Sponsor1.png " alt="Figma ">
+                        <img class="object-contain w-100 " src="./dist/img/Sponsor2.png " alt="Framer ">
+                        <img class="object-contain w-100 " src="./dist/img/Sponsor6.png " alt="Sketch ">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Bar-->
+    <footer class="relative bg-teal-900 block bottom-0 w-screen ">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-6 ">
+            <div class="relative flex flex-col items-center gap-10 h-auto py-10 ">
+                <div id="footer-links " class="flex flex-row flex-auto gap-x-20 lg:gap-48 justify-start ">
+                    <div class="item ">
+                        <ul class="list-none list-inside ">
+                            <li><a href="# " class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base ">關於我們</a></li>
+                            <li><a href="#theme " class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base ">主題</a></li>
+                            <li><a href="#prize " class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base ">獎金</a></li>
+                            <li><a href="#schedule " class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base ">活動日程</a></li>
+                        </ul>
+                    </div>
+                    <div class="item ">
+                        <ul class="list-none list-inside ">
+                            <li><a href="https://drive.google.com/drive/folders/1INxW6LFH8bN4IlmNSbee1iv6brG2gzak?usp=sharing " class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base ">活動相關文件</a></li>
+                            <li><a href="http://www.mingdao.edu.tw/homeX/Web/ " class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base ">明道官網</a></li>
+                            <li><a href="https://www.instagram.com/hackjr8th/ " class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base ">Instagram</a></li>
+                            <li><a href="https://www.facebook.com/hackathontaiwanjunior " class="text-teal-100 hover:text-white rounded-lg text-lg sm:text-base ">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="tech-desc " class="flex text-gray-200 px-10 ">
+                    This page was constructed using TailwindCSS, Parallax, and NodeJS.
+                </div>
+                <div class="px-8 sm:px-0 block ">
+                    <a href="https://www.google.com/maps/place/Mingdao+High+School/@24.1068679,120.6339044,17z/data=!3m1!4b1!4m5!3m4!1s0x34693c169505249f:0xbde692385cfc5bed!8m2!3d24.1068679!4d120.6360984 " class="text-white hover:underline ">
+                        地址: No. 497號, Section 1, Zhongshan Rd, Wuri District, Taichung City, 41401
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js "></script>
+<script src="./modules/parallax.js-1.5.0/parallax.min.js "></script>
+<script src="./modules/simpleParallax.js "></script>
+<script type="text/javascript ">
+    let mediaIconImages = document.querySelectorAll("img.media-icon ");
+
+    let coverAbsolute = document.getElementById("coverAbsolute ");
+    let prizeAbsolute = document.getElementById("prizeAbsolute ");
+    let coverAbsoluteParallax = new simpleParallax(coverAbsolute, {
+        scale: 0.5,
+        overflow: true
+    });
+
+    let prizeAbsoluteParallax = new simpleParallax(prizeAbsolute, {
+        scale: 0.5,
+        overflow: true
+    });
+
+
+    let mediaIconParallaxInstance = new simpleParallax(mediaIconImages, {
+        scale: 2.0,
+        orientation: "right ",
+        overflow: true,
+    });
+
+    let prizeSlide = document.getElementById("prizeSlide ");
+
+    let prizeSlideParallaxInstance = new simpleParallax(prizeSlide, {
+        scale: 4.0,
+        orientation: "left ",
+        overflow: true,
+        maxTransition: 50,
+    })
+
+    let themeSlide = document.getElementById("theme ");
+
+    let themeSlideParallaxInstance = new simpleParallax(themeSlide, {
+        scale: 1.2
+    })
+
+    let groupCards = document.getElementById("groupCards ");
+
+
+    let groupCardsParallaxInstance = new simpleParallax(groupCards, {
+        scale: 1.0,
+        orientation: "right ",
+        maxTransition: 50,
+    })
+</script>
+<script src="./src/app.js "></script>
+<script src="./modules/flowbite//dist//flowbite.js "></script>
+
+</html>
