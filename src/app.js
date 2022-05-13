@@ -32,9 +32,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
     toggle.onclick = () => {
         if (mobileMenu.classList.contains("hidden")) {
             mobileMenu.classList.remove("hidden");
-            return 1;
-        } 
-        mobileMenu.classList.add('hidden');
+        } else {
+            mobileMenu.classList.add('hidden');
+        }
     }
 })
 

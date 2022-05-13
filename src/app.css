@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  overflow: hidden;
+}
 
 .typewriter h2 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
