@@ -36,8 +36,10 @@ module.exports = {
             },
             screens: {
                 '2xl': '2560px'
+            },
+            backgroundImage: {
+                'hero': "url('img/heroMain.png')",
             }
-
         },
         container: {
             center: true,
