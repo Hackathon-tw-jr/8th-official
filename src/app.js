@@ -133,19 +133,19 @@ document.addEventListener("scroll", () => {
 
     theme.forEach(element => {
         console.log(element)
-        element.style.opacity = (-differentToViewportTop(element) + 800)* 0.003 ;
+        element.style.opacity = (-differentToViewportTop(element) + 800) * 0.003;
     })
 
     cards.forEach(element => {
-        element.style.opacity = (-differentToViewportTop(element) + 700)* 0.004 ;
+        element.style.opacity = (-differentToViewportTop(element) + 700) * 0.004;
     })
 
     groups.forEach(element => {
-        element.style.opacity = (-differentToViewportTop(element) + 700)* 0.004;
+        element.style.opacity = (-differentToViewportTop(element) + 700) * 0.004;
     })
 
     prize.forEach(element => {
-        element.style.opacity = (-differentToViewportTop(element) + 550)* 0.004;
+        element.style.opacity = (-differentToViewportTop(element) + 550) * 0.004;
     })
 
     // if (isAtViewportTop(hackDesc)) {
