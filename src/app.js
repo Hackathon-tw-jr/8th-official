@@ -1,27 +1,27 @@
-// function getNotificationStatus() {
-//     return sessionStorage.getItem("viewedNotification") === "true";
-// }
-//
-// document.addEventListener("DOMContentLoaded", event => {
-//     console.log(sessionStorage.getItem("viewedNotification"))
-//     if (sessionStorage.getItem("viewedNotification") == null) {
-//         sessionStorage.setItem("viewedNotification", "false");
-//     }
-//
-//     let notificationToggle = document.getElementById("notificationToggle");
-//     let eventBanner = document.getElementById("bannerNotification");
-//
-//     eventBanner.classList.add("hidden");
-//
-//     if (!getNotificationStatus()) {
-//         eventBanner.classList.remove("hidden");
-//     }
-//
-//     notificationToggle.onclick = () => {
-//         sessionStorage.setItem("viewedNotification", "true");
-//         eventBanner.classList.toggle("hidden");
-//     }
-// })
+function getNotificationStatus() {
+    return sessionStorage.getItem("viewedNotification") === "true";
+}
+
+document.addEventListener("DOMContentLoaded", event => {
+    console.log(sessionStorage.getItem("viewedNotification"))
+    if (sessionStorage.getItem("viewedNotification") == null) {
+        sessionStorage.setItem("viewedNotification", "false");
+    }
+
+    let notificationToggle = document.getElementById("notificationToggle");
+    let eventBanner = document.getElementById("bannerNotification");
+
+    eventBanner.classList.add("hidden");
+
+    if (!getNotificationStatus()) {
+        eventBanner.classList.remove("hidden");
+    }
+
+    notificationToggle.onclick = () => {
+        sessionStorage.setItem("viewedNotification", "true");
+        eventBanner.classList.toggle("hidden");
+    }
+})
 
 document.addEventListener("DOMContentLoaded", (event) => {
     let toggle = document.getElementById("mobileToggle");
